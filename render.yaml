@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: discord-bookmark-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: BOOKMARK_CHANNEL_ID
+        sync: false 
