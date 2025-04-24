@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - master
-
 jobs:
   action:
     runs-on: self-hosted

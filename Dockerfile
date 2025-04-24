@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 3587
 
-ENTRYPOINT docsify serve .
+ENTRYPOINT docsify serve . --port 3587 --theme dark
