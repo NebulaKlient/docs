@@ -1,3 +1,18 @@
+---
+layout:
+  title:
+    visible: false
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: true
+---
+
+
 # 🌌 Getting Started with Nebula Client
 
 Welcome to the setup guide for **Nebula Client**! This document will help you get up and running quickly.
@@ -7,7 +22,7 @@ Welcome to the setup guide for **Nebula Client**! This document will help you ge
 ## 📦 Requirements
 
 - Minecraft Version: `1.8.9` `1.20 Support Coming Soon!`
-- Client / Modloader: `Forge`
+- Client / Modloader: `Forge` `Fabric Support Soon`
 
 
 
