@@ -1,6 +1,6 @@
 # Table of contents
 
-* [README](README.md)
+* [Introduction](README.md)
 * [getting-started](getting-started.md)
 * [\[Macro Name Here\]](wikitemplate.md)
 * [Combat](combat/README.md)
