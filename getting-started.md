@@ -47,15 +47,6 @@ Welcome to the setup guide for **Nebula Client**! This document will help you ge
 - Start/Stop Macro: `Keybind Set Per Macro`
 - Manual Overrides: `Keybind Set in Failsafes Section`
 
-
-
-## 📁 File Locations
-
-- Config Path: ``
-- Log Files: ``
-- Saves or Profiles: ``
-
-
 ## 📫 Support & Community
 
 - Discord: `discord.gg/nebulaclient`
