@@ -11,45 +11,38 @@ layout:
   pagination:
     visible: true
 ---
+
 # getting-started
 
-# 🌌 Getting Started with Nebula Client
+## 🌌 Getting Started with Nebula Client
 
 Welcome to the setup guide for **Nebula Client**! This document will help you get up and running quickly.
 
----
+***
 
-## 📦 Requirements
+### 📦 Requirements
 
-- Minecraft Version: `1.8.9` `1.20 Support Coming Soon!`
-- Client / Modloader: `Forge` `Fabric Support Soon`
+* Minecraft Version: `1.8.9` `1.20 Support Coming Soon!`
+* Client / Modloader: `Forge` `Fabric Support Soon`
 
+### 🔧 Installation Steps
 
-
-## 🔧 Installation Steps
-
-1. Download: `Register [HERE](https://nebulaclient.zip) `
+1. Download: `Register [HERE](https://nebulaclient.zip)`
 2. Place file(s) in: `Minecraft Mods Folder`
 3. Launch: `Minecraft Client`
 
+### ⚙️ Configuration
 
+* GUI Hotkey: `/nebula` `Set Keybind in GUI after running /nebula`
 
-## ⚙️ Configuration
+### 🎮 How to Use
 
-- GUI Hotkey: `/nebula` `Set Keybind in GUI after running /nebula`
+#### Basic Controls
 
+* Start/Stop Macro: `Keybind Set Per Macro`
+* Manual Overrides: `Keybind Set in Failsafes Section`
 
+### 📫 Support & Community
 
-## 🎮 How to Use
-
-### Basic Controls
-
-- Start/Stop Macro: `Keybind Set Per Macro`
-- Manual Overrides: `Keybind Set in Failsafes Section`
-
-## 📫 Support & Community
-
-- Discord: `discord.gg/nebulaclient`
-- Website: `https://nebulaclient.zip/`
-
-
+* Discord: `discord.gg/nebulaclient`
+* Website: `https://nebulaclient.zip/`
