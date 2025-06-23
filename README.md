@@ -11,14 +11,7 @@ layout:
   pagination:
     visible: true
 ---
-
-# Introduction
-
-## Nebula Client Docs
-
-What Is Nebula Client?
-
-## Nebula Client Docs
+<span style="color: #a855f7;font-size:30px;">Nebula Client Docs</span>
 
 1. [Getting Started](getting-started.md)
 2. [General Modules Features](General/generalmodulesmain.md)

@@ -14,7 +14,7 @@ layout:
 
 # fishing
 
-## Fishing Macro
+<span style="color:rgb(168, 85, 247);font-size:30px;">Fishing Macro</span>
 
 A module that automates Fishing, with quality-of-life features to improve efficiency.
 
@@ -22,12 +22,12 @@ A module that automates Fishing, with quality-of-life features to improve effici
 
 ### ✨ Main Features And Settings
 
-* **Fishing Type** » **Normal** (Water Fishing, Anywhere there's water.), Barn ( Fishing at /warp barn, Also water fishing.), **Trophy** ( Crimson Isle trophy fishing.), Worm ( Either water or lava fishing, done in the **Crystal Hollows**.)
-* <mark style="color:purple;">**Sneak While Fishing**</mark> » This button makes it so when the fishing module is toggled and running the macro will simulate the player sneaking.
+* **Fishing Type** » **Normal** (Water Fishing, Anywhere there's water.), **Barn** ( Fishing at /warp barn, Also water fishing.), **Trophy** ( Crimson Isle trophy fishing.), **Worm** ( Either water or lava fishing, done in the **Crystal Hollows**.)
+* **Sneak While Fishing** » This button makes it so when the fishing module is toggled and running the macro will simulate the player sneaking.
 
 > **Note:** \[Extra notes or conditions for using this feature.]
 
-* **\[Hot Spot Changer]** » When this option is enabled the macro will only fish at hotspots.
+* **Hot Spot Changer** » When this option is enabled the macro will only fish at hotspots.
 
 > **Important Note:** \[ **Feature currently in beta! Use at your own risk!**]
 
@@ -37,40 +37,38 @@ A module that automates Fishing, with quality-of-life features to improve effici
 > **Note:** \[Additional usage advice.]
 
 * **\[Auto Rain]** » Auto buys rain in the park. Default purchase amount is 10.
+
 * **\[Using Rod For Attacking ( For 1 Sec) ]** » Uses rod to attack mob for 1 sec before switching to main weapon.
 
 ### ✨ Misc Features And Settings
 
 #### Minimum Requirements
 
-> Recommend at least level 7 for bazaar. See Bazaar Unlocker for details on how Nebula can assist with unlocking bazaar!
->
-> \
-> We also recommend having some coins, a general weapon, and fishing rod.
+> Recommend at least level 7 for bazaar. See Bazaar Unlocker for details on how Nebula can assist with unlocking bazaar!  
 
 #### ✅ Recommended Setups
 
 `🥇 Early Game`
 
-> * **Armor:** \[Enter armor name here]\
+> * **Armor:** \[Enter armor name here]
 >
-> * **Tool:** \[Enter tool or item name]\
+> * **Tool:** \[Enter tool or item name]
 >
 > * **Pet:** \[Enter pet name]
 
 `🥈 Mid Game`
 
-> * **Armor:** \[Enter armor name here]\
+> * **Armor:** \[Enter armor name here]
 >
-> * **Tool:** \[Enter tool or item name]\
+> * **Tool:** \[Enter tool or item name]
 >
 > * **Pet:** \[Enter pet name]
 
 `🥉 Late Game`
 
-> * **Armor:** \[Enter armor name here]\
+> * **Armor:** \[Enter armor name here]
 >
-> * **Tool:** \[Enter tool or item name]\
+> * **Tool:** \[Enter tool or item name]
 >
 > * **Pet:** \[Enter pet name]
 
