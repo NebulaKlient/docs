@@ -11,7 +11,7 @@ layout:
   pagination:
     visible: true
 ---
-
+# getting-started
 
 # 🌌 Getting Started with Nebula Client
 
