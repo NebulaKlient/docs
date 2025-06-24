@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Official Website](https://nebulaclient.zip/)
 * [getting-started](getting-started.md)
-* [\[Macro Name Here\]](wikitemplate.md)
 
 ## ℹ️ Useful Information
 
@@ -52,3 +51,7 @@
   * [RiftQOL](documentation/skills/riftqol.md)
   * [fishing](documentation/skills/fishing.md)
   * [skillsmain](documentation/skills/skillsmain.md)
+
+## templates
+
+* [\[Macro Name Here\]](templates/wikitemplate.md)
