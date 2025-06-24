@@ -45,54 +45,20 @@ To use this module, ensure the following:
 ### ✅ Recommended Setups
 
 {% tabs %}
-{% tab title="🥇 Early Game" %}
-<div align="right"><figure><img src="../../.gitbook/assets/SkyBlock_armor_glacite.png" alt="Glacite Armor" width="138"><figcaption></figcaption></figure></div>
-
-```html
-<div style="display: flex; align-items: start; gap: 1rem;">
-  <div style="flex: 1;">
-    dsadsasdasadsasdsasd  
-    *(your running text here…)*  
-  </div>
-  <div style="flex: 0 0 auto;">
-    <img
-      src="https://www.gitbook.com/cdn-cgi/image/dpr=2,width=2400,onerror=redirect,format=auto/https%3A%2F%2Ffiles.gitbook.com%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FjQgsUlLYIw88Pgm00t8K%252Fuploads%252FS6qcs81xgMNhdS76St0J%252FSkyBlock_armor_glacite.png%3Falt%3Dmedia%26token%3Daf00660d-47ca-4fe4-970f-d48bb79ddc19"
-      alt="Glacite Armor"
-      style="max-width: 200px;"
-    />
-  </div>
-</div>
-```
+{% tab title="🥉 Early Game" %}
+* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_glacite.png" alt="" data-size="line"> Glacite Armor
+* **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_stone_pickaxe.gif" alt="" data-size="line"> Bandaged / Mithril Pickaxe
+* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem
 {% endtab %}
 
 {% tab title="🥈 Mid Game" %}
 <figure><img src="../../.gitbook/assets/SkyBlock_armor_glacite.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
+
+{% tab title="🥇Late Game" %}
+
+{% endtab %}
 {% endtabs %}
-
-🥇 Early Game
-
-> * **Armor:** Glacite Armor\
->
-> * **Tool:** \[Enter tool or item name]\
->
-> * **Pet:** \[Enter pet name]
-
-🥈 Mid Game
-
-> * **Armor:** \[Enter armor name here]\
->
-> * **Tool:** \[Enter tool or item name]\
->
-> * **Pet:** \[Enter pet name]
-
-🥉 Late Game
-
-> * **Armor:** \[Enter armor name here]\
->
-> * **Tool:** \[Enter tool or item name]\
->
-> * **Pet:** \[Enter pet name]
 
 ### 📝 Usage Notes
 
