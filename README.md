@@ -11,41 +11,44 @@ layout:
   pagination:
     visible: true
 ---
-<span style="color: #a855f7;font-size:30px;">Nebula Client Docs</span>
+
+# Introduction
+
+Nebula Client Docs
 
 1. [Getting Started](getting-started.md)
-2. [General Modules Features]
-   * [Carnival](General/carnival.md)
-   * [Dojo](General/dojo.md)
-   * [Bazaar Unlocker](General/bazaarunlocker.md)
-3. [Combat]
-   * [Diana](Combat/Diana.md)
-   * [Pelt Hunter](Combat/PeltHunter.md)
-   * [Combat Macro](Combat/CombatMacro.md)
-   * [Slayer Macro](Combat/SlayerMacro.md)
-4. [Skills]
-   * [Alchemy](Skills/Alchemy.md)
-   * [Farming](Skills/Farming.md)
+2. \[General Modules Features]
+   * [Carnival](documentation/general/carnival.md)
+   * [Dojo](documentation/general/dojo.md)
+   * [Bazaar Unlocker](documentation/general/bazaarunlocker.md)
+3. \[Combat]
+   * [Diana](documentation/combat/diana.md)
+   * [Pelt Hunter](documentation/combat/pelthunter.md)
+   * [Combat Macro](documentation/combat/combatmacro.md)
+   * [Slayer Macro](documentation/combat/slayermacro.md)
+4. \[Skills]
+   * [Alchemy](documentation/skills/alchemy.md)
+   * [Farming](documentation/skills/farming.md)
    * [Fishing](Skills/Fishing.md)
-   * [Foraging](Skills/Foraging.md)
+   * [Foraging](documentation/skills/foraging.md)
    * [RiftQOL](Skills/RoftQOL.md)
-5. [Mining]
-   * [MiningQOL](Mining/MiningQOL.md)
-   * [BlockMiner](Mining/BlockMiner.md)
-   * [Dwarven Commisions](Mining/Dwarvencoms.md)
-   * [Mithril Miner](Mining/MithrilMiner.md)
-   * [Gemstone Miner](Mining/GemstoneMiner.md)
-   * [Tunnel Miner](Mining/TunnelMiner.md)
-   * [Powder Macro](Mining/PowderMacro.md)
-   * [Scatha](Mining/Scatha.md)
-6. [Dungeons]
-   * [Dungeon Utils](Dungeons/Dungeonutils.md)
+5. \[Mining]
+   * [MiningQOL](documentation/mining/miningqol.md)
+   * [BlockMiner](documentation/mining/blockminer.md)
+   * [Dwarven Commisions](documentation/mining/dwarvencoms.md)
+   * [Mithril Miner](documentation/mining/mithrilminer.md)
+   * [Gemstone Miner](documentation/mining/gemstoneminer.md)
+   * [Tunnel Miner](documentation/mining/tunnelminer.md)
+   * [Powder Macro](documentation/mining/powdermacro.md)
+   * [Scatha](documentation/mining/scatha.md)
+6. \[Dungeons]
+   * [Dungeon Utils](documentation/dungeons/dungeonutils.md)
    * [Dungeon Solvers](Dungeons/DungeonSolvers.md)
-   * [Dungeon Routes](Dungeons/DungeonRoutes.md)
-7. [Misc]
-   * [Failsafes](Misc/Failsafes.md)
-   * [Pathfinding](Misc/Pathfinding.md)
-   * [Scheduler](Misc/Scheduler.md)
-   * [Failsafe Reactions](Misc/Failsafereactions.md)
-   * [Market](Misc/Market.md)
-   * [Kuudra Utils](Misc/KuudraUtils.md)
+   * [Dungeon Routes](documentation/dungeons/dungeonroutes.md)
+7. \[Misc]
+   * [Failsafes](documentation/misc/failsafes.md)
+   * [Pathfinding](documentation/misc/pathfinding.md)
+   * [Scheduler](documentation/misc/scheduler.md)
+   * [Failsafe Reactions](documentation/misc/failsafereactions.md)
+   * [Market](documentation/misc/market.md)
+   * [Kuudra Utils](documentation/misc/kuudrautils.md)
