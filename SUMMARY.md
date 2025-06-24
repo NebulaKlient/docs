@@ -15,6 +15,7 @@
   * [carnival](documentation/general/carnival.md)
   * [dojo](documentation/general/dojo.md)
   * [generalmodulesmain](documentation/general/generalmodulesmain.md)
+  * [QOL](documentation/general/qol.md)
 * [Combat](documentation/combat/README.md)
   * [CombatMacro](documentation/combat/combatmacro.md)
   * [CombatMain](documentation/combat/combatmain.md)

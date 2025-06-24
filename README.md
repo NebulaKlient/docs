@@ -45,10 +45,18 @@ Nebula Client Docs
    * [Dungeon Utils](documentation/dungeons/dungeonutils.md)
    * [Dungeon Solvers](Dungeons/DungeonSolvers.md)
    * [Dungeon Routes](documentation/dungeons/dungeonroutes.md)
-7. \[Misc]
-   * [Failsafes](documentation/misc/failsafes.md)
-   * [Pathfinding](documentation/misc/pathfinding.md)
-   * [Scheduler](documentation/misc/scheduler.md)
-   * [Failsafe Reactions](documentation/misc/failsafereactions.md)
-   * [Market](documentation/misc/market.md)
-   * [Kuudra Utils](documentation/misc/kuudrautils.md)
+7.  \[Misc]
+
+    * [Failsafes](documentation/misc/failsafes.md)
+    * [Pathfinding](documentation/misc/pathfinding.md)
+    * [Scheduler](documentation/misc/scheduler.md)
+    * [Failsafe Reactions](documentation/misc/failsafereactions.md)
+    * [Market](documentation/misc/market.md)
+    * [Kuudra Utils](documentation/misc/kuudrautils.md)
+
+
+
+### General Modules
+
+<table data-view="cards" data-full-width="false"><thead><tr><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">QOL</td><td>A bundle with handy smaller scripts.</td><td></td><td><a href=".gitbook/assets/qol.jpeg">qol.jpeg</a></td></tr></tbody></table>
+
