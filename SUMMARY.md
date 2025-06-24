@@ -11,11 +11,10 @@
 ## 📑 Documentation
 
 * [General](documentation/general/README.md)
-  * [bazaarunlocker](documentation/general/bazaarunlocker.md)
-  * [carnival](documentation/general/carnival.md)
-  * [dojo](documentation/general/dojo.md)
-  * [generalmodulesmain](documentation/general/generalmodulesmain.md)
   * [QOL](documentation/general/qol.md)
+  * [Dojo](documentation/general/dojo.md)
+  * [Bazaar Unlocker](documentation/general/bazaarunlocker.md)
+  * [Carnival](documentation/general/carnival.md)
 * [Combat](documentation/combat/README.md)
   * [CombatMacro](documentation/combat/combatmacro.md)
   * [CombatMain](documentation/combat/combatmain.md)
