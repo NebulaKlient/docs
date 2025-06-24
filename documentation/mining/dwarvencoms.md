@@ -49,6 +49,7 @@ To use this module, ensure the following:
 * **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_glacite.png" alt="" data-size="line"> Glacite Armor
 * **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_stone_pickaxe.gif" alt="" data-size="line"> Bandaged / Mithril Pickaxe
 * **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem
+* **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_mithril_necklace.png" alt="" data-size="line"> 4/4 Mithril Equipment reforged to **Royal**
 {% endtab %}
 
 {% tab title="🥈 Mid Game" %}
