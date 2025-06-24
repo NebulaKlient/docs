@@ -58,5 +58,5 @@ Nebula Client Docs
 
 ### General Modules
 
-<table data-view="cards" data-full-width="false"><thead><tr><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">QOL</td><td>A bundle with handy smaller scripts.</td><td></td><td><a href=".gitbook/assets/qol.jpeg">qol.jpeg</a></td></tr></tbody></table>
+<table data-view="cards" data-full-width="false"><thead><tr><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">QOL</td><td>A bundle with handy smaller scripts.</td><td><a href="documentation/general/qol.md">qol.md</a></td><td><a href=".gitbook/assets/qol.jpeg">qol.jpeg</a></td></tr></tbody></table>
 
