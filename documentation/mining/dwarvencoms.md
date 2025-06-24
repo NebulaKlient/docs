@@ -15,20 +15,16 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 * **Commissions Macro Keybind:** Keybind to start and stop the macro .
 * **Warp Mines:** Optional toggle to make the macro warp to mines if you have it unlocked.
 
-> **Note:** You need the **Dwarven Mines** warp unlocked for this to work. "/warp mines"
+> **Note:** You need the **Travel Scroll to the Dwarven Mines** unlocked for this to work. "/warp mines"
 
 * **Use Abiphone For Commissions:** Calls Queen Mismyla to complete commisions anywhere.
 
 > **Note:** You need **Queen Mismyla** in your abiphone contacts. To get her in your contacts you need to give her a **Royal Pigeon**
 
 * **Sword Slot for Goblins:** Configurable weapon slot (1-9) for goblin slayer commissions.
-* **Commision Milestone:** This ensures Nebula knows what emissaries you have unlocked.
-
-> **Note:** Every **milestone** up till 3, gives you 2 new emissaries each time.
-
 * **Use Routes:** This overrides the default path to the commission area. You can create your own routes in the route manager to use. Useful for etherwarp routes to get there faster.
 
-> **Note:** The routes do not overwrite where the default commission location is, just the path **to** the default location that **Nebula** prefers. However it will use your custom location routes if the default spot is full.
+> **Note:** You can also use the **Route Manager** to create custom commissary routes. Detailed instructions can be found in the route documentation.
 
 ### ⚙️ Setup
 
