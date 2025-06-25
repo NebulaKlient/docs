@@ -17,23 +17,19 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 
 * **Fishing Type** : &#x20;
-  * **Normal** (Water Fishing, Anywhere there's water.)
-  * **Barn** ( Fishing at /warp barn, Also water fishing.)
+  * **Normal:** Fishing and kills mobs instantly.
+  * **Barn:** Fishing with the added option of killing the sea creatures after a set amount of time.
     * **Barn Fishing Attack Conditions**:
     * **Barn Fishing SC Threshold**:
     * **Not Enough Mana Retry Relay:**
     * **Etherwarp Mode**:
-  * **Trophy** ( Crimson Isle trophy fishing.)
+  * **Trophy:** Trophy fishing in the Crimson Isle.
     * **Trophy Minium Wait Time**:
-  * **Worm** ( Either water or lava fishing, done in the **Crystal Hollows**.)
+  * **Worm:** Fishing for Water Worm or Flaming Worm in the Crystal Hollows and killing them after a set period of time.
     * **Worm Fishing Attack Conditions**:
     * **Worm Fishing SC Threshold**:
 
-
-
-* **Sneak While Fishing** :  This button makes it so when the fishing module is toggled and running the macro will simulate the player sneaking.
-
-
+- **Sneak While Fishing** :  Sneaking while the macro is running to mimic legit behavior.
 
 * **Hot Spot Changer:** When this option is enabled the macro will only fish at hotspots.
 
@@ -41,16 +37,11 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 It is **important if this option is enabled, please make sure to walk around the world. This is to help the pathfinding determine fishing positions around the hotspot.**
 {% endhint %}
 
-*   **Catch Golden Fish**: When this option is toggled, it will catch the golden fish that appear while fishing in the crimson isle.
+* **Catch Golden Fish**: Catches golden fish that appear while fishing in the crimson isle.
+  * **Golden Fish Prediction Distance:** Predicts the position of the golden fish to the hook.
+* **Auto Rain:** Automatically buys rain while fishing in the park. Default purchase amount is 10.
 
-    * **Golden Fish Prediction Distance:** This option predicts the position of the golden fish to the hook. Default value is set to 0.8
-
-
-* **Auto Rain:** Auto buys rain in the park. Default purchase amount is 10.
-
-
-
-* **Using Rod For Attacking ( For 1 Sec):** Uses rod to attack mob for 1 sec before switching to main weapon.
+- **Using Rod For Attacking ( For 1 Sec):** Uses rod to attack mob for 1 sec before switching to main weapon.
 
 </details>
 
