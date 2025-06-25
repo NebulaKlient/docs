@@ -12,7 +12,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 <details>
 
-<summary>✨ Features</summary>
+<summary>✨ Options</summary>
 
 
 
