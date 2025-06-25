@@ -48,7 +48,7 @@ To use this module, ensure the following:
 {% endtab %}
 
 {% tab title="🥈 Mid Game" %}
-* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_yog.png" alt="" data-size="line">  Yog Armor
+* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_yog.png" alt="" data-size="line">  Yog Armor reforged to **Dimensional**
 
 > **Note**: If you have extra money, you can get <img src="../../.gitbook/assets/SkyBlock_armor_chainmail.png" alt="" data-size="line"> **Sorrow Armor**. The mining speed is minuscule so only get this if you have a lot of money to spare.
 
@@ -60,7 +60,7 @@ To use this module, ensure the following:
 {% endtab %}
 
 {% tab title="🥇Late Game" %}
-* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_divan.png" alt="" data-size="line"> Divan Armor
+* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_divan.png" alt="" data-size="line"> Divan Armor reforged to **Dimensional**
 * **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_prismarine_shard.gif" alt="" data-size="line"> Mithril Drill SX-R326 reforged to **Fleet**
 * **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem <mark style="color:orange;">\[L]</mark>
 * **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_titanium_gauntlet.png" alt="" data-size="line"> 4/4 Titanium Equipment reforged to **Royal**
