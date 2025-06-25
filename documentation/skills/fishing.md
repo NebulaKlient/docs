@@ -17,7 +17,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 
 * **Fishing Type** : &#x20;
-  * **Normal:** Fishing and kills mobs instantly.
+  * **Normal:** Fishing and killing mobs instantly.
   * **Barn:** Fishing with the added option of killing the sea creatures after a set amount of time.
     * **Barn Fishing Attack Conditions**:
     * **Barn Fishing SC Threshold**:
