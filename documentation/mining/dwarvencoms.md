@@ -68,6 +68,8 @@ To use this module, ensure the following:
 
 </details>
 
+***
+
 ### Recommended Setups
 
 {% tabs %}
