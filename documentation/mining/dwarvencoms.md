@@ -39,7 +39,11 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 </details>
 
-### ⚙️ Setup
+<details>
+
+<summary>⚙️ Setup</summary>
+
+
 
 To use this module, ensure the following:
 
@@ -47,7 +51,11 @@ To use this module, ensure the following:
 * Access to the **Dwarven Mines** area.
 * Once in **Dwarven Mines**, press your bind and it'll automatically pathfind from where you start.
 
-> **Tip:** Forge warp is not **mandatory**, but highly recommended. When you are far away from the next commission, **Nebula** will warp you to the forge to get there faster.
+{% hint style="info" %}
+**Tip:** Forge warp is not **mandatory**, but highly recommended. When you are far away from the next commission, **Nebula** will warp you to the forge to get there faster.
+{% endhint %}
+
+</details>
 
 ### ✅ Recommended Setups
 
