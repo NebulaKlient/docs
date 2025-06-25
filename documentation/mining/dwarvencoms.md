@@ -4,28 +4,40 @@ description: >-
   Mines, with quality-of-life features for faster progression.
 ---
 
-# ⚒️ Dwarven Commission Module
+# ⚒️ Dwarven Commission
 
 {% hint style="danger" %}
 It's **important** you enable **World Caching** in the [**Path Finder**](../misc/pathfinding.md) module, so it works for the longer distances.
 {% endhint %}
 
-### ✨ Features
+<details>
+
+<summary>✨ Features</summary>
+
+
 
 * **Commissions Macro Keybind:** Keybind to start and stop the macro .
 * **Warp Mines:** Optional toggle to make the macro warp to mines if you have it unlocked.
 
-> **Note:** You need the **Travel Scroll to the Dwarven Mines** unlocked for this to work. "/warp mines"
+{% hint style="info" %}
+**Note:** You need the **Travel Scroll to the Dwarven Mines** unlocked for this to work. "/warp mines"
+{% endhint %}
 
 * **Use Abiphone For Commissions:** Calls Queen Mismyla to complete commisions anywhere.
 
-> **Note:** Nebula will still use a **Royal Pigeon** from your hotbar if available. The abiphone integration is purely an optional enhancement feature.
+{% hint style="info" %}
+**Note:** Nebula will still use a **Royal Pigeon** from your hotbar if available. The abiphone integration is purely an optional feature.
+{% endhint %}
 
 * **Sword Slot for Goblins:** Configurable weapon slot (1-9) for goblin slayer commissions.
 * **Unlocked Comission Milestone 1**: Allows Nebula to verify whether emissaries are unlocked.
 * **Use Routes:** This overrides the default path to the commission area. You can create your own routes in the route manager to use. Useful for etherwarp routes to get there faster.
 
-> **Note:** You can also use the **Route Manager** to create custom commissary routes. Detailed instructions can be found in the route documentation.
+{% hint style="info" %}
+**Note:** You can also use the **Route Manager** to create custom commissary routes. Detailed instructions can be found in the route documentation.
+{% endhint %}
+
+</details>
 
 ### ⚙️ Setup
 
