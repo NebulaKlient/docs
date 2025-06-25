@@ -6,7 +6,7 @@
 
 ## ℹ️ Useful Information
 
-* [🖥️ Getting Started](useful-information/getting-started.md)
+* [🖥️ Getting Started](getting-started.md)
 * [Page 1](useful-information/page-1.md)
 
 ## 📑 Documentation

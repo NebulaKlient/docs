@@ -16,7 +16,7 @@ layout:
 
 Nebula Client Docs
 
-1. [Getting Started](useful-information/getting-started.md)
+1. [Getting Started](getting-started.md)
 2. \[General Modules Features]
    * [Carnival](documentation/general/carnival.md)
    * [Dojo](documentation/general/dojo.md)

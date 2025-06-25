@@ -6,6 +6,8 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 ### ✨ Main Features And Settings
 
+
+
 * **Fishing Type** : &#x20;
   * **Normal** (Water Fishing, Anywhere there's water.),&#x20;
   * **Barn** ( Fishing at /warp barn, Also water fishing.),&#x20;
@@ -36,6 +38,36 @@ It is **important if this option is enabled, please make sure to walk around the
 * **Using Rod For Attacking ( For 1 Sec):** Uses rod to attack mob for 1 sec before switching to main weapon.
 
 ### ✨ Misc Features And Settings
+
+
+
+* **Use Totem Of Corruption**:
+
+
+
+* **Use Power Orb On Boss Spawn**:
+
+
+
+* **Lava Worm Spot Finder**:
+
+
+
+* **Anti Afk Sensitivity**:&#x20;
+
+
+
+* **Anti Stuck Delay**:
+
+
+
+* **Highlight Hotspot Rings**:
+
+
+
+* **Highlight Thunder Rings:**
+
+
 
 #### Minimum Requirements
 
