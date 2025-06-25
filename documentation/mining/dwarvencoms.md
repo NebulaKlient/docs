@@ -20,7 +20,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 * **Warp Mines:** Optional toggle to make the macro warp to mines if you have it unlocked.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Note:** You need the **Travel Scroll to the Dwarven Mines** unlocked for this to work. "/warp mines"
 {% endhint %}
 
@@ -28,7 +28,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 * **Use Abiphone For Commissions:** Calls Queen Mismyla to complete commisions anywhere.
 
-{% hint style="info" %}
+{% hint style="success" %}
 **Note:** Nebula will still use a **Royal Pigeon** from your hotbar if available. The abiphone integration is purely an optional feature.
 {% endhint %}
 
@@ -49,8 +49,6 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 {% endhint %}
 
 </details>
-
-
 
 <details>
 
