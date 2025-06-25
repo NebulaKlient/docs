@@ -12,7 +12,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 <details>
 
-<summary>✨ Main Features and Settings</summary>
+<summary> Main Features and Settings</summary>
 
 
 
@@ -49,7 +49,7 @@ It is **important if this option is enabled, please make sure to walk around the
 
 <details>
 
-<summary>✨ Misc Settings and Features</summary>
+<summary> Misc Features and Settings</summary>
 
 
 
@@ -83,9 +83,21 @@ It is **important if this option is enabled, please make sure to walk around the
 
 <details>
 
-<summary>⚔️ Combat and Wardrobe Swapper Settings</summary>
+<summary> Combat and Wardrobe Swapper Features and Settings</summary>
+
+* &#x20;**Weapon Type**:
 
 
+
+* **Weapon Slot**:
+
+
+
+* **Attack Delay**:
+
+
+
+* **Attack Squids:**
 
 </details>
 
@@ -93,24 +105,24 @@ It is **important if this option is enabled, please make sure to walk around the
 
 > Recommend at least level 7 for bazaar. See [Bazaar Unlocker](../general/bazaarunlocker.md) for details on how Nebula can assist with unlocking bazaar!&#x20;
 
-## ✅ Recommended Setups
+## &#x20;Recommended Setups
 
 {% tabs %}
-{% tab title="🥇 Early Game" %}
+{% tab title=" Early Game" %}
 * Armor Set:
 * Tool:
 * Pet:
 * Equipment:
 {% endtab %}
 
-{% tab title="🥈 Mid Game" %}
+{% tab title=" Mid Game" %}
 * Armor Set:
 * Tool:
 * Pet:
 * Equipment:
 {% endtab %}
 
-{% tab title="🥇 Late Game" %}
+{% tab title=" Late Game" %}
 * Armor Set:
 * Tool:
 * Pet:
@@ -118,7 +130,7 @@ It is **important if this option is enabled, please make sure to walk around the
 {% endtab %}
 {% endtabs %}
 
-### 📝 Usage Notes
+### &#x20;Usage Notes
 
 > **Tip:** \[Helpful tip for users]
 
