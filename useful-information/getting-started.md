@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# getting-started
+# 🖥️ Getting Started
 
 ## 🌌 Getting Started with Nebula Client
 

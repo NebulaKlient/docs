@@ -1,11 +1,12 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Official Website](https://nebulaclient.zip/)
-* [getting-started](getting-started.md)
+* [🌐 Official Website](https://nebulaclient.zip/)
+* [Discord.gg/NebulaClient](https://discord.gg/nebulaclient)
 
 ## ℹ️ Useful Information
 
+* [🖥️ Getting Started](useful-information/getting-started.md)
 * [Page 1](useful-information/page-1.md)
 
 ## 📑 Documentation
