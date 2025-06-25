@@ -28,7 +28,7 @@
   * [Dungeonutils](documentation/dungeons/dungeonutils.md)
 * [Mining](documentation/mining/README.md)
   * [BlockMiner](documentation/mining/blockminer.md)
-  * [⚒️ Dwarven Commission Module](documentation/mining/dwarvencoms.md)
+  * [⚒️ Dwarven Commission](documentation/mining/dwarvencoms.md)
   * [GemstoneMiner](documentation/mining/gemstoneminer.md)
   * [MiningQOL](documentation/mining/miningqol.md)
   * [Miningmain](documentation/mining/miningmain.md)
