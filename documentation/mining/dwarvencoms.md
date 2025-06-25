@@ -19,9 +19,10 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 * **Use Abiphone For Commissions:** Calls Queen Mismyla to complete commisions anywhere.
 
-> **Note:** You need **Queen Mismyla** in your abiphone contacts. To get her in your contacts you need to give her a **Royal Pigeon**
+> **Note:** Nebula will still use a **Royal Pigeon** from your hotbar if available. The abiphone integration is purely an optional enhancement feature.
 
 * **Sword Slot for Goblins:** Configurable weapon slot (1-9) for goblin slayer commissions.
+* **Unlocked Comission Milestone 1**: Allows Nebula to verify whether emissaries are unlocked.
 * **Use Routes:** This overrides the default path to the commission area. You can create your own routes in the route manager to use. Useful for etherwarp routes to get there faster.
 
 > **Note:** You can also use the **Route Manager** to create custom commissary routes. Detailed instructions can be found in the route documentation.
@@ -36,24 +37,33 @@ To use this module, ensure the following:
 
 > **Tip:** Forge warp is not **mandatory**, but highly recommended. When you are far away from the next commission, **Nebula** will warp you to the forge to get there faster.
 
-* Recommended gear is full **Glacite Armor**, **Mithril 4/4 Equipment**, **Rare/Epic Mithril Golem** and a **Mithril Pickaxe** for HOTM 1.
-
 ### ✅ Recommended Setups
 
 {% tabs %}
 {% tab title="🥉 Early Game" %}
 * **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_glacite.png" alt="" data-size="line"> Glacite Armor
 * **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_stone_pickaxe.gif" alt="" data-size="line"> Bandaged / Mithril Pickaxe
-* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem
+* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem <mark style="color:purple;">\[E]</mark>
 * **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_mithril_necklace.png" alt="" data-size="line"> 4/4 Mithril Equipment reforged to **Royal**
 {% endtab %}
 
 {% tab title="🥈 Mid Game" %}
-<figure><img src="../../.gitbook/assets/SkyBlock_armor_glacite.png" alt=""><figcaption></figcaption></figure>
+* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_yog.png" alt="" data-size="line">  Yog Armor
+
+> **Note**: If you have extra money, you can get <img src="../../.gitbook/assets/SkyBlock_armor_chainmail.png" alt="" data-size="line"> **Sorrow Armor**. The mining speed is minuscule so only get this if you have a lot of money to spare.
+
+* **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_prismarine_shard.gif" alt="" data-size="line"> Mithril Drill SX-R226 reforged to **Fleet**
+* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem <mark style="color:orange;">\[L]</mark>
+* **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_mithril_necklace.png" alt="" data-size="line"> 4/4 Mithril Equipment reforged to **Royal**
+
+> **Note**: You can upgrade to <img src="../../.gitbook/assets/SkyBlock_items_titanium_gauntlet.png" alt="" data-size="line"> **Titanium Equipment** but you are not required to at this stage yet.
 {% endtab %}
 
 {% tab title="🥇Late Game" %}
-
+* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_divan.png" alt="" data-size="line"> Divan Armor
+* **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_prismarine_shard.gif" alt="" data-size="line"> Mithril Drill SX-R326 reforged to **Fleet**
+* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem <mark style="color:orange;">\[L]</mark>
+* **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_titanium_gauntlet.png" alt="" data-size="line"> 4/4 Titanium Equipment reforged to **Royal**
 {% endtab %}
 {% endtabs %}
 

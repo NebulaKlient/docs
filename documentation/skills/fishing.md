@@ -1,9 +1,3 @@
----
-description: >-
-  A module that automates Fishing, with quality-of-life features to improve
-  efficiency.
----
-
 # 🎣 Fishing
 
 {% hint style="danger" %}
@@ -77,5 +71,3 @@ It is **important if this option is enabled, please make sure to walk around the
 > **Tip:** \[Helpful tip for users]
 
 > **Note:** \[Extra setup clarification or reminder]
-
-\[Guides Coming Soon]

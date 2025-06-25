@@ -50,7 +50,6 @@
   * [Foraging](documentation/skills/foraging.md)
   * [🌌 RiftQOL](documentation/skills/wikitemplate.md)
   * [🎣 Fishing](documentation/skills/fishing.md)
-  * [skillsmain](documentation/skills/skillsmain.md)
 
 ## templates
 
