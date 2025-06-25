@@ -17,10 +17,17 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 
 * **Fishing Type** : &#x20;
-  * **Normal** (Water Fishing, Anywhere there's water.),&#x20;
-  * **Barn** ( Fishing at /warp barn, Also water fishing.),&#x20;
+  * **Normal** (Water Fishing, Anywhere there's water.)
+  * **Barn** ( Fishing at /warp barn, Also water fishing.)
+    * **Barn Fishing Attack Conditions**:
+    * **Barn Fishing SC Threshold**:
+    * **Not Enough Mana Retry Relay:**
+    * **Etherwarp Mode**:
   * **Trophy** ( Crimson Isle trophy fishing.)
+    * **Trophy Minium Wait Time**:
   * **Worm** ( Either water or lava fishing, done in the **Crystal Hollows**.)
+    * **Worm Fishing Attack Conditions**:
+    * **Worm Fishing SC Threshold**:
 
 
 
@@ -85,6 +92,8 @@ It is **important if this option is enabled, please make sure to walk around the
 
 <summary> Combat and Wardrobe Swapper Features and Settings</summary>
 
+**Combat**:
+
 * &#x20;**Weapon Type**:
 
 
@@ -99,7 +108,95 @@ It is **important if this option is enabled, please make sure to walk around the
 
 * **Attack Squids:**
 
+
+
+* **Ignore Targets In Lava**:
+
+
+
+**Wardrobe Swapper**:
+
+
+
+* **Wardrobe Slot To Switch Back**:
+
+
+
+* **Wardrobe Slot To Use on Thunder Spawn**:
+
+
+
+* **Wardrobe Slot To Use on Vanquisher Spawn**:
+
+
+
+* **Wardrobe Slot To Use on Lord Jawbus Spawn**:
+
+
+
+* **Wardrobe Slot To Use on Titanoboa Spawn**:
+
+
+
+* **Wardrobe Slot To Use on Wiki Tiki Spawn**:
+
 </details>
+
+<details>
+
+<summary>Visual and Notification Features and Settings</summary>
+
+**Visual**:
+
+
+
+* **Highlight Targets**:
+
+
+
+* **Show Fishing Rods Predictions:**
+
+
+
+* **Tracer Color:**
+
+
+
+* **Hit Color**:
+
+
+
+**Notifications**:
+
+
+
+* **Notify On Vanquisher Spawn**:
+
+
+
+* **Notify On Lord Jawbus Spawn**:
+
+
+
+* **Notify On Thunder Spawn**:
+
+
+
+* **Notify On Titanoboa Spawn**:
+
+
+
+* **Notify On Wiki Tiki Spawn**:
+
+</details>
+
+
+
+
+
+
+
+
 
 #### Minimum Requirements
 
