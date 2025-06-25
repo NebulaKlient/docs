@@ -1,10 +1,18 @@
+---
+description: >-
+  This module that automates Fishing, with quality-of-life features to improve
+  efficiency.
+---
+
 # 🎣 Fishing
 
 {% hint style="danger" %}
 It's **important** you enable **World Caching** in the [**Path Finder**](../misc/pathfinding.md) module, so it works for the longer distances.
 {% endhint %}
 
-### ✨ Main Features And Settings
+<details>
+
+<summary>✨ Main Features and Settings</summary>
 
 
 
@@ -37,7 +45,11 @@ It is **important if this option is enabled, please make sure to walk around the
 
 * **Using Rod For Attacking ( For 1 Sec):** Uses rod to attack mob for 1 sec before switching to main weapon.
 
-### ✨ Misc Features And Settings
+</details>
+
+<details>
+
+<summary>✨ Misc Settings and Features</summary>
 
 
 
@@ -67,11 +79,19 @@ It is **important if this option is enabled, please make sure to walk around the
 
 * **Highlight Thunder Rings:**
 
+</details>
 
+<details>
+
+<summary>⚔️ Combat and Wardrobe Swapper Settings</summary>
+
+
+
+</details>
 
 #### Minimum Requirements
 
-> Recommend at least level 7 for bazaar. See [Bazaar Unlocker](../general/bazaarunlocker.md) for details on how Nebula can assist with unlocking bazaar!
+> Recommend at least level 7 for bazaar. See [Bazaar Unlocker](../general/bazaarunlocker.md) for details on how Nebula can assist with unlocking bazaar!&#x20;
 
 ## ✅ Recommended Setups
 
