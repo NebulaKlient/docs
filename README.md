@@ -1,9 +1,9 @@
 ---
 layout:
   title:
-    visible: false
+    visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
@@ -14,49 +14,18 @@ layout:
 
 # Introduction
 
-Nebula Client Docs
-
-1. [Getting Started](getting-started.md)
-2. \[General Modules Features]
-   * [Carnival](documentation/general/carnival.md)
-   * [Dojo](documentation/general/dojo.md)
-   * [Bazaar Unlocker](documentation/general/bazaarunlocker.md)
-3. \[Combat]
-   * [Diana](documentation/combat/diana.md)
-   * [Pelt Hunter](documentation/combat/pelthunter.md)
-   * [Combat Macro](documentation/combat/combatmacro.md)
-   * [Slayer Macro](documentation/combat/slayermacro.md)
-4. \[Skills]
-   * [Alchemy](documentation/skills/alchemy.md)
-   * [Farming](documentation/skills/farming.md)
-   * [Fishing](Skills/Fishing.md)
-   * [Foraging](documentation/skills/foraging.md)
-   * [RiftQOL](Skills/RoftQOL.md)
-5. \[Mining]
-   * [MiningQOL](documentation/mining/miningqol.md)
-   * [BlockMiner](documentation/mining/blockminer.md)
-   * [Dwarven Commisions](documentation/mining/dwarvencoms.md)
-   * [Mithril Miner](documentation/mining/mithrilminer.md)
-   * [Gemstone Miner](documentation/mining/gemstoneminer.md)
-   * [Tunnel Miner](documentation/mining/tunnelminer.md)
-   * [Powder Macro](documentation/mining/powdermacro.md)
-   * [Scatha](documentation/mining/scatha.md)
-6. \[Dungeons]
-   * [Dungeon Utils](documentation/dungeons/dungeonutils.md)
-   * [Dungeon Solvers](Dungeons/DungeonSolvers.md)
-   * [Dungeon Routes](documentation/dungeons/dungeonroutes.md)
-7.  \[Misc]
-
-    * [Failsafes](documentation/misc/failsafes.md)
-    * [Pathfinding](documentation/misc/pathfinding.md)
-    * [Scheduler](documentation/misc/scheduler.md)
-    * [Failsafe Reactions](documentation/misc/failsafereactions.md)
-    * [Market](documentation/misc/market.md)
-    * [Kuudra Utils](documentation/misc/kuudrautils.md)
-
-
-
 ### General Modules
 
 <table data-view="cards" data-full-width="false"><thead><tr><th align="center"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><strong>QOL</strong></td><td>A bundle with handy smaller scripts.</td><td><a href="documentation/general/qol.md">qol.md</a></td><td><a href=".gitbook/assets/qol.png">qol.png</a></td></tr><tr><td align="center"><strong>Dojo</strong></td><td>Completes all Dojo Challenges for you.</td><td><a href="documentation/general/dojo.md">dojo.md</a></td><td><a href=".gitbook/assets/dojo.png">dojo.png</a></td></tr><tr><td align="center"><strong>Bazaar Unlocker</strong></td><td>Completes tasks to unlock Bazaar.</td><td><a href="documentation/general/bazaarunlocker.md">bazaarunlocker.md</a></td><td><a href=".gitbook/assets/bazaar.png">bazaar.png</a></td></tr><tr><td align="center"><strong>Carnival</strong></td><td>Plays Zombie Shootout and Catch a Fish.</td><td><a href="documentation/general/carnival.md">carnival.md</a></td><td><a href=".gitbook/assets/carnival.png">carnival.png</a></td></tr><tr><td align="center"><strong>Visuals</strong></td><td>Fancy and customizable Nebula visuals.</td><td><a href="documentation/general/visuals.md">visuals.md</a></td><td><a href=".gitbook/assets/visuals.webp">visuals.webp</a></td></tr><tr><td align="center"><strong>Chocolate Factory</strong></td><td>Upgrades rabbits, collects chocolates and highlights eggs around you.</td><td><a href="documentation/general/chocolate-factory.md">chocolate-factory.md</a></td><td><a href=".gitbook/assets/cf.webp">cf.webp</a></td></tr><tr><td align="center"><strong>Music</strong></td><td>Spotify integration for your client.</td><td><a href="documentation/general/music.md">music.md</a></td><td><a href=".gitbook/assets/music.webp">music.webp</a></td></tr></tbody></table>
 
+### Combat Modules
+
+<table data-view="cards"><thead><tr><th align="center"></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><strong>Diana Macro</strong></td><td>Digs burrows and kills the monsters around the hub.</td><td><a href=".gitbook/assets/diana.webp">diana.webp</a></td><td><a href="documentation/combat/diana.md">diana.md</a></td></tr><tr><td align="center"><strong>PeltHunter</strong></td><td>Hunts the pelts in the Farming Island area.</td><td><a href=".gitbook/assets/pelt.webp">pelt.webp</a></td><td></td></tr><tr><td align="center"><strong>Combat Macro</strong></td><td>Customizable universal combat macro.</td><td><a href=".gitbook/assets/combat.webp">combat.webp</a></td><td></td></tr><tr><td align="center"><strong>Slayer Macro</strong></td><td>Kills slayer bosses to complete quests.</td><td><a href=".gitbook/assets/slayer.webp">slayer.webp</a></td><td></td></tr></tbody></table>
+
+### Skill Modules
+
+<table data-view="cards"><thead><tr><th align="center"></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><strong>Alchemy</strong></td><td>Automatically brews potions and sells them.</td><td><a href=".gitbook/assets/alchemy.webp">alchemy.webp</a></td><td><a href="documentation/skills/alchemy.md">alchemy.md</a></td></tr><tr><td align="center"><strong>Fishing</strong></td><td>Automated fishing macro with modes and auto kill.</td><td><a href=".gitbook/assets/fishing.webp">fishing.webp</a></td><td><a href="documentation/skills/fishing.md">fishing.md</a></td></tr><tr><td align="center"><strong>Foraging</strong></td><td>Park and island foraging macro.</td><td><a href=".gitbook/assets/foraging.webp">foraging.webp</a></td><td><a href="documentation/skills/foraging.md">foraging.md</a></td></tr><tr><td align="center"><strong>RiftQOL</strong></td><td>Macros to automate almost every aspect of rift.</td><td><a href=".gitbook/assets/rift.webp">rift.webp</a></td><td><a href="documentation/skills/wikitemplate.md">wikitemplate.md</a></td></tr></tbody></table>
+
+### Mining Modules
+
+<table data-view="cards"><thead><tr><th></th></tr></thead><tbody><tr><td></td></tr></tbody></table>
