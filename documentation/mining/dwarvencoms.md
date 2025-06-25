@@ -16,12 +16,15 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 
 
-* **Commissions Macro Keybind:** Keybind to start and stop the macro .
+* **Commissions Macro Keybind:** Keybind to start and stop the macro .\
+
 * **Warp Mines:** Optional toggle to make the macro warp to mines if you have it unlocked.
 
 {% hint style="info" %}
 **Note:** You need the **Travel Scroll to the Dwarven Mines** unlocked for this to work. "/warp mines"
 {% endhint %}
+
+
 
 * **Use Abiphone For Commissions:** Calls Queen Mismyla to complete commisions anywhere.
 
@@ -29,15 +32,25 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 **Note:** Nebula will still use a **Royal Pigeon** from your hotbar if available. The abiphone integration is purely an optional feature.
 {% endhint %}
 
+
+
 * **Sword Slot for Goblins:** Configurable weapon slot (1-9) for goblin slayer commissions.
+
+
+
 * **Unlocked Comission Milestone 1**: Allows Nebula to verify whether emissaries are unlocked.
+
+
+
 * **Use Routes:** This overrides the default path to the commission area. You can create your own routes in the route manager to use. Useful for etherwarp routes to get there faster.
 
 {% hint style="info" %}
-**Note:** You can also use the **Route Manager** to create custom commissary routes. Detailed instructions can be found in the route documentation.
+**Note:** You can also use the **Route Manager** to create custom commission routes. Detailed instructions can be found in the route documentation.
 {% endhint %}
 
 </details>
+
+
 
 <details>
 
@@ -51,7 +64,7 @@ To use this module, ensure the following:
 * Access to the **Dwarven Mines** area.
 * Once in **Dwarven Mines**, press your bind and it'll automatically pathfind from where you start.
 
-{% hint style="info" %}
+{% hint style="success" %}
 **Tip:** Forge warp is not **mandatory**, but highly recommended. When you are far away from the next commission, **Nebula** will warp you to the forge to get there faster.
 {% endhint %}
 
