@@ -12,7 +12,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 <details>
 
-<summary>✨ Options</summary>
+<summary>Options</summary>
 
 
 
@@ -52,7 +52,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 <details>
 
-<summary>⚙️ Setup</summary>
+<summary> Setup</summary>
 
 
 
@@ -68,7 +68,7 @@ To use this module, ensure the following:
 
 </details>
 
-### ✅ Recommended Setups
+### Recommended Setups
 
 {% tabs %}
 {% tab title="🥉 Early Game" %}
@@ -98,7 +98,7 @@ To use this module, ensure the following:
 {% endtab %}
 {% endtabs %}
 
-### 📝 Usage Notes
+### Usage Notes
 
 > **Tip:** Make sure to set your sword slot number correctly for goblin commissions -- the module will auto-switch to that slot when needed.
 
