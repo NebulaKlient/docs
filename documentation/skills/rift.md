@@ -14,10 +14,10 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 
 
-* **Auto Come Back:** Jumps back into the rift after buying **Dimensional Infusion** from the wizard.\
+* **Auto Come Back:** Jumps back into the rift after buying <img src="../../.gitbook/assets/KAT_BOUQUET_normal.png" alt="" data-size="line">**Dimensional Infusion** from the wizard.\
 
 
-- **Payment Mode:** Choice to pay with either **Grand Experience Bottles** or **Bits** when joining back.
+- **Payment Mode:** Choice to pay with either <img src="../../.gitbook/assets/GRAND_EXP_BOTTLE_normal.png" alt="" data-size="line">**Grand Experience Bottles** or <img src="../../.gitbook/assets/BITS_TALISMAN_normal.png" alt="" data-size="line">**Bits** when joining back.
 
 
 
@@ -45,7 +45,7 @@ Higher ping players can generally go faster than others. However if you want to 
 This is not needed for the **macro**. It will do that itself. Purely QOL if you want to do it urself.
 {% endhint %}
 
-* **Agaricus Cap Macro:** Will run around **Dread Farm** and farm them for you.
+* **Agaricus Cap Macro:** Will run around <img src="../../.gitbook/assets/SkyBlock_icons_zone_rift.png" alt="" data-size="line">**Dread Farm** and farm them for you.
 
 
 
@@ -61,7 +61,7 @@ This is ban on **Staff Spectate. Use at your own caution.**
 
 
 
-* **Disable Turbo Mode Player Range:** Will disable the nuker is a player is within X blocks set on slider. If you put the slider to 0, nuker will not **turn on**.
+* **Disable Turbo Mode Player Range:** Will disable the nuker if a player is within X blocks set on slider. If you put the slider to 0, nuker will not **turn on**.
 
 
 
@@ -91,9 +91,9 @@ This is ban on **Staff Spectate. Use at your own caution.**
 
 
 * **Timite Macro Ore Type:**
-  * **Youngite**: Targets Youngite.
-  * **Timite**: Uses a Time Gun and targets Timite.
-  * **Obsolite**: Uses a Time Gun and targets Obsolite.
+  * **Youngite**: Targets <img src="../../.gitbook/assets/YOUNGITE_normal.png" alt="" data-size="line">Youngite.
+  * **Timite**: Uses a <img src="../../.gitbook/assets/TIME_GUN_normal.png" alt="" data-size="line">Time Gun and targets <img src="../../.gitbook/assets/TIMITE_normal.png" alt="" data-size="line">Timite.
+  * **Obsolite**: Uses a <img src="../../.gitbook/assets/TIME_GUN_normal.png" alt="" data-size="line">Time Gun and targets <img src="../../.gitbook/assets/OBSOLITE_normal.png" alt="" data-size="line">Obsolite.
   * **Highlite or Discrite (Auto Craft)**: Will auto craft your choice while mining.
 
 
@@ -104,7 +104,7 @@ This is ban on **Staff Spectate. Use at your own caution.**
 Higher ping players can generally go faster than others. However if you want to be safe, just make the rotation look like **you**.
 {% endhint %}
 
-* **Auto Stun Snakes**: Will automatically mine and swap between your **Frozen Water Pungi** and **Self-Recursive Pickaxe**.
+* **Auto Stun Snakes**: Will automatically mine and swap between your <img src="../../.gitbook/assets/FROZEN_WATER_PUNGI_normal.png" alt="" data-size="line">**Frozen Water Pungi** and <img src="../../.gitbook/assets/SELF_RECURSIVE_PICKAXE_normal.png" alt="" data-size="line">**Self-Recursive Pickaxe**.
 
 </details>
 
@@ -143,11 +143,11 @@ This should **not** ban on spectate, since you would also swing around your curs
 
 * **Crux Macro Type**:
   * **All**: Targets any crux mob in vicinity.
-  * **Shy**: Targets only shy's
-  * **Shadow**: Targets only shadow's
-  * **Volt**: Target only volt's.
-  * **Scribe**: Targets only scribe's.
-  * **Frozille**: Targets only frozille's.
+  * **Shy**: Targets only <img src="../../.gitbook/assets/SkyBlock_entities_shy.png" alt="" data-size="line"> shy's
+  * **Shadow**: Targets only <img src="../../.gitbook/assets/SkyBlock_entities_shadow.png" alt="" data-size="line"> shadow's
+  * **Volt**: Target only <img src="../../.gitbook/assets/SkyBlock_entities_volt.png" alt="" data-size="line"> volt's.
+  * **Scribe**: Targets only <img src="../../.gitbook/assets/SkyBlock_entities_scribe.png" alt="" data-size="line"> scribe's.
+  * **Frozille**: Targets only <img src="../../.gitbook/assets/SkyBlock_entities_frozille.png" alt="" data-size="line"> frozille's.
 
 </details>
 
