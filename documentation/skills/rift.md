@@ -14,7 +14,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 
 
-* **Auto Come Back:** Talks to the Wizard and joins the **Rift** again.\
+* **Auto Come Back:** Jumps back into the rift after buying **Dimensional Infusion** from the wizard.\
 
 
 - **Payment Mode:** Choice to pay with either **Grand Experience Bottles** or **Bits** when joining back.
