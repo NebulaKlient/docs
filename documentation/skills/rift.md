@@ -185,40 +185,6 @@ To use this module, ensure the following:
 
 ***
 
-### Recommended Setups
-
-{% tabs %}
-{% tab title="Early Game" %}
-* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_glacite.png" alt="" data-size="line"> Glacite Armor
-* **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_stone_pickaxe.gif" alt="" data-size="line"> Bandaged / Mithril Pickaxe
-* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem <mark style="color:purple;">\[E]</mark>
-* **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_mithril_necklace.png" alt="" data-size="line"> 4/4 Mithril Equipment reforged to **Royal**
-{% endtab %}
-
-{% tab title="Mid Game" %}
-* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_yog.png" alt="" data-size="line">  Yog Armor reforged to **Dimensional**
-
-> **Note**: If you have extra money, you can get <img src="../../.gitbook/assets/SkyBlock_armor_chainmail.png" alt="" data-size="line"> **Sorrow Armor**. The mining speed is minuscule so only get this if you have a lot of money to spare.
-
-* **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_prismarine_shard.gif" alt="" data-size="line"> Mithril Drill SX-R226 reforged to **Fleet**
-* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem <mark style="color:orange;">\[L]</mark>
-* **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_mithril_necklace.png" alt="" data-size="line"> 4/4 Mithril Equipment reforged to **Royal**
-
-> **Note**: You can upgrade to <img src="../../.gitbook/assets/SkyBlock_items_titanium_gauntlet.png" alt="" data-size="line"> **Titanium Equipment** but you are not required to at this stage yet.
-{% endtab %}
-
-{% tab title="Late Game" %}
-* **Armor Set**: <img src="../../.gitbook/assets/SkyBlock_armor_divan.png" alt="" data-size="line"> Divan Armor reforged to **Dimensional**
-* **Tool**: <img src="../../.gitbook/assets/SkyBlock_items_enchanted_prismarine_shard.gif" alt="" data-size="line"> Mithril Drill SX-R326 reforged to **Fleet**
-* **Pet**: <img src="../../.gitbook/assets/SkyBlock_pets_mithril_golem.png" alt="" data-size="line"> Mithril Golem <mark style="color:orange;">\[L]</mark>
-* **Equipment**: <img src="../../.gitbook/assets/SkyBlock_items_titanium_gauntlet.png" alt="" data-size="line"> 4/4 Titanium Equipment reforged to **Royal**
-{% endtab %}
-{% endtabs %}
-
 ### Usage Notes
 
-> **Tip:** Make sure to set your sword slot number correctly for goblin commissions -- the module will auto-switch to that slot when needed.
-
-> **Note:** The warp mines feature only works after reaching Commission Milestone 4, so early players will need to travel manually. Use "/visit mid" or other portal islands to get there faster.
-
-The module works best when you have the base Mithril **HOTM** perks unlocked and decent mining gear. It'll handle the repetitive parts of commission grinding while you can focus on other task
+Rift requires the specific item needed for each activity to function properly, this is not a rift guide. The macro will not use a sword to farm.
