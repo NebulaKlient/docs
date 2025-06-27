@@ -52,8 +52,8 @@
   * [Alchemy](documentation/skills/alchemy.md)
   * [Farming](documentation/skills/farming.md)
   * [Foraging](documentation/skills/foraging.md)
-  * [🌌 RiftQOL](documentation/skills/wikitemplate.md)
   * [🎣 Fishing](documentation/skills/fishing.md)
+  * [🌌 Rift](documentation/skills/rift.md)
 
 ## templates
 
