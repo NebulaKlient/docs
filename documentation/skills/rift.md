@@ -21,7 +21,7 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 
 
-* **Show Macro HUDs in their respective locations:** Will display the macro HUD even if not enabled.
+* **Show Macro HUDs in their respective locations:** Will display the macro HUD even if the macro is not enabled.
 
 
 
