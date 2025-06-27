@@ -90,7 +90,11 @@ This is ban on **Staff Spectate. Use at your own caution.**
 
 
 
-* **Timite Macro Ore Type**: fuck this rn too tired to all options and explain them
+* **Timite Macro Ore Type:**
+  * **Youngite**: Targets Youngite.
+  * **Timite**: Uses a Time Gun and targets Timite.
+  * **Obsolite**: Uses a Time Gun and targets Obsolite.
+  * **Highlite or Discrite (Auto Craft)**: Will auto craft your choice while mining.
 
 
 
@@ -137,7 +141,13 @@ This should **not** ban on spectate, since you would also swing around your curs
 
 
 
-* **Crux Macro Type**: fuck that not doing the optionms rn 6:26 AM!!
+* **Crux Macro Type**:
+  * **All**: Targets any crux mob in vicinity.
+  * **Shy**: Targets only shy's
+  * **Shadow**: Targets only shadow's
+  * **Volt**: Target only volt's.
+  * **Scribe**: Targets only scribe's.
+  * **Frozille**: Targets only frozille's.
 
 </details>
 
@@ -147,6 +157,24 @@ This should **not** ban on spectate, since you would also swing around your curs
 
 
 
+* **Dance**: Automatically completes Tiny Dancer puzzle.
+
+
+
+* **Lava Maze Helper**: Shows you what blocks are walk able.
+
+
+
+* **UpsideDown Parkour**: Shows you what platforms are correct.
+
+
+
+* **Turbulator Parkour**: Shows you all the blocks without using the Emmet Pointer.
+
+
+
+* **Crafting Room Mob ESP**: Shows you the invisible mobs on your side.
+
 </details>
 
 <details>
@@ -155,6 +183,20 @@ This should **not** ban on spectate, since you would also swing around your curs
 
 
 
+* **Hacking Solver**: Automatically click and solve the hacking in Dread Farm.
+
+
+
+* **Auto Use Tuba**: Uses Tuba when off cooldown.
+
+
+
+* **Flower Pot Helper**: Will stop your motion under next flower pot.
+
+{% hint style="warning" %}
+It will abruptly change your velocity so it might be **ban** on spec/report.
+{% endhint %}
+
 </details>
 
 <details>
@@ -162,6 +204,27 @@ This should **not** ban on spectate, since you would also swing around your curs
 <summary>Vampire</summary>
 
 
+
+* **Auto Heal**: Uses the Healing Melon when your percentage is met automatically.
+  * **Auto Heal Percentage**: Percentage slider to trigger healing at X hp.
+
+
+
+* **Auto Steak**: Will swap to steak when you can kill with one steak hit to a vampire or mobs.
+
+
+
+* **Auto Ice**: Automatically use the Holy Ice to tank damage like Mania and Twinclaws.
+
+
+
+* **Auto Quick Time Event**: Will complete the Mania tasks automatically.
+
+
+
+* **Vampire Macro Items Mode**:
+  * **Sell**: Sells them to grubber(?).
+  * **Store in Ender Chest**: When inventory is full, stores your loot in your ender chest's.
 
 </details>
 
