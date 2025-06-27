@@ -165,24 +165,6 @@ This should **not** ban on spectate, since you would also swing around your curs
 
 </details>
 
-<details>
-
-<summary> Setup</summary>
-
-
-
-To use this module, ensure the following:
-
-* A keybind set for the Commissions Macro (configured in the [first option](../mining/dwarvencoms.md#features))
-* Access to the **Dwarven Mines** area.
-* Once in **Dwarven Mines**, press your bind and it'll automatically pathfind from where you start.
-
-{% hint style="success" %}
-**Tip:** Forge warp is not **mandatory**, but highly recommended. When you are far away from the next commission, **Nebula** will warp you to the forge to get there faster.
-{% endhint %}
-
-</details>
-
 ***
 
 ### Usage Notes
