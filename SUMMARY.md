@@ -7,7 +7,6 @@
 ## ℹ️ Useful Information
 
 * [🖥️ Getting Started](getting-started.md)
-* [Page 1](useful-information/page-1.md)
 
 ## 📑 Documentation
 
@@ -31,15 +30,11 @@
   * [Dungeonsmain](documentation/dungeons/dungeonsmain.md)
   * [Dungeonutils](documentation/dungeons/dungeonutils.md)
 * [Mining](documentation/mining/README.md)
-  * [BlockMiner](documentation/mining/blockminer.md)
   * [⚒️ Dwarven Commission](documentation/mining/dwarvencoms.md)
-  * [GemstoneMiner](documentation/mining/gemstoneminer.md)
-  * [MiningQOL](documentation/mining/miningqol.md)
-  * [Miningmain](documentation/mining/miningmain.md)
-  * [MithrilMiner](documentation/mining/mithrilminer.md)
-  * [PowderMacro](documentation/mining/powdermacro.md)
-  * [Scatha](documentation/mining/scatha.md)
-  * [TunnelMiner](documentation/mining/tunnelminer.md)
+  * [💎 Gemstone Miner](documentation/mining/gemstoneminer.md)
+  * [⛏️ Mining QOL](documentation/mining/miningqol.md)
+  * [🔷 Mithril Miner](documentation/mining/mithrilminer.md)
+  * [⛰️ Tunnel Miner](documentation/mining/tunnelminer.md)
 * [Misc](documentation/misc/README.md)
   * [Failsafereactions](documentation/misc/failsafereactions.md)
   * [Failsafes](documentation/misc/failsafes.md)
@@ -49,9 +44,9 @@
   * [Pathfinding](documentation/misc/pathfinding.md)
   * [Scheduler](documentation/misc/scheduler.md)
 * [Skills](documentation/skills/README.md)
-  * [Alchemy](documentation/skills/alchemy.md)
-  * [Farming](documentation/skills/farming.md)
-  * [Foraging](documentation/skills/foraging.md)
+  * [🥣 Alchemy](documentation/skills/alchemy.md)
+  * [🪴 Farming](documentation/skills/farming.md)
+  * [🌳 Foraging](documentation/skills/foraging.md)
   * [🎣 Fishing](documentation/skills/fishing.md)
   * [🌌 Rift](documentation/skills/rift.md)
 
