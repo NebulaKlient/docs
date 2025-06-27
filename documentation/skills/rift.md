@@ -1,7 +1,5 @@
 ---
-description: >-
-  A module that automates commission grinding and completion in the Dwarven
-  Mines, with quality-of-life features for faster progression.
+description: A comprehensive Rift module that turns tedious work into easy work
 ---
 
 # 🌌 Rift
@@ -18,10 +16,12 @@ It's **important** you enable **World Caching** in the [**Path Finder**](../misc
 
 * **Auto Come Back:** Talks to the Wizard and joins the **Rift** again.\
 
-* **Payment Mode:** Choice to pay with either **Grand Experience Bottles** or **Bits** when joining back.
-*
 
-- **Show Macro HUDs in their respective locations:** Will display the macro HUD even if not enabled.
+- **Payment Mode:** Choice to pay with either **Grand Experience Bottles** or **Bits** when joining back.
+
+
+
+* **Show Macro HUDs in their respective locations:** Will display the macro HUD even if not enabled.
 
 
 
