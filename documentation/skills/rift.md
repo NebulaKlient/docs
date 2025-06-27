@@ -78,7 +78,7 @@ This is ban on **Staff Spectate. Use at your own caution.**
 
 <summary>Other</summary>
 
-* **Sun Gecko Macro**: Automate fighting Sun Gecko.
+* **Sun Gecko Macro**: Automates fighting Sun Gecko.
 
 </details>
 
