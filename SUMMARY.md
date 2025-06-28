@@ -16,7 +16,7 @@
   * [🔓 Bazaar Unlocker](documentation/general/bazaarunlocker.md)
   * [🎪 Carnival](documentation/general/carnival.md)
   * [🎨 Visuals](documentation/general/visuals.md)
-  * [🍫 Chocolate Factory](documentation/general/chocolate-factory.md)
+  * [🍫 Chocolate Factory](documentation/general/chocolate.md)
   * [🎵 Music](documentation/general/music.md)
 * [Combat](documentation/combat/README.md)
   * [⚔️ Combat](documentation/combat/combatmacro.md)
@@ -43,7 +43,6 @@
 * [Skills](documentation/skills/README.md)
   * [🥣 Alchemy](documentation/skills/alchemy.md)
   * [🪴 Farming](documentation/skills/farming.md)
-  * [🌳 Foraging](documentation/skills/foraging.md)
   * [🎣 Fishing](documentation/skills/fishing.md)
   * [🌌 Rift](documentation/skills/rift.md)
 
