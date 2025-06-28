@@ -205,16 +205,16 @@ It will abruptly change your velocity so it might be **ban** on spec/report.
 
 
 
-* **Auto Heal**: Uses the Healing Melon when your percentage is met automatically.
+* **Auto Heal**: Uses the <img src="../../.gitbook/assets/JUICY_HEALING_MELON_normal.png" alt="" data-size="line">Healing Melon when your percentage is met automatically.
   * **Auto Heal Percentage**: Percentage slider to trigger healing at X hp.
 
 
 
-* **Auto Steak**: Will swap to steak when you can kill with one steak hit to a vampire or mobs.
+* **Auto Steak**: Will swap to <img src="../../.gitbook/assets/SHARP_STEAK_STAKE_normal.png" alt="" data-size="line">Steak when you can kill with one hit to a vampire or mobs.
 
 
 
-* **Auto Ice**: Automatically use the Holy Ice to tank damage like Mania and Twinclaws.
+* **Auto Ice**: Automatically use the <img src="../../.gitbook/assets/HOLY_ICE_normal.png" alt="" data-size="line">Holy Ice to tank damage like Mania and Twinclaws.
 
 
 
