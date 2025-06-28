@@ -1,7 +1,7 @@
 ---
 description: >-
-  Chooses the best upgrades your factory and collects chocolate for you. It also
-  shows chocolate eggs around the world.
+  Chooses the best upgrades for your factory and collects chocolate for you. It
+  also shows chocolate eggs around the world.
 ---
 
 # 🍫 Chocolate Factory
