@@ -1,2 +1,2 @@
-# Chocolate Factory
+# 🍫 Chocolate Factory
 
