@@ -9,6 +9,8 @@ server {
 
     resolver 8.8.8.8;
 
+    rewrite ^/nebula/(.*)$ /$1 break;
+
     location / {
         proxy_pass https://nebulaclient.gitbook.io/nebula/;
         proxy_ssl_server_name on;
