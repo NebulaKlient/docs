@@ -1,5 +1,6 @@
 FROM traefik:v3.0
 
+RUN mkdir -p /etc/traefik
 RUN <<'EOF' cat > /etc/traefik/traefik.yml
 api:
   dashboard: false
