@@ -1,57 +1,52 @@
-FROM caddy:2-alpine
+FROM traefik:v3.0
 
-RUN <<'EOF' cat > /etc/caddy/Caddyfile
-:3587 {
-    
-    rewrite * /nebula{uri}
-    
-    reverse_proxy https://nebulaclient.gitbook.io {
-        header_up Host nebulaclient.gitbook.io
-        header_up X-Real-IP {remote_host}
-        header_up X-Forwarded-For {remote_host}
-        header_up X-Forwarded-Proto {scheme}
+RUN <<'EOF' cat > /etc/traefik/traefik.yml
+api:
+  dashboard: false
+  insecure: false
 
-    }
-    
-    header {
-        -Server
-        -X-Powered-By
-    }
-    
-    handle_response {
-        @html header Content-Type text/html*
-        replace @html {
-            nebulaclient.gitbook.io docs.nebulaclient.zip
-            /nebula/ /
-            "/nebula" "/"
-            '/nebula' '/'
-        }
-        
-        @css header Content-Type text/css*
-        replace @css {
-            nebulaclient.gitbook.io docs.nebulaclient.zip
-            /nebula/ /
-        }
-        
-        @js header Content-Type application/javascript*
-        replace @js {
-            nebulaclient.gitbook.io docs.nebulaclient.zip
-            /nebula/ /
-            "/nebula" "/"
-            '/nebula' '/'
-        }
-        
-        @json header Content-Type application/json*
-        replace @json {
-            nebulaclient.gitbook.io docs.nebulaclient.zip
-            /nebula/ /
-            "/nebula" "/"
-        }
-    }
-    
-    redir /nebula /
-    redir /nebula/* /{uri.path.1}
-}
+entryPoints:
+  web:
+    address: ":3587"
+
+providers:
+  file:
+    filename: /etc/traefik/dynamic.yml
+
+log:
+  level: ERROR
+EOF
+
+RUN <<'EOF' cat > /etc/traefik/dynamic.yml
+http:
+  routers:
+    gitbook:
+      rule: "PathPrefix(`/`)"
+      service: gitbook-service
+      entryPoints:
+        - web
+      middlewares:
+        - rewrite-path
+        - headers
+
+  middlewares:
+    rewrite-path:
+      replacePathRegex:
+        regex: "^/nebula(.*)$"
+        replacement: "$1"
+    headers:
+      headers:
+        customRequestHeaders:
+          Host: "nebulaclient.gitbook.io"
+          X-Forwarded-Host: "docs.nebulaclient.zip"
+        customResponseHeaders:
+          Content-Security-Policy: ""
+
+  services:
+    gitbook-service:
+      loadBalancer:
+        servers:
+          - url: "https://nebulaclient.gitbook.io/nebula/"
 EOF
 
 EXPOSE 3587
