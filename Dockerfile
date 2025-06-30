@@ -16,10 +16,13 @@ server {
         proxy_pass https://nebulaclient.gitbook.io/nebula/;
         proxy_set_header Accept-Encoding "";
         sub_filter_once off;
+        sub_filter 'nebulaclient.gitbook.io' 'docs.nebulaclient.zip';
+        sub_filter 'https://docs.nebulaclient.zip/nebula/' 'https://docs.nebulaclient.zip/';
+        sub_filter '"https://docs.nebulaclient.zip/nebula"' '"https://docs.nebulaclient.zip"';
+        sub_filter "'https://docs.nebulaclient.zip/nebula'" "'https://docs.nebulaclient.zip'";
         sub_filter '/nebula/' '/';
         sub_filter '"/nebula"' '"/"';
         sub_filter "'/nebula'" "'/'";
-        sub_filter 'nebulaclient.gitbook.io' 'docs.nebulaclient.zip';
         proxy_ssl_server_name on;
         proxy_set_header Host              nebulaclient.gitbook.io;
         proxy_set_header X-Real-IP         $remote_addr;
