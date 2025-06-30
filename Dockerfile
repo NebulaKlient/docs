@@ -4,7 +4,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 RUN <<'EOF' cat > /etc/nginx/conf.d/default.conf
 server {
-    listen 80;
+    listen 3587;
     server_name docs.nebulaclient.zip;
 
     location / {
@@ -20,6 +20,6 @@ server {
 }
 EOF
 
-EXPOSE 80
+EXPOSE 3587
 
 CMD ["nginx", "-g", "daemon off;"]
