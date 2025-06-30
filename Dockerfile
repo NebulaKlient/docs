@@ -7,8 +7,11 @@ server {
     listen 3587;
     server_name docs.nebulaclient.zip;
 
+    resolver 8.8.8.8;
+
     location / {
         proxy_pass https://nebulaclient.gitbook.io/nebula/;
+        proxy_ssl_server_name on;
         proxy_set_header Host              nebulaclient.gitbook.io;
         proxy_set_header X-Real-IP         $remote_addr;
         proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
