@@ -1,37 +1,53 @@
-FROM caddy:2-builder AS builder
-
-RUN xcaddy build \
-    --output /usr/bin/caddy-custom \
-    --with github.com/caddyserver/replace-response
-
 FROM caddy:2-alpine
 
-COPY --from=builder /usr/bin/caddy-custom /usr/bin/caddy-custom
-
-RUN chmod +x /usr/bin/caddy-custom
-
-RUN /usr/bin/caddy-custom list-modules | grep http.handlers.replace_response
-
 RUN <<'EOF' cat > /etc/caddy/Caddyfile
-docs.nebulaclient.zip:3587 {
-    replace_response {
-        content_type text/plain text/html text/css application/javascript application/json
-        search_replace "nebulaclient.gitbook.io" "docs.nebulaclient.zip"
-        search_replace "/nebula/" "/"
+:3587 {
+    reverse_proxy https://nebulaclient.gitbook.io/nebula/ {
+        header_up Host nebulaclient.gitbook.io
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
     }
-
-    rewrite * /nebula{path}
-
-    reverse_proxy https://nebulaclient.gitbook.io {
-        header_up Host "nebulaclient.gitbook.io"
-        header_up Accept-Encoding ""
-        header_up X-Real-IP "{remote_host}"
-        header_up X-Forwarded-For "{remote_host}"
-        header_up X-Forwarded-Proto "{scheme}"
+    
+    header {
+        -Server
+        -X-Powered-By
     }
+    
+    handle_response {
+        @html header Content-Type text/html*
+        replace @html {
+            nebulaclient.gitbook.io docs.nebulaclient.zip
+            /nebula/ /
+            "/nebula" "/"
+            '/nebula' '/'
+        }
+        
+        @css header Content-Type text/css*
+        replace @css {
+            nebulaclient.gitbook.io docs.nebulaclient.zip
+            /nebula/ /
+        }
+        
+        @js header Content-Type application/javascript*
+        replace @js {
+            nebulaclient.gitbook.io docs.nebulaclient.zip
+            /nebula/ /
+            "/nebula" "/"
+            '/nebula' '/'
+        }
+        
+        @json header Content-Type application/json*
+        replace @json {
+            nebulaclient.gitbook.io docs.nebulaclient.zip
+            /nebula/ /
+            "/nebula" "/"
+        }
+    }
+    
+    redir /nebula /
+    redir /nebula/* /{uri.path.1}
 }
 EOF
 
 EXPOSE 3587
-
-CMD ["/usr/bin/caddy-custom", "run", "--config", "/etc/caddy/Caddyfile"]
