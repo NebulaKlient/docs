@@ -7,7 +7,7 @@ server {
     listen 3587;
     server_name docs.nebulaclient.zip;
 
-    resolver 8.8.8.8;
+    resolver 8.8.8.8 ipv6=off;
 
     rewrite ^/nebula/(.*)$ /$1 permanent;
     rewrite ^/nebula$ / permanent;
@@ -16,6 +16,8 @@ server {
         proxy_pass https://nebulaclient.gitbook.io/nebula/;
         proxy_set_header Accept-Encoding "";
         sub_filter_once off;
+        sub_filter_types text/plain text/html text/css
+                         application/javascript application/json;
         sub_filter 'nebulaclient.gitbook.io' 'docs.nebulaclient.zip';
         sub_filter 'https://docs.nebulaclient.zip/nebula/' 'https://docs.nebulaclient.zip/';
         sub_filter '"https://docs.nebulaclient.zip/nebula"' '"https://docs.nebulaclient.zip"';
