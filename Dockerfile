@@ -1,42 +1,32 @@
-FROM nginx:stable-alpine
+FROM caddy:2-builder AS builder
 
-RUN rm /etc/nginx/conf.d/default.conf
+RUN xcaddy build \
+    --with github.com/caddyserver/replace-response
 
-RUN <<'EOF' cat > /etc/nginx/conf.d/default.conf
-server {
-    listen 3587;
-    server_name docs.nebulaclient.zip;
+FROM caddy:2-alpine
 
-    resolver 8.8.8.8 ipv6=off;
+COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
-    rewrite ^/nebula/(.*)$ /$1 permanent;
-    rewrite ^/nebula$ / permanent;
+RUN <<'EOF' cat > /etc/caddy/Caddyfile
+docs.nebulaclient.zip:3587 {
+    route {
+        replace_response {
+            content_type text/plain text/html text/css application/javascript application/json
+            search_replace "nebulaclient.gitbook.io" "docs.nebulaclient.zip"
+            search_replace "/nebula/" "/"
+        }
 
-    location / {
-        proxy_pass https://nebulaclient.gitbook.io/nebula/;
-        proxy_set_header Accept-Encoding "";
-        sub_filter_once off;
-        sub_filter_types text/plain text/html text/css
-                         application/javascript application/json;
-        sub_filter 'nebulaclient.gitbook.io' 'docs.nebulaclient.zip';
-        sub_filter 'https://docs.nebulaclient.zip/nebula/' 'https://docs.nebulaclient.zip/';
-        sub_filter '"https://docs.nebulaclient.zip/nebula"' '"https://docs.nebulaclient.zip"';
-        sub_filter "'https://docs.nebulaclient.zip/nebula'" "'https://docs.nebulaclient.zip'";
-        sub_filter '/nebula/' '/';
-        sub_filter '"/nebula"' '"/"';
-        sub_filter "'/nebula'" "'/'";
-        proxy_ssl_server_name on;
-        proxy_set_header Host              nebulaclient.gitbook.io;
-        proxy_set_header X-Real-IP         $remote_addr;
-        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_connect_timeout       10s;
-        proxy_send_timeout          30s;
-        proxy_read_timeout          30s;
+        rewrite * /nebula{path}
+
+        reverse_proxy https://nebulaclient.gitbook.io {
+            header_up Host "nebulaclient.gitbook.io"
+            header_up Accept-Encoding ""
+            header_up X-Real-IP "{remote_host}"
+            header_up X-Forwarded-For "{remote_host}"
+            header_up X-Forwarded-Proto "{scheme}"
+        }
     }
 }
 EOF
 
 EXPOSE 3587
-
-CMD ["nginx", "-g", "daemon off;"]
