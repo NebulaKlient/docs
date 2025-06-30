@@ -2,11 +2,12 @@ FROM caddy:2-alpine
 
 RUN <<'EOF' cat > /etc/caddy/Caddyfile
 :3587 {
-    reverse_proxy https://nebulaclient.gitbook.io/nebula/ {
+    reverse_proxy https://nebulaclient.gitbook.io {
         header_up Host nebulaclient.gitbook.io
         header_up X-Real-IP {remote_host}
         header_up X-Forwarded-For {remote_host}
         header_up X-Forwarded-Proto {scheme}
+        rewrite * /nebula{uri}
     }
     
     header {
