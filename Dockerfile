@@ -1,14 +1,16 @@
 FROM caddy:2-builder AS builder
 
 RUN xcaddy build \
-    --output /usr/bin/caddy \
+    --output /usr/bin/caddy-custom \
     --with github.com/caddyserver/replace-response
 
 FROM caddy:2-alpine
 
-COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+COPY --from=builder /usr/bin/caddy-custom /usr/bin/caddy-custom
 
-RUN caddy list-modules | grep http.handlers.replace_response
+RUN chmod +x /usr/bin/caddy-custom
+
+RUN /usr/bin/caddy-custom list-modules | grep http.handlers.replace_response
 
 RUN <<'EOF' cat > /etc/caddy/Caddyfile
 docs.nebulaclient.zip:3587 {
@@ -31,3 +33,5 @@ docs.nebulaclient.zip:3587 {
 EOF
 
 EXPOSE 3587
+
+CMD ["/usr/bin/caddy-custom", "run", "--config", "/etc/caddy/Caddyfile"]
