@@ -1,3 +1,11 @@
+.mint-docs-sidebar {
+  padding-left: 0 !important;
+}
+
+.mint-docs-sidebar {
+  margin-left: -2rem !important;
+}
+
 .mint-docs-layout__content {
-  padding-left: 30rem; /* tweak until it looks right */
+  padding-left: 15rem !important;
 }
