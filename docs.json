@@ -24,6 +24,7 @@
             "pages": [
               {
                 "group": "General",
+                "icon": "slider",
                 "pages": [
                   "modules/general/bazaar-unlocker",
                   "modules/general/carnival",
@@ -119,6 +120,6 @@
   ],
   "logo": {
     "light": "/logo/nebula.webp",
-    "dark": "/logo/nebula.webp"
+    "dark": "/logo/test_neb.webp"
   }
 }
