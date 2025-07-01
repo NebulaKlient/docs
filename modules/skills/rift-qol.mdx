@@ -7,7 +7,7 @@ title: "🌌 RiftQoL"
   It's **important** you enable **World Caching** in the [**Pathfinding**](../misc/pathfinding) module, so it works for the longer distances.
 </Danger>
 
-<Accordion title="‎ ‎‎  General" description="‎ ‎› #Non specific options for the Rift" icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#84ff84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tractor-icon lucide-tractor"><path d="m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20"/><path d="M16 18h-5"/><path d="M18 5a1 1 0 0 0-1 1v5.573"/><path d="M3 4h8.129a1 1 0 0 1 .99.863L13 11.246"/><path d="M4 11V4"/><path d="M7 15h.01"/><path d="M8 10.1V4"/><circle cx="18" cy="18" r="2"/><circle cx="7" cy="15" r="5"/></svg>} iconType="solid">
+<Accordion title="‎ ‎‎  General" description="‎" icon="gears" iconType="duotone">
   - **Auo Come Back:** Jumps back into the rift after buying **Dimensional Infusion** from the wizard.
   - **Payment Mode:** Choice to pay with either **Bits or XP** when joining back.
   - **Show Macro HUDs in their respective locations:** Will display the macro HUD even if the macro is not enabled.
@@ -18,7 +18,7 @@ title: "🌌 RiftQoL"
     </Warning>
 </Accordion>
 
-<Accordion title="Farming" description="- Farming options inside the Rift" icon="farm" iconType="solid">
+<Accordion title="Farming" icon="farm" iconType="solid">
   - **Agaricus Cap Auto Clicker:** Will click for you when the timing is right.
 
     <Tip>
@@ -36,118 +36,84 @@ title: "🌌 RiftQoL"
   - **Farm land priority:**
     - **Nearest**: Locates and starts the macro on the closest available farmland.
     - **Smallest**: Locates and starts the macro on the smallest available farmland.
-    - **Enabled in**: Initiates farming in the field where the macro is started.
+    - **Enabled in**: Initiates farming in the field where the macro is started
 </Accordion>
 
-<AccordionGroup>
-  <Accordion title="New Accordion" icon="sparkles">
-    
-  </Accordion>
-  <Accordion title="New Accordion" icon="sparkles">
-    
-  </Accordion>
-</AccordionGroup>
+<Accordion title="Other" description="‎" icon="option" iconType="duotone">
+  - **Sun Gecko Macro**: Automates fighting Sun Gecko.
+</Accordion>
 
-## Farming
+<Accordion title="Mining" description="‎" icon="pickaxe" iconType="duotone">
+  - **Timite Macro**: Keybind to start the macro.
+  - **Timite Macro Ore Type:**
+    - **Youngite**: Targets Youngite.
+    - **Timite**: Uses a Time Gun and targets Timite.
+    - **Obsolite**: Uses a Time Gun and targets Obsolite.
+    - **Highlite or Discrite (Auto Craft)**: Will auto craft your choice while mining.
+  - **Timite Macro Rotation Speed**: The rotation speed multiplier controls how fast rotations move - higher values make them slower. Best practice is to make the rotations look like something you can mimic.
 
-- **Agaricus Cap Auto Clicker:** Will click for you when the timing is right.
+    <Warning>
+      Higher ping players can generally go faster than others. However if you want to be safe, just make the rotation look like **you**.
+    </Warning>
+  - **Auto Stun Snakes**: Will automatically mine and swap between your **Frozen Water Pungi** and **Self-Recursive Pickaxe**.
+</Accordion>
 
-  <Tip>
-    This is not needed for the **macro**. It will do that itself. Purely QOL if you want to do it urself.
-  </Tip>
-- **Agaricus Cap Macro:** Will run around **Dread Farm** and farm them for you.
-- **Wilted Berberis Macro:** Keybind to start the macro. It will start farming inside the field you press your bind in.
-- **Wilted Berberis Turbo Mode:** This is a nuker for berberis, it will instantly farm multiple at further reach than normal.
+<Accordion title="Crux" icon="ankh" iconType="duotone">
+  - **ESP Scribe Blocks**: Highlights scribe blocks for better visibility.
+  - **Auto Look At Scribe Blocks**: Will automatically look at all scribe blocks.
 
-  <Danger>
-    This is ban on **Staff Spectate. Use at your own risk**
-  </Danger>
-- **Disable Turbo Mode Player Range:** Will disable the nuker if a player is within X blocks set on slider. If you put the slider to 0, nuker will not **turn on**.
-- **Delay After Berberis Break:** Will delay your rotation to the next crop by X delay in ms set on the slider. A sweet spot is around 60ms to 100ms delay.\\
-- **Farm land priority:**
-  - **Nearest**: Locates and starts the macro on the closest available farmland.
-  - **Smallest**: Locates and starts the macro on the smallest available farmland.
-  - **Enabled in**: Initiates farming in the field where the macro is started.
+    <Danger>
+      This is ban on **Staff Spectate. Use at your own risk**
+    </Danger>
+  - **Auto Destroy Frozille's Ice**: Will automatically destroy all ice blocks before it explodes.
 
-## Other
+    <Tip>
+      This should **not** ban on spectate, since you would also swing around your cursor legit.
+    </Tip>
+  - **Crux Esp**: Highlights all crux's for better visibility.
+  - **Splatter Heart Esp**: Highlights splatter hearts on the ground for better visibility.
+  - **Splatter Heart Trace**: Shows a tracer to the hearts.
+  - **Crux Macro Type**:
+    - **All**: Targets any crux mob in vicinity.
+    - **Shy**: Targets only  shy's
+    - **Shadow**: Targets only  shadow's
+    - **Volt**: Target only  volt's.
+    - **Scribe**: Targets only  scribe's.
+    - **Frozille**: Targets only  frozille's.
+</Accordion>
 
-- **Sun Gecko Macro**: Automates fighting Sun Gecko.
+<Accordion title="Mirrorverse" icon="reflect-vertical" iconType="duotone">
+  - **Dance**: Automatically completes Tiny Dancer puzzle.
+  - **Lava Maze Helper**: Shows you what blocks are walk able.
+  - **UpsideDown Parkour**: Shows you what platforms are correct.
+  - **Turbulator Parkour**: Shows you all the blocks without using the Emmet Pointer.
+  - **Crafting Room Mob ESP**: Shows you the invisible mobs on your side.
+</Accordion>
 
-## Mining
+<Accordion title="Misc" icon="rectangle-history-circle-plus" iconType="duotone">
+  - **Hacking Solver**: Automatically click and solve the hacking in Dread Farm.
+  - **Auto Use Tuba**: Uses Tuba when off cooldown.
+  - **Flower Pot Helper**: Will stop your motion under next flower pot.
 
-- **Timite Macro**: Keybind to start the macro.
-- **Timite Macro Ore Type:**
-  - **Youngite**: Targets Youngite.
-  - **Timite**: Uses a Time Gun and targets Timite.
-  - **Obsolite**: Uses a Time Gun and targets Obsolite.
-  - **Highlite or Discrite (Auto Craft)**: Will auto craft your choice while mining.
-- **Timite Macro Rotation Speed**: The rotation speed multiplier controls how fast rotations move - higher values make them slower. Best practice is to make the rotations look like something you can mimic.
-
-  <Warning>
-    Higher ping players can generally go faster than others. However if you want to be safe, just make the rotation look like **you**.
-  </Warning>
-- **Auto Stun Snakes**: Will automatically mine and swap between your **Frozen Water Pungi** and **Self-Recursive Pickaxe**.
-
-## Crux
-
-- **ESP Scribe Blocks**: Highlights scribe blocks for better visibility.
-- **Auto Look At Scribe Blocks**: Will automatically look at all scribe blocks.
-
-  <Danger>
-    This is ban on **Staff Spectate. Use at your own risk**
-  </Danger>
-- **Auto Destroy Frozille's Ice**: Will automatically destroy all ice blocks before it explodes.
-
-  <Tip>
-    This should **not** ban on spectate, since you would also swing around your cursor legit.
-  </Tip>
-- **Crux Esp**: Highlights all crux's for better visibility.
-- **Splatter Heart Esp**: Highlights splatter hearts on the ground for better visibility.
-- **Splatter Heart Trace**: Shows a tracer to the hearts.
-- **Crux Macro Type**:
-  - **All**: Targets any crux mob in vicinity.
-  - **Shy**: Targets only  shy's
-  - **Shadow**: Targets only  shadow's
-  - **Volt**: Target only  volt's.
-  - **Scribe**: Targets only  scribe's.
-  - **Frozille**: Targets only  frozille's.
-
-## Mirrorverse
-
-- **Dance**: Automatically completes Tiny Dancer puzzle.
-- **Lava Maze Helper**: Shows you what blocks are walk able.
-- **UpsideDown Parkour**: Shows you what platforms are correct.
-- **Turbulator Parkour**: Shows you all the blocks without using the Emmet Pointer.
-- **Crafting Room Mob ESP**: Shows you the invisible mobs on your side.
-
-## Misc
-
-- **Hacking Solver**: Automatically click and solve the hacking in Dread Farm.
-- **Auto Use Tuba**: Uses Tuba when off cooldown.
-- **Flower Pot Helper**: Will stop your motion under next flower pot.
-
-  <Warning>
     It will abruptly change your velocity, so it might be **ban** on spec/report.
-  </Warning>
+</Accordion>
 
-## Vampire
-
-- **Auto Heal**: Uses the Healing Melon when your percentage is met automatically.
-  - **Auto Heal Percentage**: Percentage slider to trigger healing at X hp.
-- **Auto Steak**: Will swap to Steak when you can kill with one hit to a vampire or mobs.
-- **Auto Ice**: Automatically use the Holy Ice to tank damage like Mania and Twinclaws.
-- **Auto Quick Time Event**: Will complete the Impel tasks automatically.
-- **Boss Aim Helper**: Aim Assist for your Vampire Slayer Boss
-- **Turn On Third Person In Mania**: When the mania phase begins, turns on Third Person.
-- **Auto Break Spring**: Will automatically run to the Killer Spring and break it.
-- **Auto Escape In Mania**: Will run to the green areas during Mania.
-- **Call Maddox**: Contact Maddox to start a new quest upon completing a current one, or to start a quest if none are active.
-- **Ignore Vampires That Has Players Nearby**: Will prioritize Thralls and Fledglings further away from other players.
-- **Vampire Macro Items Mode**:
-  - **Sell**: When inventory is full, walks to the Motes Grubber and sells - sellable items.
-  - **Store in Ender Chest**: When inventory is full, stores your loot in your ender chest's.
-
----
+<Accordion title="Vampire" icon="coffin-cross" iconType="duotone">
+  - **Auto Heal**: Uses the Healing Melon when your percentage is met automatically.
+    - **Auto Heal Percentage**: Percentage slider to trigger healing at X hp.
+  - **Auto Steak**: Will swap to Steak when you can kill with one hit to a vampire or mobs.
+  - **Auto Ice**: Automatically use the Holy Ice to tank damage like Mania and Twinclaws.
+  - **Auto Quick Time Event**: Will complete the Impel tasks automatically.
+  - **Boss Aim Helper**: Aim Assist for your Vampire Slayer Boss
+  - **Turn On Third Person In Mania**: When the mania phase begins, turns on Third Person.
+  - **Auto Break Spring**: Will automatically run to the Killer Spring and break it.
+  - **Auto Escape In Mania**: Will run to the green areas during Mania.
+  - **Call Maddox**: Contact Maddox to start a new quest upon completing a current one, or to start a quest if none are active.
+  - **Ignore Vampires That Has Players Nearby**: Will prioritize Thralls and Fledglings further away from other players.
+  - **Vampire Macro Items Mode**:
+    - **Sell**: When inventory is full, walks to the Motes Grubber and sells - sellable items.
+    - **Store in Ender Chest**: When inventory is full, stores your loot in your ender chest's.
+</Accordion>
 
 ### Usage Notes
 
