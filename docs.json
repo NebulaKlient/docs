@@ -18,109 +18,75 @@
       },
       {
         "dropdown": "General",
+        "icon": "slider",
         "pages": [
-          {
-            "dropdown": "Modules",
-            "pages": [
-              "modules/general/bazaar-unlocker",
-              "modules/general/carnival",
-              "modules/general/chocolate-factory",
-              "modules/general/dojo",
-              "modules/general/qol",
-              "modules/general/visuals"
-            ]
-          }
+          "modules/general/bazaar-unlocker",
+          "modules/general/carnival",
+          "modules/general/chocolate-factory",
+          "modules/general/dojo",
+          "modules/general/qol",
+          "modules/general/visuals"
         ]
       },
       {
         "dropdown": "Combat",
         "pages": [
-          {
-            "dropdown": "Modules",
-            "pages": [
-              "modules/combat/combat-macro",
-              "modules/combat/diana-macro",
-              "modules/combat/pelt-hunter",
-              "modules/combat/slayer-macro"
-            ]
-          }
+          "modules/combat/combat-macro",
+          "modules/combat/diana-macro",
+          "modules/combat/pelt-hunter",
+          "modules/combat/slayer-macro"
         ]
       },
       {
         "dropdown": "Skills",
         "pages": [
-          {
-            "dropdown": "Modules",
-            "pages": [
-              "modules/skills/alchemy",
-              "modules/skills/fishing",
-              "modules/skills/foraging",
-              "modules/skills/rift-qol"
-            ]
-          }
+          "modules/skills/alchemy",
+          "modules/skills/fishing",
+          "modules/skills/foraging",
+          "modules/skills/rift-qol"
         ]
       },
       {
         "dropdown": "Mining",
         "pages": [
-          {
-            "dropdown": "Modules",
-            "pages": [
-              "modules/mining/block-miner",
-              "modules/mining/dwarven-commissions",
-              "modules/mining/gemstone-miner",
-              "modules/mining/mining-qol",
-              "modules/mining/mithril-miner",
-              "modules/mining/powder-macro",
-              "modules/mining/scatha",
-              "modules/mining/tunnels-miner"
-            ]
-          }
+          "modules/mining/block-miner",
+          "modules/mining/dwarven-commissions",
+          "modules/mining/gemstone-miner",
+          "modules/mining/mining-qol",
+          "modules/mining/mithril-miner",
+          "modules/mining/powder-macro",
+          "modules/mining/scatha",
+          "modules/mining/tunnels-miner"
         ]
       },
       {
         "dropdown": "Farming",
         "pages": [
-          {
-            "dropdown": "Modules",
-            "pages": [
-              "modules/farming/auto-visitors",
-              "modules/farming/farming",
-              "modules/farming/pest-macro",
-              "modules/farming/plot-cleaner"
-            ]
-          }
+          "modules/farming/auto-visitors",
+          "modules/farming/farming",
+          "modules/farming/pest-macro",
+          "modules/farming/plot-cleaner"
         ]
       },
       {
         "dropdown": "Dungeons",
         "pages": [
-          {
-            "dropdown": "Modules",
-            "pages": [
-              "modules/dungeons/dungeon-routes",
-              "modules/dungeons/dungeon-solvers",
-              "modules/dungeons/dungeon-utils"
-            ]
-          }
+          "modules/dungeons/dungeon-routes",
+          "modules/dungeons/dungeon-solvers",
+          "modules/dungeons/dungeon-utils"
         ]
       },
       {
         "dropdown": "Misc",
         "pages": [
-          {
-            "dropdown": "Modules",
-            "pages": [
-              "modules/misc/auto-builder",
-              "modules/misc/failsafe-reactions",
-              "modules/misc/failsafes",
-              "modules/misc/kuudra-utils",
-              "modules/misc/market",
-              "modules/misc/music",
-              "modules/misc/pathfinding",
-              "modules/misc/scheduler"
-            ]
-          }
+          "modules/misc/auto-builder",
+          "modules/misc/failsafe-reactions",
+          "modules/misc/failsafes",
+          "modules/misc/kuudra-utils",
+          "modules/misc/market",
+          "modules/misc/music",
+          "modules/misc/pathfinding",
+          "modules/misc/scheduler"
         ]
       }
     ]
