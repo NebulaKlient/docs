@@ -33,6 +33,7 @@
           },
           {
             "group": "Combat",
+            "icon": "sword",
             "pages": [
               "modules/combat/combat-macro",
               "modules/combat/diana-macro",
@@ -42,6 +43,7 @@
           },
           {
             "group": "Skills",
+            "icon": "book-sparkles",
             "pages": [
               "modules/skills/alchemy",
               "modules/skills/fishing",
@@ -51,6 +53,7 @@
           },
           {
             "group": "Mining",
+            "icon": "hammer-crash",
             "pages": [
               "modules/mining/block-miner",
               "modules/mining/dwarven-commissions",
@@ -64,6 +67,7 @@
           },
           {
             "group": "Farming",
+            "icon": "wheat-awn",
             "pages": [
               "modules/farming/auto-visitors",
               "modules/farming/farming",
@@ -73,6 +77,7 @@
           },
           {
             "group": "Dungeons",
+            "icon": "skull",
             "pages": [
               "modules/dungeons/dungeon-routes",
               "modules/dungeons/dungeon-solvers",
@@ -81,6 +86,7 @@
           },
           {
             "group": "Misc",
+            "icon": "filter-list",
             "pages": [
               "modules/misc/auto-builder",
               "modules/misc/failsafe-reactions",
