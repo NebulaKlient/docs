@@ -6,6 +6,6 @@
   margin-left: -2rem !important;
 }
 
-.mint-docs-layout__content {
-  padding-left: 155rem !important;
+#content-container {
+  padding-left: 55rem !important;
 }
