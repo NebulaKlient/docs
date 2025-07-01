@@ -7,7 +7,7 @@
     "light": "#A78BFA",
     "dark": "#5B21B6"
   },
-  "favicon": "/logo/test_neb.webp",
+  "favicon": "/logo/nebula.webp",
   "navigation": {
     "tabs": [
       {
@@ -115,6 +115,6 @@
   ],
   "logo": {
     "light": "/logo/nebula.webp",
-    "dark": "/logo/test_neb.webp"
+    "dark": "/logo/nebula.webp"
   }
 }
