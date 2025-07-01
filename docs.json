@@ -12,18 +12,18 @@
     "tabs": [
       {
         "tab": "Docs",
-        "groups": [
+        "dropdowns": [
           {
-            "group": "Get Started",
+            "dropdown": "Get Started",
             "pages": [
               "index"
             ]
           },
           {
-            "group": "Modules",
+            "dropdown": "Modules",
             "pages": [
               {
-                "group": "General",
+                "dropdown": "General",
                 "icon": "slider",
                 "pages": [
                   "modules/general/bazaar-unlocker",
@@ -35,7 +35,7 @@
                 ]
               },
               {
-                "group": "Combat",
+                "dropdown": "Combat",
                 "pages": [
                   "modules/combat/combat-macro",
                   "modules/combat/diana-macro",
@@ -44,7 +44,7 @@
                 ]
               },
               {
-                "group": "Skills",
+                "dropdown": "Skills",
                 "pages": [
                   "modules/skills/alchemy",
                   "modules/skills/fishing",
@@ -53,7 +53,7 @@
                 ]
               },
               {
-                "group": "Mining",
+                "dropdown": "Mining",
                 "pages": [
                   "modules/mining/block-miner",
                   "modules/mining/dwarven-commissions",
@@ -66,7 +66,7 @@
                 ]
               },
               {
-                "group": "Farming",
+                "dropdown": "Farming",
                 "pages": [
                   "modules/farming/auto-visitors",
                   "modules/farming/farming",
@@ -75,7 +75,7 @@
                 ]
               },
               {
-                "group": "Dungeons",
+                "dropdown": "Dungeons",
                 "pages": [
                   "modules/dungeons/dungeon-routes",
                   "modules/dungeons/dungeon-solvers",
@@ -83,7 +83,7 @@
                 ]
               },
               {
-                "group": "Misc",
+                "dropdown": "Misc",
                 "pages": [
                   "modules/misc/auto-builder",
                   "modules/misc/failsafe-reactions",
