@@ -1,0 +1,121 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "willow",
+  "name": "NebulaClient",
+  "colors": {
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#5B21B6"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Docs",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              {
+                "group": "General",
+                "pages": [
+                  "modules/general/bazaar-unlocker",
+                  "modules/general/carnival",
+                  "modules/general/chocolate-factory",
+                  "modules/general/dojo",
+                  "modules/general/qol",
+                  "modules/general/visuals"
+                ]
+              },
+              {
+                "group": "Combat",
+                "pages": [
+                  "modules/combat/combat-macro",
+                  "modules/combat/diana-macro",
+                  "modules/combat/pelt-hunter",
+                  "modules/combat/slayer-macro"
+                ]
+              },
+              {
+                "group": "Skills",
+                "pages": [
+                  "modules/skills/alchemy",
+                  "modules/skills/fishing",
+                  "modules/skills/foraging",
+                  "modules/skills/rift-qol"
+                ]
+              },
+              {
+                "group": "Mining",
+                "pages": [
+                  "modules/mining/block-miner",
+                  "modules/mining/dwarven-commissions",
+                  "modules/mining/gemstone-miner",
+                  "modules/mining/mining-qol",
+                  "modules/mining/mithril-miner",
+                  "modules/mining/powder-macro",
+                  "modules/mining/scatha",
+                  "modules/mining/tunnels-miner"
+                ]
+              },
+              {
+                "group": "Farming",
+                "pages": [
+                  "modules/farming/auto-visitors",
+                  "modules/farming/farming",
+                  "modules/farming/pest-macro",
+                  "modules/farming/plot-cleaner"
+                ]
+              },
+              {
+                "group": "Dungeons",
+                "pages": [
+                  "modules/dungeons/dungeon-routes",
+                  "modules/dungeons/dungeon-solvers",
+                  "modules/dungeons/dungeon-utils"
+                ]
+              },
+              {
+                "group": "Misc",
+                "pages": [
+                  "modules/misc/auto-builder",
+                  "modules/misc/failsafe-reactions",
+                  "modules/misc/failsafes",
+                  "modules/misc/kuudra-utils",
+                  "modules/misc/market",
+                  "modules/misc/music",
+                  "modules/misc/pathfinding",
+                  "modules/misc/scheduler"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Website",
+          "href": "https://nebulaclient.zip",
+          "icon": "globe"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://nebulaclient.zip/discord",
+          "icon": "discord"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/nebula.webp",
+    "dark": "/logo/nebula.webp"
+  }
+}

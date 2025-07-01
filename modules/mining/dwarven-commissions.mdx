@@ -1,0 +1,120 @@
+---
+description: "A module that automates commission grinding and completion in the Dwarven Mines, with quality-of-life features for faster progression."
+title: "⚒️ DwarvenCommission"
+---
+
+<Danger>
+  It's **important** you enable **World Caching** in the [**Pathfinding**](../misc/pathfinding) module, so it works for the longer distances.
+</Danger>
+
+## Options
+
+- **Commissions Macro Keybind:** Keybind to start and stop the macro.
+- **Warp Mines:** Optional toggle to make the macro warp to mines if you have it unlocked.
+
+  <Warning>
+    **Note:** You need the **Travel Scroll to the Dwarven Mines** unlocked for this to work. "/warp mines"
+  </Warning>
+- **Use Abiphone For Commissions:** Calls Queen Mismyla to complete commisions anywhere.
+
+  <Info>
+    **Note:** Nebula will still use a **Royal Pigeon** from your hotbar if available. The abiphone integration is purely an optional feature.
+  </Info>
+- **Sword Slot for Goblins:** Configurable weapon slot (1-9) for goblin slayer commissions.
+- **Unlocked Comission Milestone 1**: Allows Nebula to verify whether emissaries are unlocked.
+- **Use Routes:** This overrides the default path to the commission area. You can create your own routes in the route manager to use. Useful for etherwarp routes to get there faster.
+
+  <Tip>
+    **Tip:** You can also use the **Route Manager** to create custom commission routes. Detailed instructions can be found in the route documentation.
+  </Tip>
+
+## Usage
+
+To use this module, ensure the following:
+
+- A keybind set for the Commissions Macro.
+- Access to the **Dwarven Mines** area.
+- Once in **Dwarven Mines**, press your bind and it'll automatically pathfind from where you start.
+
+  <Tip>
+    **Tip:** Forge warp is not **mandatory**, but highly recommended. When you are far away from the next commission, **Nebula** will warp you to the forge to get there faster.
+  </Tip>
+
+## Recommended Setups
+
+<Tabs>
+  <Tab title="Early Game">
+    <Card title="Armor Set: Glacite Armor" icon={<img
+src="https://wiki.hypixel.net/images/3/3d/SkyBlock_armor_glacite.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Tool: Bandaged / Mithril Pickaxe" icon={<img
+src="https://wiki.hypixel.net/images/3/37/SkyBlock_items_enchanted_stone_pickaxe.gif"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Pet: Mithril Golem (Epic)" icon={<img
+src="https://wiki.hypixel.net/images/d/dc/SkyBlock_pets_mithril_golem.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Equipment: 4/4 Mithril Equipment reforged to Royal" icon={<img
+src="https://wiki.hypixel.net/images/7/72/SkyBlock_items_mithril_necklace.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+  </Tab>
+  <Tab title="Mid Game">
+    <Card title="Armor Set: Yog Armor reforged to Dimensional" icon={<img
+src="https://wiki.hypixel.net/images/f/f5/SkyBlock_armor_yog.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      Note: If you have extra money, you can get Sorrow Armor. The mining speed is minuscule, so only get this if you have a lot of money to spare
+    </Card>
+    <Card title="Tool: Mithril Drill SX-R226 reforged to Fleet" icon={<img
+src="https://wiki.hypixel.net/images/e/e1/SkyBlock_items_enchanted_prismarine_shard.gif"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Pet: Mithril Golem (Legendary)" icon={<img
+src="https://wiki.hypixel.net/images/d/dc/SkyBlock_pets_mithril_golem.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Equipment: 4/4 Mithril Equipment reforged to Royal" icon={<img
+src="https://wiki.hypixel.net/images/7/72/SkyBlock_items_mithril_necklace.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      Note: You can upgrade to Titanium Equipment, but you are not required to at this stage yet.
+    </Card>
+  </Tab>
+  <Tab title="Late Game">
+    <Card title="Armor Set: Armor of Divan reforged to Dimensional" icon={<img
+src="https://wiki.hypixel.net/images/9/9c/SkyBlock_armor_divan.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Tool: Mithril Drill SX-R326 reforged to Fleet" icon={<img
+src="https://wiki.hypixel.net/images/e/e1/SkyBlock_items_enchanted_prismarine_shard.gif"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Pet: Mithril Golem (Legendary)" icon={<img
+src="https://wiki.hypixel.net/images/d/dc/SkyBlock_pets_mithril_golem.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+    <Card title="Equipment: 4/4 Mithril Equipment reforged to Royal" icon={<img
+src="https://wiki.hypixel.net/images/7/72/SkyBlock_items_mithril_necklace.png"
+className="h-6 w-6 my-0"/>} horizontal>
+      
+    </Card>
+  </Tab>
+</Tabs>
+
+### Notes
+
+**Tip:** Make sure to set your sword slot number correctly for goblin commissions -- the module will auto-switch to that slot when needed.
+
+**Note:** The warp mines feature only works after reaching Commission Milestone 4, so early players will need to travel manually. Use "/visit mid" or other portal islands to get there faster.
+
+The module works best when you have the base Mithril **HOTM** perks unlocked and decent mining gear. It'll handle the repetitive parts of commission grinding while you can focus on other task.
