@@ -115,7 +115,7 @@
     }
   },
   "customCss": [
-    "src/css/custom.css"
+    "css/custom.css"
   ],
   "logo": {
     "light": "/logo/nebula.webp",
