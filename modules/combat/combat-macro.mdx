@@ -1,6 +1,38 @@
 ---
 title: "⚔️ CombatMacro"
-description: "Page is under construction"
+description: "Highly customizable combat macro with custom mob selection, area presets and more. Supports a variety of weapon types."
 ---
 
-# 
+<Accordion title="General" icon="option" iconType="duotone">
+  - **Combat Macro Keybind**: Keybind to start the macro.
+  - **Preset**: ⤵
+
+  <Expandable title="Preset Options">
+    - **Custom**: Allows you to input custom entities to target.
+    - **Zombie (Graveyard)**
+    - **Zombie (Crypts)**
+    - **Tara (Spider's Den)**
+    - **Tara (Crimson Isle)**
+    - **Sven (Ruins)**
+    - **Sven (Cave)** - Deprecated due to 1.21 for now.
+    - **Zealot**
+  </Expandable>
+  - **Custom Target Entities**: Text input for manually entering entity names to target.
+
+  <Info>
+    What you should input is 1:1 the nametag you see, not the mob name. **Example**: Zealot Bruiser \!= Enderman. To input multiple entities seperate them with a comma like so "Zealot Bruiser, Zealot".
+  </Info>
+  - **Ignore Entities**: Exclude any entities you never want to target.
+  - **Target Jerry**: Will kill jerry's during mayor event.
+  - **Weapon Type**:
+    - **Melee**: Will kill the mobs using a sword.
+    - **Ability**: Will kill the mobs using your weapons ability.
+    - **Hyperion**: Will use the Wither Impact when in range to kill the mobs.
+    - **Ability Stationary**: Will stay where you start the macro and use your weapons ability to kill the mobs.
+    - **Hyperion Stationary**: Will stay where you start the macro and use Wither Impact at that location.
+  - **One Tap Mode**: Will assume you can one tap whatever mob you are targeting and move on after hitting once.
+  - **Auto Heal**: Will use any healing item in your hotbar when low.
+  - **Use AOTE/AOTV**: Will utilize either if in hotbar to get to the next mob faster.
+  - **Look for mobs**: Will imitate legit behaviour when no mobs are detected looking around for the next mob.
+  - **Mana Threshold**: 1-100%. This means that if you put your treshold to 50, the macro will stop using your ability if you are below 50% of your total mana.
+</Accordion>
