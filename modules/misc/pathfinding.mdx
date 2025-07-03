@@ -1,6 +1,48 @@
 ---
 title: "🧭 Pathfinding"
-description: "This page is under construction"
+description: "Custom pathfinding optimized for skyblock that handles a lot of different situations compared to competitors."
 ---
 
-# 
+<Accordion title="General" icon="option" iconType="duotone">
+  - **Use AOTV**: Will teleport using an AOTV between nodes when possible.
+  - **Use Etherwarp**: Will teleport using etherwarp across path when possible.
+  - **Disable extra descend**: Enabling this will restrict how far a fall is allowed when calculating paths.
+  - **Disable extra ascend**: Enabling this will exclude Jump Boost effects when calculating paths.
+  - **Cache Pathfinding Calculations**: Caches all calculations used by pathfinding to avoid recalculating them speeding up path generation.
+
+    <Tip>
+      You should **always** have this on, it will disable itself when seen as inefficient.
+    </Tip>
+  - **Jump on lower speeds**: Will jump when running is slower than jumping - Running is only better at higher speeds.
+  - **Allow Omni-Sprinting**: Will allow you to sprint in all directions when backwards.
+
+    <Warning>
+      This will most likely ban you on **Staff Spectate**. Sprinting backwards / left / right is not natural minecraft behaviour and therefor not allowed on **Hypixel**.
+    </Warning>
+  - **World Caching**: This will cache the world you are in depending on where you have been. If you want max performance out of the path finder you should teleport around the map to cache the world.
+
+    <Tip>
+      You should **always** have this on, it will greatly improve pathfinding results.
+    </Tip>
+</Accordion>
+
+<Accordion title="Rotations" icon="angle-90" iconType="duotone">
+  - **Walking Rotation Type**:
+    - **Smooth**: More linear rotations resulting in smooth rotations.
+    - **Legit**: More snappy but random resulting in a more legit rotation.
+
+    <Info>
+      When we say **"more legit"** smooth is still legit looking. You can choose either, its down to your preference. Legit is more efficient in general.
+    </Info>
+</Accordion>
+
+<Accordion title="Routes" icon="map-location-dot" iconType="duotone">
+  - **Open Route Selector Screen**: Bind to open the global route creator.
+  - **Open Route Editor Screen**: This will open the editor gui for the route you're currently editing.
+  - **Reload loaded routes**: Force reload all your saved routes.
+  - **Render Waypoints Of Editing Route**: Will show you all created waypoints in your current route.
+
+    <Info>
+      More in depth route creation will be in the **Routes** section.
+    </Info>
+</Accordion>
