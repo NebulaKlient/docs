@@ -37,7 +37,7 @@
     gap: 12px;
 }
 #inventory-preview .inventory-grid-item {
-    background-color: #282828;
+    background-color: #202020;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     display: flex;

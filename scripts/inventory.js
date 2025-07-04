@@ -7,18 +7,30 @@ function initializeInventoryComponent() {
 
     draggable.dataset.dragSetupComplete = 'true';
     const gridItems = container.querySelectorAll('.inventory-grid-item');
-    const cellDefaultColor = '#282828'; // Matches CSS
+    const cellDefaultColor = '#282828';
     const cellHoverColor = '#555555';
 
     draggable.addEventListener('dragstart', () => {
-        // Use a timeout to avoid glitchy rendering on drag start
         setTimeout(() => draggable.classList.add('inventory-dragging'), 0);
     });
 
-    draggable.addEventListener('dragend', () => draggable.classList.remove('inventory-dragging'));
+    draggable.addEventListener('dragend', () => {
+        draggable.classList.remove('inventory-dragging');
+        // This resets any lingering hover styles if the drag is cancelled.
+        gridItems.forEach(item => {
+            if (item.children.length === 0) {
+                item.style.backgroundColor = cellDefaultColor;
+            }
+        });
+    });
 
     gridItems.forEach(item => {
-        item.addEventListener('dragover', e => e.preventDefault());
+        // --- THIS IS THE CORE FIX ---
+        // By setting dropEffect, we tell the browser this is a valid drop target.
+        item.addEventListener('dragover', e => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+        });
 
         item.addEventListener('dragenter', e => {
             e.preventDefault();
@@ -44,16 +56,13 @@ function initializeInventoryComponent() {
     });
 }
 
-// This observer is now more persistent and reliable for dynamic page loads.
 const observer = new MutationObserver(() => {
     initializeInventoryComponent();
 });
 
-// Start observing the entire document for any changes.
 observer.observe(document.body, {
     childList: true,
     subtree: true
 });
 
-// Also run on initial load.
 document.addEventListener('DOMContentLoaded', initializeInventoryComponent);
