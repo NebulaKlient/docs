@@ -51,13 +51,5 @@
     left: 10%;
     width: 80%;
     height: 80%;
-    
-    /* Updated path for the images folder */
-    background-image: url('/images/draggable-cube.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    /* Keep the border temporarily to confirm it's working */
-    border: 1px solid red;
+    object-fit: contain;
 }
