@@ -1,80 +1,103 @@
-function initializeManualDrag() {
+function initializeManualDragAndDrop() {
     const inventory = document.getElementById('inventory-preview');
     if (!inventory) return;
 
     const draggableItem = inventory.querySelector('.inventory-draggable');
-    if (!draggableItem || draggableItem.dataset.manualDragReady) return;
+    if (!draggableItem || draggableItem.dataset.finalDragReady) return;
     
-    draggableItem.dataset.manualDragReady = 'true';
-    let originalCell = draggableItem.parentElement;
-    let isDragging = false;
-    let offsetX, offsetY;
+    draggableItem.dataset.finalDragReady = 'true';
 
-    // --- Fires when the user presses the mouse button down on the cube ---
+    let originalCell = null;
+    let currentDropTarget = null;
+    const cellDefaultColor = '#282828';
+    const cellHoverColor = '#555555';
+
+    // --- Define Event Handlers for Drop Targets ---
+    const handleMouseEnter = (e) => {
+        currentDropTarget = e.currentTarget;
+        if (e.currentTarget.children.length === 0) {
+            e.currentTarget.style.backgroundColor = cellHoverColor;
+        }
+    };
+
+    const handleMouseLeave = (e) => {
+        currentDropTarget = null;
+        e.currentTarget.style.backgroundColor = cellDefaultColor;
+    };
+
+    // --- Functions to Activate/Deactivate Drop Targets ---
+    const dropTargets = inventory.querySelectorAll('.inventory-grid-item');
+    const activateDropTargets = () => {
+        dropTargets.forEach(cell => {
+            cell.addEventListener('mouseenter', handleMouseEnter);
+            cell.addEventListener('mouseleave', handleMouseLeave);
+        });
+    };
+    const deactivateDropTargets = () => {
+        dropTargets.forEach(cell => {
+            cell.removeEventListener('mouseenter', handleMouseEnter);
+            cell.removeEventListener('mouseleave', handleMouseLeave);
+            cell.style.backgroundColor = cellDefaultColor; // Reset all colors
+        });
+    };
+
+    // --- Main Drag-and-Drop Logic ---
     draggableItem.addEventListener('mousedown', (e) => {
-        e.preventDefault(); // Prevent default browser drag behavior
-        isDragging = true;
-        
-        originalCell = draggableItem.parentElement;
-        const rect = draggableItem.getBoundingClientRect();
-        offsetX = e.clientX - rect.left;
-        offsetY = e.clientY - rect.top;
+        if (e.button !== 0) return; // Only allow left-click drags
+        e.preventDefault();
 
-        // Make the item draggable across the page
+        originalCell = draggableItem.parentElement;
+
+        const rect = draggableItem.getBoundingClientRect();
+        const offsetX = e.clientX - rect.left;
+        const offsetY = e.clientY - rect.top;
+
+        // Style the item for dragging
         document.body.appendChild(draggableItem);
         draggableItem.style.position = 'absolute';
         draggableItem.style.zIndex = '1000';
         draggableItem.style.cursor = 'grabbing';
-        
-        // Move the item to the initial mouse position
-        draggableItem.style.left = `${e.clientX - offsetX}px`;
-        draggableItem.style.top = `${e.clientY - offsetY}px`;
-    });
+        draggableItem.style.pointerEvents = 'none'; // CRITICAL: Allows mouse to "see through" the dragged item
 
-    // --- Fires when the user moves the mouse anywhere on the page ---
-    document.addEventListener('mousemove', (e) => {
-        if (isDragging) {
-            e.preventDefault();
-            // Update the item's position to follow the mouse
-            draggableItem.style.left = `${e.clientX - offsetX}px`;
-            draggableItem.style.top = `${e.clientY - offsetY}px`;
-        }
-    });
+        const handleMouseMove = (moveEvent) => {
+            draggableItem.style.left = `${moveEvent.clientX - offsetX}px`;
+            draggableItem.style.top = `${moveEvent.clientY - offsetY}px`;
+        };
+        document.addEventListener('mousemove', handleMouseMove);
 
-    // --- Fires when the user releases the mouse button anywhere on the page ---
-    document.addEventListener('mouseup', (e) => {
-        if (isDragging) {
-            isDragging = false;
-            draggableItem.style.cursor = 'grab';
-            
-            // Temporarily hide the dragged item to find what's underneath
-            draggableItem.style.visibility = 'hidden';
-            const elementUnderMouse = document.elementFromPoint(e.clientX, e.clientY);
-            draggableItem.style.visibility = 'visible';
-            
-            let dropTarget = elementUnderMouse ? elementUnderMouse.closest('.inventory-grid-item') : null;
+        // Activate drop targets only when a drag starts
+        activateDropTargets();
 
-            // Check if the drop target is a valid, empty cell
-            if (dropTarget && dropTarget.children.length === 0) {
-                // Success: Snap the item into the new cell
-                dropTarget.appendChild(draggableItem);
+        const handleMouseUp = () => {
+            // Deactivate drop targets when the drag ends
+            deactivateDropTargets();
+
+            // If we have a valid and empty drop target, place the item
+            if (currentDropTarget && currentDropTarget.children.length === 0) {
+                currentDropTarget.appendChild(draggableItem);
             } else {
-                // Failure: Return the item to its original cell
+                // Otherwise, return to the original cell
                 originalCell.appendChild(draggableItem);
             }
-
-            // Reset the item's inline styles so it fits in the grid again
+            
+            // Reset all inline styles so the item fits back in the grid
             draggableItem.style.position = '';
             draggableItem.style.left = '';
             draggableItem.style.top = '';
             draggableItem.style.zIndex = '';
-        }
+            draggableItem.style.cursor = 'grab';
+            draggableItem.style.pointerEvents = 'auto';
+
+            // Clean up the global mouse listeners
+            document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('mouseup', handleMouseUp);
+        };
+        document.addEventListener('mouseup', handleMouseUp);
     });
 }
 
-// This observer is the most reliable way to run the script.
 const observer = new MutationObserver(() => {
-    initializeManualDrag();
+    initializeManualDragAndDrop();
 });
 
 observer.observe(document.body, {
@@ -82,4 +105,4 @@ observer.observe(document.body, {
     subtree: true,
 });
 
-document.addEventListener('DOMContentLoaded', initializeManualDrag);
+document.addEventListener('DOMContentLoaded', initializeManualDragAndDrop);
