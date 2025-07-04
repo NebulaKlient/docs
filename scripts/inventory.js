@@ -7,12 +7,21 @@ function initializeDefinitiveDragAndDrop() {
     
     draggableItem.dataset.dragReady = 'true';
 
+    // --- THIS IS THE CORE FIX ---
+    // This listener actively finds and neutralizes the browser's default
+    // drag-and-drop system, which is the source of the conflict.
+    draggableItem.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
     let originalCell = null;
     let isDragging = false;
 
+    // --- This is the manual drag-and-drop system that will now work correctly ---
     draggableItem.addEventListener('mousedown', (e) => {
-        if (e.button !== 0) return; // Only drag with the left mouse button
-        e.preventDefault(); // Prevent default browser actions like text selection
+        if (e.button !== 0) return; // Only allow left-click drags
+        e.preventDefault(); // Prevent text selection, etc.
 
         isDragging = true;
         originalCell = draggableItem.parentElement;
@@ -21,21 +30,16 @@ function initializeDefinitiveDragAndDrop() {
         const offsetX = e.clientX - rect.left;
         const offsetY = e.clientY - rect.top;
 
-        // Move item to the body for unrestricted dragging
         document.body.appendChild(draggableItem);
         draggableItem.style.position = 'absolute';
         draggableItem.style.zIndex = '1000';
         draggableItem.style.cursor = 'grabbing';
         
-        // --- This handler moves the item and highlights drop targets ---
         const handleMouseMove = (moveEvent) => {
             if (!isDragging) return;
-
-            // Follow the cursor
             draggableItem.style.left = `${moveEvent.clientX - offsetX}px`;
             draggableItem.style.top = `${moveEvent.clientY - offsetY}px`;
 
-            // Check for a drop target by coordinates
             const dropTargets = inventory.querySelectorAll('.inventory-grid-item');
             dropTargets.forEach(cell => {
                 const cellRect = cell.getBoundingClientRect();
@@ -43,29 +47,26 @@ function initializeDefinitiveDragAndDrop() {
                     moveEvent.clientX > cellRect.left && moveEvent.clientX < cellRect.right &&
                     moveEvent.clientY > cellRect.top && moveEvent.clientY < cellRect.bottom
                 ) {
-                    if (cell.children.length === 0) {
-                        cell.classList.add('drop-target-hover');
-                    }
+                    if (cell.children.length === 0) cell.classList.add('drop-target-hover');
                 } else {
                     cell.classList.remove('drop-target-hover');
                 }
             });
         };
 
-        // --- This handler finalizes the drop ---
         const handleMouseUp = () => {
             if (!isDragging) return;
             isDragging = false;
 
             const dropTarget = inventory.querySelector('.drop-target-hover');
 
-            if (dropTarget) { // If we are over a valid, highlighted cell
+            if (dropTarget) {
                 dropTarget.appendChild(draggableItem);
-            } else { // Otherwise, snap back to where we started
+            } else {
                 originalCell.appendChild(draggableItem);
             }
 
-            // Reset all styles so the item fits back in the grid
+            // Reset styles
             draggableItem.style.position = '';
             draggableItem.style.left = '';
             draggableItem.style.top = '';
@@ -75,7 +76,6 @@ function initializeDefinitiveDragAndDrop() {
                 cell.classList.remove('drop-target-hover');
             });
 
-            // Clean up the listeners to prevent memory leaks
             document.removeEventListener('mousemove', handleMouseMove);
             document.removeEventListener('mouseup', handleMouseUp);
         };
