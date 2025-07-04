@@ -58,3 +58,7 @@
 #inventory-preview .inventory-dragging {
     opacity: 0.5;
 }
+
+#inventory-preview .inventory-grid-item.drop-target-hover {
+    background-color: #555555; /* Highlight color for valid drop cells */
+}
