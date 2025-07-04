@@ -52,15 +52,13 @@
     width: 80%;
     height: 80%;
     
-    /* Adding the border back so we can see the positioning */
-    border: 2px solid red;
-    
-    /* Try the background image with a different path format */
-    background-image: url('/draggable-cube.png');
+    /* Try multiple path formats to find the one that works */
+    background-image: url('/draggable-cube.png'), url('./draggable-cube.png'), url('draggable-cube.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     
-    /* Fallback background color to make sure the div is visible */
-    background-color: rgba(255, 0, 0, 0.2);
+    /* Remove the debug border and background once we confirm the image works */
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
 }
