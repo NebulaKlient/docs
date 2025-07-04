@@ -37,26 +37,26 @@
     gap: 12px; /* Your gap size */
 }
 
-/* --- THE DEFINITIVE VISIBILITY AND CENTERING FIX --- */
 #inventory-preview .inventory-grid-item {
     background-color: #202020; /* Your color */
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
 
-    /* Using Flexbox, which is more stable for single-item centering. */
+    /* We still use flexbox to center the new div */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#inventory-preview .inventory-draggable {
+/* --- THE DEFINITIVE BACKGROUND-IMAGE FIX --- */
+#inventory-preview .inventory-draggable-item {
     width: 80%;
     height: 80%;
-    object-fit: contain; /* Prevents distortion */
 
-    /* This is the most important property. It explicitly tells the browser: */
-    /* "Do NOT shrink this item, even if you think there's no space." */
-    /* This prevents the image from collapsing and disappearing. */
-    flex-shrink: 0;
+    /* Applying the image as a background is more stable than using an <img> tag */
+    background-image: url(/draggable-cube.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
