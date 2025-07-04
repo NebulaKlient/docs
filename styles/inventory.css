@@ -11,7 +11,7 @@
     position: relative;
     width: 85%;
     max-width: 950px;
-    background-color: rgba(59, 59, 59, 0.65); /* Your color */
+    background-color: rgba(59, 59, 59, 0.65);
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -34,27 +34,26 @@
 #inventory-preview .inventory-grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 12px; /* Your gap size */
+    gap: 12px;
 }
 
 #inventory-preview .inventory-grid-item {
-    background-color: #202020; /* Your color */
+    background-color: #202020;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-
-    /* We still use flexbox to center the new div */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
-/* --- THE DEFINITIVE BACKGROUND-IMAGE FIX --- */
+/* --- MANUAL POSITIONING TO FORCE PERFECT CENTERING --- */
 #inventory-preview .inventory-draggable-item {
+    position: absolute;
+    /* These values manually center the cube. Adjust them if needed. */
+    top: 10%;
+    left: 10%;
     width: 80%;
     height: 80%;
-
-    /* Applying the image as a background is more stable than using an <img> tag */
+    
     background-image: url(/draggable-cube.png);
     background-size: contain;
     background-position: center;
