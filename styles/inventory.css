@@ -37,20 +37,20 @@
     gap: 12px; /* Your gap size */
 }
 
-/* --- THE FINAL AND MOST ROBUST CENTERING SOLUTION --- */
 #inventory-preview .inventory-grid-item {
     background-color: #202020; /* Your color */
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    /* By making the cell a grid container itself, we gain precise control. */
     display: grid;
-    /* This single property perfectly centers the child on both axes. */
     place-items: center;
 }
 
+/* --- THE FINAL AND MOST ROBUST CENTERING SOLUTION --- */
 #inventory-preview .inventory-draggable {
-    width: 80%;
-    height: 80%;
-    object-fit: contain; /* Prevents image distortion */
+    /* Instead of forcing a width/height, we set a maximum size. */
+    /* This gives the browser better instructions for alignment. */
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
 }
