@@ -47,8 +47,8 @@
 
 #inventory-preview .inventory-draggable-item {
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 70%;
+    left: 70%;
     width: 80%;
     height: 80%;
     object-fit: contain;
