@@ -39,7 +39,7 @@
 
 #inventory-preview .inventory-grid-item {
     background-color: #202020;
-    border-radius: 10px;
+    border-radius: 12px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     position: relative;
