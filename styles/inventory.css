@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #585858;
+    background: transparent; /* Use a transparent background */
     padding: 2rem 0;
     margin: 0;
 }
@@ -15,6 +15,8 @@
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
+    /* This new property fixes the bug where the outline was hidden */
+    isolation: isolate;
 }
 
 #inventory-preview .inventory-container::before {
@@ -27,7 +29,7 @@
     border-radius: 25px;
     border: 5px solid #7042f8;
     box-shadow: 0 0 20px rgba(112, 66, 248, 0.7);
-    z-index: -1;
+    z-index: -1; /* This will now work correctly */
 }
 
 #inventory-preview .inventory-grid-container {
