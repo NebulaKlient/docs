@@ -47,9 +47,8 @@
 
 #inventory-preview .inventory-draggable-item {
     position: absolute;
-    /* Very dramatic positioning that should be obvious */
-    top: 0px;
-    left: 0px;
+    top: 10%;
+    left: 10%;
     width: 80%;
     height: 80%;
     
@@ -57,7 +56,4 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    
-    /* Adding a bright border to make it obvious if the CSS is working */
-    border: 3px solid red;
 }
