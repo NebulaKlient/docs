@@ -11,7 +11,7 @@
     position: relative;
     width: 80%;
     max-width: 900px;
-    background-color: rgba(64, 64, 64, 0.75); /* Made slightly more transparent */
+    background-color: rgba(64, 64, 64, 0.75);
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -37,24 +37,25 @@
     gap: 15px;
 }
 
+/* --- CORE FIX FOR LAYOUT BUG --- */
 #inventory-preview .inventory-grid-item {
     background-color: #313131;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: background-color 0.2s;
-    min-width: 0;
-    min-height: 0;     /* Fixes stretching bug */
-    overflow: hidden;    /* Fixes stretching bug */
+    position: relative; /* Establishes a positioning context for the image */
 }
 
+/* --- CORE FIX FOR LAYOUT BUG --- */
 #inventory-preview .inventory-draggable {
     width: 80%;
     height: 80%;
     cursor: grab;
     user-select: none;
+    position: absolute;   /* Decouples image size from grid cell size */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the image perfectly */
 }
 
 #inventory-preview .inventory-dragging {
