@@ -12,8 +12,8 @@
     width: 85%; /* Reduced from 85% */
     max-width: 950px; /* Reduced from 950px */
     background-color: rgba(59, 59, 59, 0.65);
-    border-radius: 20px;
-    padding: 15px; /* Reduced from 20px to make it more compact */
+    border-radius: 15px;
+    padding: 10px; /* Reduced from 20px to make it more compact */
     box-sizing: border-box;
     isolation: isolate;
 }
@@ -38,7 +38,7 @@
 }
 
 #inventory-preview .inventory-grid-item {
-    background-color: #100b35;
+    background-color: #202020;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
