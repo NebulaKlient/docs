@@ -52,13 +52,12 @@
     width: 80%;
     height: 80%;
     
-    /* Try multiple path formats to find the one that works */
-    background-image: url('/draggable-cube.png'), url('./draggable-cube.png'), url('draggable-cube.png');
+    /* Since the image is in the root directory, try these paths */
+    background-image: url('../draggable-cube.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     
-    /* Remove the debug border and background once we confirm the image works */
+    /* Keep the border so we can see if positioning is still correct */
     border: 1px solid red;
-    background-color: rgba(255, 0, 0, 0.1);
 }
