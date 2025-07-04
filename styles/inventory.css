@@ -47,13 +47,20 @@
 
 #inventory-preview .inventory-draggable-item {
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 10%;
+    left: 10%;
     width: 80%;
     height: 80%;
     
-    background-image: url(/draggable-cube.png);
+    /* Adding the border back so we can see the positioning */
+    border: 2px solid red;
+    
+    /* Try the background image with a different path format */
+    background-image: url('/draggable-cube.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    
+    /* Fallback background color to make sure the div is visible */
+    background-color: rgba(255, 0, 0, 0.2);
 }
