@@ -9,11 +9,11 @@
 
 #inventory-preview .inventory-container {
     position: relative;
-    width: 85%;
-    max-width: 950px;
+    width: 75%; /* Reduced from 85% */
+    max-width: 850px; /* Reduced from 950px */
     background-color: rgba(59, 59, 59, 0.65);
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px; /* Reduced from 20px to make it more compact */
     box-sizing: border-box;
     isolation: isolate;
 }
@@ -21,10 +21,10 @@
 #inventory-preview .inventory-container::before {
     content: "";
     position: absolute;
-    top: -12px;
-    left: -12px;
-    right: -12px;
-    bottom: -12px;
+    top: -10px; /* Reduced from -12px */
+    left: -10px; /* Reduced from -12px */
+    right: -10px; /* Reduced from -12px */
+    bottom: -10px; /* Reduced from -12px */
     border-radius: 25px;
     border: 5px solid #7042f8;
     box-shadow: 0 0 20px rgba(112, 66, 248, 0.7);
@@ -34,7 +34,7 @@
 #inventory-preview .inventory-grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 12px;
+    gap: 10px;
 }
 
 #inventory-preview .inventory-grid-item {
