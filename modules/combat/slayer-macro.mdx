@@ -1,6 +1,68 @@
 ---
 title: "☠️ SlayerMacro"
-description: "Page is under construction"
+description: "Automatically does slayer quests for you. Works with Zombie, Spider, Wolf and Enderman slayer types."
 ---
 
-# 
+<Accordion title="General" icon="option" iconType="duotone">
+  - **Slayer Macro Keybind**: Keybind to start and stop the macro.
+  - **Macro Type**: ⤵
+
+  <Expandable title="Slayer Types">
+    - **Revenant**: Zombie slayer in the Graveyard or Crypts.
+    - **Tarantula**: Spider slayer in Spider's Den or Crimson Isle.
+    - **Sven**: Wolf slayer in the Ruins or Cave.
+    - **Enderman**: Voidgloom slayer in The End.
+    - **Inferno**: Blaze slayer in the Crimson Isle.
+    - **Vampire**: Riftstalker slayer in the Rift.
+  </Expandable>
+  - **Kill Other People Bosses**: Attack and kill slayer bosses spawned by other players for extra combat XP and drops.
+  - **Auto Daedalus Axe Swap**: Automatically switches to Daedalus Axe when killing mobs for increased Magic Find.
+  - **Daedalus Axe Swap On %HP**: Health percentage threshold (1-100%) to switch to Daedalus Axe. At 10%, the macro will swap when the mob reaches 10% health or below.
+</Accordion>
+
+<Accordion title="Zombie Slayer" icon="biohazard" iconType="duotone">
+  - **Dodge T5 TNT**: Automatically dodges TNT explosions during Tier 5 boss fights.
+  - **Auto Use AOTS**: Automatically uses Axe of the Shredded throw ability for additional damage output.
+</Accordion>
+
+<Accordion title="Enderman Slayer" icon="eye" iconType="duotone">
+  - **Voidgloom Glyph Wither Cloak**: Uses cloak instead of going for beacon during the Voidgloom Seraph boss fight.
+  - **Wither Cloak Duration in Seconds**: Duration to maintain the wither cloak effect. Increase for high ping or decrease if running out of mana.
+  - **Use Summons for Hits Phase**: Automatically deploys summons during the hits phase of the Voidgloom Seraph fight.
+
+  <Info>
+    **Note:** You need either a **Summoning Ring**, **Necromancer Sword**, or **Reaper Scythe** in your hotbar to spawn summons.
+  </Info>
+  - **Use SoulCry When Spawning**: Activates SoulCry ability when spawning the Voidgloom Seraph boss.
+</Accordion>
+
+<Accordion title="Weapon" icon="swords" iconType="duotone">
+  - **Spawn Weapon Type**: ⤵
+
+  <Expandable title="Weapon Types">
+    - **Melee**: Uses sword attacks to kill spawned slayer mobs.
+    - **Ability/Bow**: Uses weapon ability or bow to kill spawned slayer mobs.
+    - **Hyperion**: Uses Wither Impact ability to kill spawned slayer mobs.
+  </Expandable>
+  - **Spawn Weapon Slot**: Configurable weapon slot (1-9) for killing spawned slayer mobs.
+  - **Boss Weapon Type**: ⤵
+
+  <Expandable title="Boss Weapon Types">
+    - **Melee**: Uses sword attacks to kill the slayer boss.
+    - **Ability/Bow**: Uses weapon ability or bow to kill the slayer boss.
+    - **Hyperion**: Uses Wither Impact ability to kill the slayer boss.
+  </Expandable>
+  - **Boss Weapon Slot**: Configurable weapon slot (1-9) for killing the slayer boss.
+</Accordion>
+
+<Accordion title="Armor" icon="shield" iconType="duotone">
+  - **Spawn Armor Slot**: Wardrobe slot (0-18) for armor used when spawning the slayer boss. Set to 0 to disable armor swap.
+  - **Boss Armor Slot**: Wardrobe slot (0-18) for armor used when the slayer boss is spawned. Set to 0 to disable armor swap.
+  - **Swap Armor On X% Health**: Health percentage threshold (0-100%) to swap to boss armor during spawn phase. At 50%, the macro will swap when your health drops to 50% or below.
+  - **Boss On X% Health Armor Slot**: Wardrobe slot (0-18) for emergency armor when health drops below the threshold during boss fight.
+</Accordion>
+
+<Accordion title="Maddox" icon="phone-volume" iconType="duotone">
+  - **Mute the Batphone sounds**: Disables sound effects when using the Maddox Batphone.
+  - **Mute the Batphone chat messages**: Hides chat messages from the Maddox in chat.
+</Accordion>
