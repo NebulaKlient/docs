@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent; /* Use a transparent background */
+    background: transparent;
     padding: 2rem 0;
     margin: 0;
 }
@@ -11,11 +11,10 @@
     position: relative;
     width: 80%;
     max-width: 900px;
-    background-color: #404040;
+    background-color: rgba(64, 64, 64, 0.85); /* Added transparency */
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
-    /* This new property fixes the bug where the outline was hidden */
     isolation: isolate;
 }
 
@@ -29,7 +28,7 @@
     border-radius: 25px;
     border: 5px solid #7042f8;
     box-shadow: 0 0 20px rgba(112, 66, 248, 0.7);
-    z-index: -1; /* This will now work correctly */
+    z-index: -1;
 }
 
 #inventory-preview .inventory-grid-container {
@@ -46,6 +45,7 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.2s;
+    min-width: 0; /* Prevents the cell from stretching */
 }
 
 #inventory-preview .inventory-draggable {
@@ -53,6 +53,7 @@
     height: 80%;
     cursor: grab;
     user-select: none;
+    object-fit: contain; /* Ensures image aspect ratio is correct */
 }
 
 #inventory-preview .inventory-dragging {

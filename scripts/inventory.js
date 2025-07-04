@@ -1,13 +1,12 @@
 function setupInventoryDrag() {
     const container = document.getElementById('inventory-preview');
-    if (!container) return; // Don't run if the component isn't on the page
+    if (!container) return;
 
     const draggable = container.querySelector('.inventory-draggable');
-    const gridItems = container.querySelectorAll('.inventory-grid-item');
-    
-    // Prevent script from running multiple times on the same element
     if (!draggable || draggable.dataset.dragSetup) return;
+    
     draggable.dataset.dragSetup = 'true';
+    const gridItems = container.querySelectorAll('.inventory-grid-item');
 
     draggable.addEventListener('dragstart', () => draggable.classList.add('inventory-dragging'));
     draggable.addEventListener('dragend', () => draggable.classList.remove('inventory-dragging'));
@@ -32,5 +31,18 @@ function setupInventoryDrag() {
     });
 }
 
-// Run the setup script after the page has fully loaded
+// This is a robust way to ensure the script runs when the component is added to the page.
+const observer = new MutationObserver(() => {
+    if (document.getElementById('inventory-preview')) {
+        setupInventoryDrag();
+    }
+});
+
+// Start observing the entire document for changes.
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+});
+
+// Also run on initial load, just in case.
 document.addEventListener('DOMContentLoaded', setupInventoryDrag);
