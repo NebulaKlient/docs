@@ -1,68 +1,76 @@
-function initializeInventoryComponent() {
-    const container = document.getElementById('inventory-preview');
-    if (!container) return;
+function setupInventoryDragAndDrop() {
+    const inventory = document.getElementById('inventory-preview');
+    if (!inventory) return;
 
-    const draggable = container.querySelector('.inventory-draggable');
-    if (!draggable || draggable.dataset.dragSetupComplete) return;
+    const draggableItem = inventory.querySelector('.inventory-draggable');
+    const dropTargets = inventory.querySelectorAll('.inventory-grid-item');
 
-    draggable.dataset.dragSetupComplete = 'true';
-    const gridItems = container.querySelectorAll('.inventory-grid-item');
-    const cellDefaultColor = '#282828';
-    const cellHoverColor = '#555555';
+    // If the script has already run on this element, do nothing.
+    if (!draggableItem || draggableItem.dataset.dndReady) return;
+    draggableItem.dataset.dndReady = 'true';
 
-    draggable.addEventListener('dragstart', () => {
-        setTimeout(() => draggable.classList.add('inventory-dragging'), 0);
+    // --- Fires when the user STARTS dragging the cube ---
+    draggableItem.addEventListener('dragstart', (e) => {
+        // This is the CRITICAL line that makes the drag operation valid.
+        e.dataTransfer.setData('text/plain', e.target.id || 'draggable');
+        e.dataTransfer.effectAllowed = 'move';
+
+        // Hide the original item to create a "ghost" effect.
+        setTimeout(() => {
+            e.target.style.visibility = 'hidden';
+        }, 0);
     });
 
-    draggable.addEventListener('dragend', () => {
-        draggable.classList.remove('inventory-dragging');
-        // This resets any lingering hover styles if the drag is cancelled.
-        gridItems.forEach(item => {
-            if (item.children.length === 0) {
-                item.style.backgroundColor = cellDefaultColor;
-            }
-        });
+    // --- Fires when the user STOPS dragging (no matter where) ---
+    draggableItem.addEventListener('dragend', (e) => {
+        // Always make the item visible again.
+        e.target.style.visibility = 'visible';
     });
 
-    gridItems.forEach(item => {
-        // --- THIS IS THE CORE FIX ---
-        // By setting dropEffect, we tell the browser this is a valid drop target.
-        item.addEventListener('dragover', e => {
+    // --- Set up each grid cell as a potential drop target ---
+    dropTargets.forEach(cell => {
+        // --- Fires as the cube is dragged OVER a cell ---
+        // This is MANDATORY to allow a drop.
+        cell.addEventListener('dragover', (e) => {
             e.preventDefault();
-            e.dataTransfer.dropEffect = 'move';
         });
 
-        item.addEventListener('dragenter', e => {
+        // --- Fires when the cube ENTERS a cell's boundary ---
+        cell.addEventListener('dragenter', (e) => {
             e.preventDefault();
             if (e.currentTarget.children.length === 0) {
-                e.currentTarget.style.backgroundColor = cellHoverColor;
+                e.currentTarget.style.backgroundColor = '#555555';
             }
         });
 
-        item.addEventListener('dragleave', e => {
+        // --- Fires when the cube LEAVES a cell's boundary ---
+        cell.addEventListener('dragleave', (e) => {
             if (e.currentTarget.children.length === 0) {
-                e.currentTarget.style.backgroundColor = cellDefaultColor;
+                e.currentTarget.style.backgroundColor = '#282828';
             }
         });
 
-        item.addEventListener('drop', e => {
+        // --- Fires when the cube is DROPPED on a cell ---
+        cell.addEventListener('drop', (e) => {
             e.preventDefault();
-            const draggedElement = container.querySelector('.inventory-dragging');
-            if (e.currentTarget.children.length === 0 && draggedElement) {
-                e.currentTarget.style.backgroundColor = cellDefaultColor;
-                e.currentTarget.appendChild(draggedElement);
+            if (e.currentTarget.children.length === 0) {
+                e.currentTarget.appendChild(draggableItem);
             }
+            e.currentTarget.style.backgroundColor = '#282828';
         });
     });
 }
 
+// This observer is the most reliable way to run the script
+// in a dynamic environment like Mintlify.
 const observer = new MutationObserver(() => {
-    initializeInventoryComponent();
+    setupInventoryDragAndDrop();
 });
 
 observer.observe(document.body, {
     childList: true,
-    subtree: true
+    subtree: true,
 });
 
-document.addEventListener('DOMContentLoaded', initializeInventoryComponent);
+// A fallback for the initial page load.
+document.addEventListener('DOMContentLoaded', setupInventoryDragAndDrop);
