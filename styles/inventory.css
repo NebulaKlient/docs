@@ -37,25 +37,25 @@
     gap: 15px;
 }
 
-/* --- CORE FIX FOR LAYOUT BUG --- */
+/* --- Final Fix for Layout and Visibility --- */
 #inventory-preview .inventory-grid-item {
-    background-color: #202020;
+    background-color: #202020; /* Made cells darker for visibility */
     border-radius: 10px;
     aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.2s;
-    position: relative; /* Establishes a positioning context for the image */
+    overflow: hidden; /* Prevents content from breaking the layout */
 }
 
-/* --- CORE FIX FOR LAYOUT BUG --- */
+/* --- Final Fix for Cube Rendering and Sizing --- */
 #inventory-preview .inventory-draggable {
     width: 80%;
     height: 80%;
     cursor: grab;
     user-select: none;
-    position: absolute;   /* Decouples image size from grid cell size */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centers the image perfectly */
+    object-fit: contain; /* Ensures image scales correctly without stretching the cell */
 }
 
 #inventory-preview .inventory-dragging {
