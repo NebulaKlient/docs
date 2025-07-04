@@ -1,16 +1,20 @@
 function initializeInventoryComponent() {
     const container = document.getElementById('inventory-preview');
-    // If the component isn't on the page, do nothing.
     if (!container) return;
 
     const draggable = container.querySelector('.inventory-draggable');
-    // If the script has already run, do nothing.
     if (!draggable || draggable.dataset.dragSetupComplete) return;
 
     draggable.dataset.dragSetupComplete = 'true';
     const gridItems = container.querySelectorAll('.inventory-grid-item');
+    const cellDefaultColor = '#282828'; // Matches CSS
+    const cellHoverColor = '#555555';
 
-    draggable.addEventListener('dragstart', () => draggable.classList.add('inventory-dragging'));
+    draggable.addEventListener('dragstart', () => {
+        // Use a timeout to avoid glitchy rendering on drag start
+        setTimeout(() => draggable.classList.add('inventory-dragging'), 0);
+    });
+
     draggable.addEventListener('dragend', () => draggable.classList.remove('inventory-dragging'));
 
     gridItems.forEach(item => {
@@ -19,13 +23,13 @@ function initializeInventoryComponent() {
         item.addEventListener('dragenter', e => {
             e.preventDefault();
             if (e.currentTarget.children.length === 0) {
-                e.currentTarget.style.backgroundColor = '#555555';
+                e.currentTarget.style.backgroundColor = cellHoverColor;
             }
         });
 
         item.addEventListener('dragleave', e => {
             if (e.currentTarget.children.length === 0) {
-                e.currentTarget.style.backgroundColor = '#313131';
+                e.currentTarget.style.backgroundColor = cellDefaultColor;
             }
         });
 
@@ -33,27 +37,23 @@ function initializeInventoryComponent() {
             e.preventDefault();
             const draggedElement = container.querySelector('.inventory-dragging');
             if (e.currentTarget.children.length === 0 && draggedElement) {
-                e.currentTarget.style.backgroundColor = '#313131';
+                e.currentTarget.style.backgroundColor = cellDefaultColor;
                 e.currentTarget.appendChild(draggedElement);
             }
         });
     });
 }
 
-// This observer waits for the component to be added to the page.
-// It's the most reliable way to handle dynamic content.
-const observer = new MutationObserver((mutationsList, obs) => {
-    if (document.getElementById('inventory-preview')) {
-        initializeInventoryComponent();
-        obs.disconnect(); // Stop watching once we've found it.
-    }
+// This observer is now more persistent and reliable for dynamic page loads.
+const observer = new MutationObserver(() => {
+    initializeInventoryComponent();
 });
 
-// Start watching the page for changes.
+// Start observing the entire document for any changes.
 observer.observe(document.body, {
     childList: true,
     subtree: true
 });
 
-// Also run when the page first loads, just in case.
+// Also run on initial load.
 document.addEventListener('DOMContentLoaded', initializeInventoryComponent);

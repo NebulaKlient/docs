@@ -9,8 +9,8 @@
 
 #inventory-preview .inventory-container {
     position: relative;
-    width: 80%;
-    max-width: 900px;
+    width: 85%;
+    max-width: 950px;
     background-color: rgba(59, 59, 59, 0.65);
     border-radius: 20px;
     padding: 20px;
@@ -34,28 +34,25 @@
 #inventory-preview .inventory-grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 15px;
+    gap: 12px;
 }
-
-/* --- Final Fix for Layout and Visibility --- */
 #inventory-preview .inventory-grid-item {
-    background-color: #202020; /* Made cells darker for visibility */
+    background-color: #282828;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     transition: background-color 0.2s;
-    overflow: hidden; /* Prevents content from breaking the layout */
+    overflow: hidden;
 }
 
-/* --- Final Fix for Cube Rendering and Sizing --- */
 #inventory-preview .inventory-draggable {
     width: 80%;
     height: 80%;
     cursor: grab;
     user-select: none;
-    object-fit: contain; /* Ensures image scales correctly without stretching the cell */
+    object-fit: contain;
+    display: block;
+    margin: auto;
 }
 
 #inventory-preview .inventory-dragging {
