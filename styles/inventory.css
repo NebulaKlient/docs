@@ -36,29 +36,19 @@
     grid-template-columns: repeat(8, 1fr);
     gap: 12px;
 }
+
 #inventory-preview .inventory-grid-item {
     background-color: #202020;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
-    display: flex;
-    transition: background-color 0.2s;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #inventory-preview .inventory-draggable {
     width: 80%;
     height: 80%;
-    cursor: grab;
-    user-select: none;
     object-fit: contain;
-    display: block;
-    margin: auto;
-}
-
-#inventory-preview .inventory-dragging {
-    opacity: 0.5;
-}
-
-#inventory-preview .inventory-grid-item.drop-target-hover {
-    background-color: #555555; /* Highlight color for valid drop cells */
 }
