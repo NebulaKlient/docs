@@ -20,28 +20,15 @@ description: "Fancy and customizable Nebula visuals."
 
 <Accordion title="Inventory Preview" icon="box-open" iconType="duotone">
   - **Inventory Preview**: Shows a preview of your inventory contents on screen without opening the inventory GUI.
-
-  ![HYPERION Debug](/HYPERION_normal.gif)
-
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const img = document.querySelector('img[alt="HYPERION Debug"]');
-      console.log('Mintlify processed URL:', img ? img.src : 'not found');
-      // Copy this URL and use it directly in your HTML
-  });
-  </script>
-
+  
   <div id="inventory-preview">
   <div class="inventory-body">
   <div class="inventory-container">
   <div class="inventory-grid-container">
   <div class="inventory-grid-item">
-  <img
-    class="inventory-draggable-item"
-    src="/HYPERION_normal.gif"
-    alt="Draggable Cube"
-  />
-
+  <div class="inventory-grid-item">
+    <div class="inventory-draggable-item hyperion-bg"></div>
+  </div>
   </div>
 
   <div class="inventory-grid-item" />

@@ -45,11 +45,14 @@
     position: relative;
 }
 
-#inventory-preview .inventory-draggable-item {
+.hyperion-bg {
+    background-image: url('/HYPERION_normal.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180%;
+    height: 180%;
     position: absolute;
     top: 10%;
     left: 10%;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
 }
