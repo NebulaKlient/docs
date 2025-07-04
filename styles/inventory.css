@@ -11,7 +11,7 @@
     position: relative;
     width: 85%;
     max-width: 950px;
-    background-color: rgba(59, 59, 59, 0.65); /* Your color */
+    background-color: rgba(59, 59, 59, 0.65);
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -34,27 +34,21 @@
 #inventory-preview .inventory-grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 12px; /* Your gap size */
+    gap: 12px;
 }
 
-/* --- THE ABSOLUTE POSITIONING FIX --- */
 #inventory-preview .inventory-grid-item {
-    background-color: #202020; /* Your color */
+    background-color: #202020;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    /* This establishes the boundary for the absolutely positioned child. */
     position: relative;
 }
 
-/* --- THE DEFINITIVE CENTERING SOLUTION --- */
 #inventory-preview .inventory-draggable {
     width: 80%;
     height: 80%;
     object-fit: contain;
-
-    /* These four properties work together to guarantee perfect centering */
-    /* in all browsers, regardless of sub-pixel rendering bugs. */
     position: absolute;
     top: 50%;
     left: 50%;
