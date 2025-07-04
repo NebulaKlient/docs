@@ -37,23 +37,26 @@
     gap: 12px; /* Your gap size */
 }
 
+/* --- THE DEFINITIVE VISIBILITY AND CENTERING FIX --- */
 #inventory-preview .inventory-grid-item {
-    background-color: #202020;
+    background-color: #202020; /* Your color */
     border-radius: 10px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    position: relative;
+
+    /* Using Flexbox, which is more stable for single-item centering. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* --- THE DEFINITIVE CENTERING AND VISIBILITY FIX --- */
 #inventory-preview .inventory-draggable {
-    /* By removing explicit width/height and using max- values instead, */
-    /* we prevent the browser bug that made the image disappear. */
-    max-width: 80%;
-    max-height: 80%;
-    
-    /* This centering technique remains the most robust. */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    object-fit: contain; /* Prevents distortion */
+
+    /* This is the most important property. It explicitly tells the browser: */
+    /* "Do NOT shrink this item, even if you think there's no space." */
+    /* This prevents the image from collapsing and disappearing. */
+    flex-shrink: 0;
+}
