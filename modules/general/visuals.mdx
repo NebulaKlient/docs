@@ -20,121 +20,40 @@ description: "Fancy and customizable Nebula visuals."
 
 <Accordion title="Inventory Preview" icon="box-open" iconType="duotone">
   - **Inventory Preview**: Shows a preview of your inventory contents on screen without opening the inventory GUI.
-  <div id="inventory-preview-container">
-    <style>
-    {`
-        #inventory-preview-container .inventory-body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #585858;
-            padding: 2rem 0;
-            margin: 0;
-        }
 
-        #inventory-preview-container .inventory-container {
-            position: relative;
-            width: 80%;
-            max-width: 900px;
-            background-color: #404040;
-            border-radius: 20px;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        #inventory-preview-container .inventory-container::before {
-            content: "";
-            position: absolute;
-            top: -12px;
-            left: -12px;
-            right: -12px;
-            bottom: -12px;
-            border-radius: 25px;
-            border: 5px solid #7042f8;
-            box-shadow: 0 0 20px rgba(112, 66, 248, 0.7);
-            z-index: -1;
-        }
-
-        #inventory-preview-container .inventory-grid-container {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            gap: 15px;
-        }
-
-        #inventory-preview-container .inventory-grid-item {
-            background-color: #313131;
-            border-radius: 10px;
-            aspect-ratio: 1 / 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: background-color 0.2s;
-        }
-
-        #inventory-preview-container .inventory-draggable {
-            width: 80%;
-            height: 80%;
-            cursor: grab;
-            user-select: none;
-        }
-        
-        #inventory-preview-container .inventory-dragging {
-            opacity: 0.5;
-        }
-    `}
-    </style>
-    
-    <div className="inventory-body">
-        <div className="inventory-container">
-            <div className="inventory-grid-container">
-                <div className="inventory-grid-item">
-                    <img className="inventory-draggable" src="/draggable-cube.png" draggable="true" alt="Draggable Cube" />
+  <div id="inventory-preview">
+    <div class="inventory-body">
+        <div class="inventory-container">
+            <div class="inventory-grid-container">
+                <div class="inventory-grid-item">
+                    <img class="inventory-draggable" src="/draggable-cube.png" draggable="true" alt="Draggable Cube" />
                 </div>
-                <div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div><div className="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
+                <div class="inventory-grid-item"></div>
             </div>
         </div>
     </div>
-
-    <script dangerouslySetInnerHTML={{ __html: `
-        function setupInventoryDrag() {
-            const container = document.getElementById('inventory-preview-container');
-            if (!container) return;
-            
-            const draggable = container.querySelector('.inventory-draggable');
-            const gridItems = container.querySelectorAll('.inventory-grid-item');
-            
-            if (!draggable || draggable.dataset.dragSetup) return;
-            draggable.dataset.dragSetup = 'true';
-
-            draggable.addEventListener('dragstart', () => draggable.classList.add('inventory-dragging'));
-            draggable.addEventListener('dragend', () => draggable.classList.remove('inventory-dragging'));
-
-            gridItems.forEach(item => {
-                item.addEventListener('dragover', e => e.preventDefault());
-                item.addEventListener('dragenter', e => {
-                    e.preventDefault();
-                    if (e.currentTarget.children.length === 0) e.currentTarget.style.backgroundColor = '#555555';
-                });
-                item.addEventListener('dragleave', e => {
-                    if (e.currentTarget.children.length === 0) e.currentTarget.style.backgroundColor = '#313131';
-                });
-                item.addEventListener('drop', e => {
-                    e.preventDefault();
-                    const draggedElement = container.querySelector('.inventory-dragging');
-                    if (e.currentTarget.children.length === 0 && draggedElement) {
-                        e.currentTarget.style.backgroundColor = '#313131';
-                        e.currentTarget.appendChild(draggedElement);
-                    }
-                });
-            });
-        }
-        
-        if (typeof window !== 'undefined') {
-          document.addEventListener('DOMContentLoaded', setupInventoryDrag);
-          // Fallback for environments where DOMContentLoaded might not fire as expected
-          setTimeout(setupInventoryDrag, 100);
-        }
-    ` }} />
 </div>
 </Accordion>
 
