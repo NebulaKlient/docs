@@ -11,7 +11,7 @@
     position: relative;
     width: 80%;
     max-width: 900px;
-    background-color: rgba(64, 64, 64, 0.85); /* Added transparency */
+    background-color: rgba(64, 64, 64, 0.75); /* Made slightly more transparent */
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
@@ -45,7 +45,9 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.2s;
-    min-width: 0; /* Prevents the cell from stretching */
+    min-width: 0;
+    min-height: 0;     /* Fixes stretching bug */
+    overflow: hidden;    /* Fixes stretching bug */
 }
 
 #inventory-preview .inventory-draggable {
@@ -53,7 +55,6 @@
     height: 80%;
     cursor: grab;
     user-select: none;
-    object-fit: contain; /* Ensures image aspect ratio is correct */
 }
 
 #inventory-preview .inventory-dragging {
