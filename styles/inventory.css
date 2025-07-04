@@ -52,11 +52,12 @@
     width: 80%;
     height: 80%;
     
-    /* Alternative path - relative to the project root */
-    background-image: url('./draggable-cube.png');
+    /* Updated path for the images folder */
+    background-image: url('/images/draggable-cube.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     
+    /* Keep the border temporarily to confirm it's working */
     border: 1px solid red;
 }
