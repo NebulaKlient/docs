@@ -48,10 +48,9 @@
 /* --- MANUAL POSITIONING TO FORCE PERFECT CENTERING --- */
 #inventory-preview .inventory-draggable-item {
     position: absolute;
-    /* Moving it up by reducing the top value */
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* Direct positioning without transform - this will actually move */
+    top: 25%;
+    left: 10%;
     width: 80%;
     height: 80%;
     
