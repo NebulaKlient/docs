@@ -36,11 +36,20 @@ description: "Mines mithril and ores in the Dwarven Mines, includes a custom rou
 
 <Accordion title="Mining Ability" icon="pickaxe" iconType="duotone">
   - **Use Mining Ability**: Automatically uses mining abilities when available.
-  - **Blue Cheese Swap**: Swaps to Blue Cheese item.
+  - **Blue Cheese Swap**: Swaps to your Blue Cheese Drill.
   - **Blue Cheese Drill Slot**: Hotbar slot (1-9) for the Blue Cheese drill.
   - **Minimum Size Of A Vein**: Minimum vein size required for Pickobulus ability activation.
 </Accordion>
 
 <Accordion title="Waypoint Mode" icon="map-location-dot" iconType="duotone">
+  To get started use `/n files` to open Nebula directory. Navigate to `minecraft\Nebula\MithrilMiner` and create a folder named "routes".
   
+  - `/n mithril add` - Add waypoint to the route.
+  - `/n mithril insert [INDEX]` - Insert waypoint at specific index.
+  - `/n mithril remove [INDEX]` - Remove waypoint from the macro.
+  - `/n mithril edit [INDEX]` - Edit waypoint in the macro.
+  - `/n mithril clear` - Clear all waypoints.
+  - `/n mithril save [FILE]` - Save waypoints to a file.
+  - `/n mithril load [FILE]` - Load waypoints from a file.
+  - `/n mithril minable [INDEX]` - Places minable waypoint on the block you're looking at, macro will target the minable blocks over mining at random.
 </Accordion>
