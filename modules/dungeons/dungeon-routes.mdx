@@ -4,7 +4,7 @@ description: "Auto routes for dungeons "
 ---
 
 <Accordion title="General" icon="gear" iconType="solid">
-  - **Routes Toggle**: toggles route nodes, requires brush enabled from DungeonUtils
+  - **Routes Toggle**: toggles route nodes, requires brush to be enabled from DungeonUtils
   - **Render Routes**: toggles nodes visibility
   - **Actions Delay**: <u>additional</u> actions delay for nodes
   - **Rotation Type**: ⤵
@@ -14,12 +14,12 @@ description: "Auto routes for dungeons "
       **Fake**: doesnt change player view 
     </Expandable>
   - **Rotation Speed**: changes rotations speed for nodes
-  - **Fast TP**: zero ping etherwarp (currently unavaiable because of anti-cheat update)
+  - **Fast TP**: zero ping etherwarp (currently unavailable because of anti-cheat update)
 
     <Danger>
       If feature will be fixed in the future its still can be detected after a new anti-cheat update
     </Danger>
-  - **Timer Balance**: improved version of Fast TP with delayed game speed slowdown (currently unavaiable because of anti-cheat update)
+  - **Timer Balance**: improved version of Fast TP with delayed game speed slowdown (currently unavailable because of anti-cheat update)
 
     <Danger>
       If feature will be fixed in the future its still can be detected after a new anti-cheat update
@@ -29,34 +29,34 @@ description: "Auto routes for dungeons "
 
 <Accordion title="Tips " icon="sparkles">
   <Expandable title="Commands">
-    - **/n routes help**: prints help message
+    - **/n routes help**: prints a help message
     - **/n routes load**: reloads current routes from file
-    - **/n routes edit**: toggles edit mode that allows u to place nodes
+    - **/n routes edit**: toggles edit mode that allowing you to place nodes
     - **/n routes edit placewarp**: places Etherwarp node
 
       <Expandable title="Content">
         - /n routes edit placewarp [additional delay] [waitforsecret] [manual mode]
-        - <u>example</u>: /n routes edit placewarp 0 true false
+        - <u>Example</u>: /n routes edit placewarp 0 true false
       </Expandable>
-    - **/n routes edit clear [radius]**: clears <u>EVERY</u> node in selected radius, /n routes edit clear without selected radius clears <u>EVERY</u> node in a room
+    - **/n routes edit clear [radius]**: clears <u>EVERY</u> node in the selected radius, /n routes edit clear in the selected radius clears <u>EVERY</u> node in the room
   </Expandable>
   <Expandable title="Nodes list">
     - **Etherwarp:** places an Etherwarp node that automatically etherwarps you to the selected block using an algorithm or hardcoded yaw & pitch values
-    - **Walk**: places an Walk node that automatically walks in selected direction
-    - **Pearl**: places an Pearl node that automatically throws ender pearl 
-    - **Rotate**: places an Rotate node that automatically rotates u
-    - **Chat**: places an Chat node that automatically sends message or command in chat
+    - **Walk**: places a Walk node that automatically walks in the selected direction
+    - **Pearl**: places a Pearl node that automatically throws ender pearl 
+    - **Rotate**: places a Rotate node that automatically rotates u
+    - **Chat**: places a Chat node that automatically sends message or command in chat
 
-      <Expandable title="explained">
+      <Expandable title="Explained">
         - **vclip**: /n dungeons vclip -\*
         - **pearlclip**: /n dungeons vclip -\*
 
         To switch from VClip to PearlClip, you need to enable VClip Auto Pearl in DungeonUtils module
       </Expandable>
-    - **Press Key**: places an Press Key node that allows you to use ingame keybinds for the routes
-    - **Use Item**: places an Use Item node that automatically uses selected item
+    - **Press Key**: places a Press Key node that allows you to use ingame keybinds for the routes
+    - **Use Item**: places a Use Item node that automatically uses selected item
 
-    <Expandable title="explained">
+    <Expandable title="Explained">
       To set rotation for <u>Pearl </u>& <u>Use Item</u> nodes, you need to <u>place a Rotate node</u> that executes first with the “Wait for Rotation” attribute
     </Expandable>
   </Expandable>
