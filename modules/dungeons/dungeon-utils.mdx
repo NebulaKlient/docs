@@ -1,6 +1,303 @@
 ---
 title: "⚙️ DungeonUtils"
-description: "Page is under construction"
+description: "Features for dungeons"
 ---
 
-# 
+<Accordion title="General" icon="sparkles">
+  - **Chest Closer**: automatically closes chests in dungeons
+  - **Bigger Secret Hitboxes**: expands buttons, levers, chests, essence hitboxes to full block
+  - **M3 Fire Freeze Timer**: shows timer for Fire Freeze
+  - **Auto Use Fire Freeze**: automatically use Fire Freeze
+  - **Terminator Clicker**: spams left click when holding right click
+  - **Gyro Radius**: shows radius for gyrokinetic wand
+  - **Gyro Radius Only in Thirdperson**: shows radius for gyrokinetic wand only in Thirdperson
+  - **Blessings Display HUD**: shows current blessings
+  - **Auto Send Message on Teammate Death**: sends a message when someone dies
+  - **Message to send**: custom message for Auto Send Message on Teammate Death
+  - **Mimic Message**: sends message on mimic death
+  - **Mimic Message Text**: custom message for Mimic Message
+  - **No DT**: automatically starts new dungeon
+  - **Auto GFS**: automatically sends /gfs ender pearl amount
+  - **Block Interaction**: allows you to throw pearls even if interacting with block
+  - **Vertical Jerry**: straight up jerry gun velocity
+  - **Bonzo Movement Helper**: improves movement with Bonzo Staff
+  - **Tank/Healer Ultimate Notification**: sends a message when you need to use the ultimate ability
+  - **Tank/Healer Auto Use Ultimate**: automatically uses the ultimate ability on Tank/Healer in certain moments
+  - **No Death Animation**: removes death animation
+  - **Auto Stair Align Keybind**: automatically aligns you
+  - **Auto Stair Align**: automatically aligns you without pressing a keybind
+  - **Doorless**: allows you to skip through door
+  - **Doorless Motion**: pushes you forward after using Doorless
+  - **Auto Left Click Superboom Swap**: automatically press left click after swapping on Superboom/Ininityboom TNT
+  - **Auto Mask Swap**: swaps masks (Bonzo, Spirit)
+</Accordion>
+
+<Accordion title="Visuals" icon="sparkles">
+  - **Custom Mage Beam**: custom mage beam
+  - **Custom Mage Beam Duration**: how long takes to disappear
+  - **Custom Mage Beam Colour**: color customization
+  - **Custom Mage Beam Width**: beam width
+  - **Depth Check for Custom Mage Beam**: visibility through blocks 
+</Accordion>
+
+<Accordion title="Blood Camp" icon="sparkles">
+  - **Blood Camp Helper:** shows a box where the next mob will spawn
+  - **Draw Line:** draws a line to the next mob
+  - **Draw Time:** shows the time until the next mob spawns
+  - **Watcher Ready Notification:** notifies you when all mobs have spawned
+</Accordion>
+
+<Accordion title="Auto Sell" icon="sparkles">
+  - **Auto Sell:** automatically sells items in the trades menu
+  - **Don’t Sell Skeleton Master Chestplate:** excludes the Skeleton Master Chestplate from the autosell list
+  - **Auto Sell Custom Items:** adds custom items to the auto sell list (default dungeon items are already included)
+</Accordion>
+
+<Accordion title="Etherwarp" icon="sparkles">
+  - **Zero Ping Etherwarp**: zero ping etherwarp client (client only)
+  - **Zero Ping AOTV**: zero ping aotv (client only)
+  - **Cancel TP Packet**: changes Zero Ping Etherwarp/AOTV method 
+
+    <Danger>
+      **Potentially unsafe feature that can be detected with new anti cheat update**
+    </Danger>
+  - **Keep Motion**: keeps motion after Etherwarp/AOTV
+  - **Etherwarp Sound**: plays custom sound after Etherwarp
+  - **Fast etherwarp**: spams Etherwarp
+  - **Left Click Etherwarp**: allows u to Etherwarp with left click
+</Accordion>
+
+<Accordion title="Leap Menu" icon="sparkles">
+  - **Leap Menu**: custom leap menu
+  - **Announce when Leaping**: sends a message after leap
+</Accordion>
+
+<Accordion title="Item Timers" icon="sparkles">
+  - **Item Timers**: shows cooldowns for Bonzo, Spirit masks and Phoenix
+  - **Announce on Item Pop**: sends a message on item pop
+  - **Draw Hud**: hud with item cooldowns
+  - **Draw Hud Only in Boss**: hud with item cooldowns only in boss room
+</Accordion>
+
+<Accordion title="Optimization" icon="sparkles">
+  - **Hide Damage in Boss**: hides damage numbers in boss room
+  - **Hide Falling Blocks**: hides falling blocks
+  - **Hide Wither Cloak**: hides wither cloak creepers
+  - **Hide Wither Born**: hides wither born from full wither sets
+</Accordion>
+
+<Accordion title="M7" icon="sparkles">
+  - **Crystal Aura**: automatically grabs crystals
+  - **Relic Aura**: automatically grabs relics
+  - **Relic Placer**: automatically places relics
+  - **Remove Diorite Pillars**: removes diorite pillars
+  - **Terminal Aura**: automatically opens terminals while in range
+  - **Terminal Aura Only on Ground**: automaticall opens terminals only when on ground
+  - **Anti TNT Velocity**: removes TNT knockback
+  - **Insta Middle**: instantly teleports u to middle platform
+  - **Debuff Helper**: helps u debuff dragons
+  - **Auto Ice Spray**: automatically ice sprays boss
+  - **Auto Soul Whip**: automatically soul whip boss
+  - **Debuff Tracker**: shows u debuffs
+  - **Dragon Pillar Boxes**:
+  - **Dragon Hitboxes**: hitboxes for dragons (p5)
+  - **Split Helper**: helps with splits 
+  - **Dragon Spawn Timer**: timer until dragon spawns
+  - **Split Power**: shows current power
+  - **Easy Split power**: shows easy split power
+  - **Show All (Non Split) drags**: shows all drags
+  - **Send Split Message on P5 Start**: sends split message on P5 Start
+  - **Send Teams Split Message on Dragon**: send teams split message on dragon
+  - **Healer Team on Normal Dragon**
+
+    <Expandable title="team">
+      - **Bers Team**
+      - **Arch Team**
+    </Expandable>
+  - **Tank Team on Normal Dragon**
+
+    <Expandable title="team">
+      - **Bers Team**
+      - **Arch Team**
+    </Expandable>
+  - **Healer Team on Purple Dragon**
+
+    <Expandable title="team">
+      - **Bers Team**
+      - **Arch Team**
+    </Expandable>
+  - **Tank Team on Purple Dragon**
+
+    <Expandable title="team">
+      - **Bers Team**
+      - **Arch Team**
+    </Expandable>
+</Accordion>
+
+<Accordion title="M6" icon="sparkles">
+  - **Auto M6 Gyro**: Automatically left clicks gyrokinetic wand in timing (Mage only)
+</Accordion>
+
+<Accordion title="F4/M4" icon="sparkles">
+  - **Thorn Aimbot**: automatically aims at boss
+</Accordion>
+
+<Accordion title="Ghost Block" icon="sparkles">
+  - **Ghost Blocks Keybind**: pressing a keybind creates ghost blocks
+  - **Restore Ghost Blocks**: restores ghost blocks
+  - **Ghost Blocks Legit Mode**: swings and sends mine packets
+  - **Ghost Blocks Delay**: delay between creating ghost blocks
+  - **Ghost Blocks Range**: range to create ghost blocks
+  - **Ghost Blocks With Pickaxe**: allows ghost blocking with pickaxe
+  - **Ghost Blocks With Pickaxe Restore Delay**: restore delay for ghost blocks created with pickaxe
+</Accordion>
+
+<Accordion title="Secret Aura" icon="sparkles">
+  - **Secret Aura**: toggles secret aura
+  - **Secret Aura Keybind**: toggles secret aura with a keybind
+  - **Secret Aura Mode**:⤵
+
+    <Expandable title="Content">
+      - **Aura:** automatically collects secrets within range
+      - **Stonkless:** automatically collects secrets through walls when looking at them
+      - **TriggerBot:** automatically collects secrets when looking at them
+    </Expandable>
+  - **Secret Aura Sounds:** plays a sound when a secret is collected with Secret Aura
+  - **Auto Swap Item**: swaps to selected item before collecting a secret
+  - **Aura Reach**: range for Secret Aura
+  - **Aura FOV**: FOV for Secret Aura
+  - **Aura Rotations**: toggles client side rotation
+  - **Stonkless Reach**: range for Stonkless Secret Aura mode
+  - **Click Doors**: clicks wither doors with Secret Aura
+</Accordion>
+
+<Accordion title="ESP" icon="sparkles">
+  - **ESP**: shows mobs throught walls
+  - **ESP Mode**: ⤵
+
+    <Expandable title="Modes">
+      - **Outline**: mode ESP
+      - **Box**: mode for ESP
+      - **Chams**: mode for ESP
+      - **Glow**: mode for ESP
+    </Expandable>
+  - **Terminals ESP**: shows completed and uncompleted terminals
+  - **Wither Door ESP**: ⤵
+
+    <Expandable title="Modes">
+      - **Next**: shows only the next wither door
+      - **All**: shows all wither doors
+    </Expandable>
+  - **Player ESP**: shows players through walls
+  - **Player ESP Color**: customization for Player ESP
+  - **Player ESP Nametags**: shows Player Nametags
+  - **Player ESP nametags Scale**: Player Nametags size
+  - **Starred Mobs ESP**: shows starred mobs through walls 
+  - **Starred Mobs ESP Color**: customization for Starred Mobs ESP
+  - **Bats ESP**: shows bats through walls
+  - **Bats ESP Color**: customization for Bats ESP
+  - **Wither ESP**: shows withers (f7 boss) through walls
+  - **Wither ESP Color**: customization for Wither ESP 
+  - **Key ESP**: shows key through walls
+  - **Key ESP Color**: customization for Key ESP
+</Accordion>
+
+<Accordion title="Dungeon Map" icon="sparkles">
+  - **Dungeon Map**: shows map in dungeons
+  - **Print Dungeon Info in Chat**: prints dungeon info in chat (client)
+  - **Print Team Info in Chat After Dungeon End**: prints team info in chat after dungeon ends (secrets, rooms, etc)
+  - **Hide Map in Boss**: hides map in boss room
+  - **Rotate Map to Keep Entrance at the Bottom**: rotates map to keep entrance at the bottom
+  - **Rotate Map With Player:** rotates the map along with the player
+  - **Center Map At Player:** centers the map on the player
+  - **Highlight Current Player Head**: highlites ur head on the map
+  - **Room Checkmarks**: ⤵
+
+    <Expandable title="Modes">
+      - **Off**
+      - **NEU**
+      - **Clean**
+    </Expandable>
+  - **Room Secrets**: ⤵
+
+    <Expandable title="Modes">
+      - **Off**
+      - **On**
+      - **Replace Checkmarks**
+    </Expandable>
+  - **Room Names**: ⤵
+
+    <Expandable title="Content">
+      - **Off**
+      - **Puzzles and Trap**
+      - **On**
+    </Expandable>
+  - **Room Names Size**: scale for room names 
+  - **Text Shadow**: text shadow
+  - **Darken Undiscovered Rooms:** darkens undiscovered rooms
+  - **Darken Rooms Percentage:** sets how much undiscovered rooms are darkened
+  - **Show Player Names**: renders players names on the map
+  - **Show Dungeon Info Under the Map**: shows dungeon info under the map
+</Accordion>
+
+<Accordion title="Score Calculation" icon="sparkles">
+  - **Dungeon Score HUD**: shows current score
+  - **Minimized HUD**: minimized score HUD
+  - **300 Score Title:** displays a title at 300 score
+  - **300 Score Message:** sends a message at 300 score
+  - **300 Score Message Text:** customizes the 300 Score Message
+  - **270 Score Title:** displays a title at 270 score
+  - **270 Score Message:** sends a message at 270 score
+  - **270 Score Message Text:** customizes the 270 Score Message
+</Accordion>
+
+<Accordion title="Brush" icon="sparkles">
+  - **Enable Brush**: allows u to place blocks in dungeons
+  - **Enable Brush Outside of Dungeons**: allows u to place blocks outside of dungeons
+</Accordion>
+
+<Accordion title="Shortbow Aura" icon="sparkles">
+  - **Shortbow Aura:** toggles Shortbow Aura
+  - **Rotation Speed:** adjusts rotation speed for Shortbow Aura
+  - **FOV:** sets the FOV for Shortbow Aura
+  - **Height Difference:** sets the maximum height difference for Shortbow Aura
+  - **Shortbow Slot:** selects the slot with a Shortbow
+  - **One Hit Per Target:** hits each target only once
+</Accordion>
+
+<Accordion title="Clip" icon="sparkles">
+  - **Bar Phase**: allows u to walk through iron bars, and glass panes
+  - **HClip Keybind**: toggles HClip with a keybind
+  - **HClip Keybind Mode**: ⤵
+
+    <Expandable title="Modes">
+      - **Once**
+      - **Hold**
+      - **Toggle**
+    </Expandable>
+  - **HClip Type**: ⤵
+
+    <Expandable title="Type">
+      - **Move**
+      - **Velocity**
+    </Expandable>
+  - **HClip Distance**: change distance of hclip
+  - **Hclip Auto Pearl**: uses ender pearl before HClip
+  - **VClip Keybind**: toggles VClip with a keybind
+  - **VClip Distance**: changes VClip distance
+  - **VClip Auto Pearl**: uses ender pearl before VClip
+  - **Auto VClip in Lava Keybind**: lava clip
+  - **Wall Clip keybind**: clips through wall
+  - **Wall Clip Auto Core**: walk through core (f7)
+</Accordion>
+
+<Accordion title="Blink" icon="sparkles">
+  - **Blink Keybind**: toggles blink
+  - **Blink Keybind Mode**: ⤵
+
+    <Expandable title="Mode">
+      - **Toggle**
+      - **Hold**
+    </Expandable>
+  - **Blink Only Position Packets**: sends only position packets
+</Accordion>
