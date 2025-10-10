@@ -1,6 +1,73 @@
 ---
 title: "🚨 Failsafes"
-description: "This page is under construction"
+description: "Failsafe system for macro"
 ---
 
-# 
+<Accordion title="Failsafes" icon="sparkles">
+  - **Rotation failsafe**: toggles Rotation failsafe
+  - **TP failsafe**: toggles TP failsafe
+  - **Stuck In Block failsafe**: toggles Stuck In Block failsafe
+  - **Death failsafe**: toggles Death failsafe
+  - **Warp failsafe**: toggles Warp failsafe
+  - **Player Close failsafe**: toggles Close failsafe
+  - **Player Griefing Failsafe**: toggles Player Griefing failsafe
+  - **Player Name Failsafe**: toggles Player Name Failsafe
+  - **Player Name List**: comma separated
+  - **Player Looking failsafe**: toggles Player Looking failsafe
+  - **Player Looking Duration (in seconds)**: how long it takes for the failsafe to trigger when a player is looking at you
+  - **Enviroment Change failsafe**: toggles Enviroment Change failsafe
+  - **Bedrock Cage failsafe**: toggles Bedrock Cage failsafe
+  - **Velocity failsafe**: toggles Velocity failsafe
+  - **Velocity Threshold failsafe**: velocity failsafe threshold
+  - **Cobweb failsafe**: toggles Cobweb failsafe
+  - **Bad Effects Failsafe**: toggles Bad Effects failsafe
+  - **Failed Etherwarp failsafe**: toggles Failed Etherwarp failsafe
+  - **Dirt Check failsafe**: toggles Dirt Check failsafe
+  - **Upcoming Staff Check failsafe**: toggles Upcoming Staff Check Failsafes
+  - **Chat Mention failsafe**: toggles Chat Mention failsafe
+  - **Trigger Chat Mention Failsafe only when the player is close**: toggles Chat Mention Failsafe only when the player is close
+</Accordion>
+
+<Accordion title="Alerts" icon="sparkles">
+  - **Entity Close Failsafe**: toggles entity close failsafe
+  - **Auto Disable Player Close Failsafe**: automatically disables the Player Close and Entity failsafe if there are too many entities nearby when a macro starts
+  - **Auto Disable Entity Close Failsafe**: automatically disables the Player Close and Entity failsafes if there are too many entities nearby when a macro starts
+  - **Sound Type**: ⤵
+
+    <Expandable title="Types">
+      - **Disabled**
+      - **Minecraft**
+      - **Built-in**
+      - **Custom**
+    </Expandable>
+  - **Built-in Sound**: ⤵
+
+    <Expandable title="Types">
+      - **AAAAAAAAAA**
+      - **Metal pipe**
+    </Expandable>
+  - **Custom Sound File**: the sound must be a WAV file in directory: .minecraft/Nebula/Failsafes/sounds
+  - **Custom Sound Volume**: change sound volume
+  - **Play/Stop Sound**: play / stop selected sound
+  - **Alt-Tab When Alerted**: alt-tab in game when alerted
+  - **Flash Screen When Alerted**: flashes the screen red and yellow for selected time
+  - **Flash Duration (in seconds)**: select time for Flash Screen
+</Accordion>
+
+<Accordion title="Recording" icon="sparkles">
+  - **Clip Capturing Type**: ⤵
+
+    <Expandable title="Type">
+      - **Disabled**
+      - **Built-in Replay Buffer**
+      - **External Replay Buffer**
+      - **External Recorder**
+    </Expandable>
+  - **Capture Notification**: toggles capture notification
+  - **Hardware Acceleration**: tries to find the best hardware acceleration settings suited for your PC, test using "/n clip hardware"
+  - **Capture Clip After Failsafe**: captures clip after failsafe
+  - **Capture Clip After Getting Banned**: captures clip after getting banned
+  - **Key 1 (required)**: the first key used in combination to capture a clip
+  - **Key 2 (required)**: the second key used in combination to capture a clip
+  - **Key 3 (optional)**: the third key used in combination to capture a clip
+</Accordion>
