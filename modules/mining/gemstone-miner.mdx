@@ -14,12 +14,12 @@ description: "Gemstone Macro"
   - **Block Hitbox Expander**: expands block hitboxes
   - **Instantly start Mining the next block**: instantly start mining the next block
   - **Custom Mining Speed**: set custom mining speed value
-  - **Rotation Time Multiplier**: rotations speed
-  - **AOTV Rotation Time Multiplier**: AOTV rotations speed
-  - **Additional Ticks (Normal)**: additional ticks for mining
-  - **Additional Ticks (MSB)**: additional ticks for mining under Mining Speed Boost
-  - **Experimental Tickgliding**: Experimental Tickgliding
-  - **Disable tickgliding when server TPS dies**: disables tickgliding when the server TPS is lower or equal than the selected value
+  - **Rotation Time Multiplier**: rotation speed
+  - **AOTV Rotation Time Multiplier**: AOTV rotation speed
+  - **Additional Ticks (Normal)**: additional ticks for tick glidin
+  - **Additional Ticks (MSB)**: additional ticks for tick gliding under Mining Speed Boost
+  - **Experimental Tickgliding**: Experimental Tickgliding, may have a positive impact on rates
+  - **Disable tickgliding when server TPS dies**: disables tickgliding when the server TPS is less than or equal to the selected value
   - **Sneak While Mining**: sneaks while mining
   - **Pristine**: enter your pristine amount
   - **Type of Gemstone**: ⤵ used by profit calculator
@@ -40,7 +40,7 @@ description: "Gemstone Macro"
 <Accordion title="Mining Speed Boost" icon="sparkles">
   - **Use Mining Speed Boost**: toggles Mining Speed Boost usage
   - **Blue Cheese Swap**: toggles Blue Cheese Swap
-  - **Blue Cheese Drill Slot**: slot for Blue Cheese Swap
+  - **Blue Cheese Drill Slot**: slot with Blue Cheese drill
   - **Use MSB on Topaz**: use Mining Speed Boost on topaz
 </Accordion>
 
@@ -53,6 +53,10 @@ description: "Gemstone Macro"
       - **Hyperion**
     </Expandable>
   - **Weapon Slot**: slot with weapon
+
+    <Info>
+      Change range in "Combat Macro" module
+    </Info>
 </Accordion>
 
 <Accordion title="Route Miner" icon="sparkles">
@@ -60,6 +64,9 @@ description: "Gemstone Macro"
 </Accordion>
 
 <Accordion title="Gemstone Type" icon="diamond" iconType="solid">
+  <Info>
+    Macro will mine only selected gemstone types
+  </Info>
   - **Ruby Gemstone**
   - **Amber Gemstone**
   - **Amethyst Gemstone**
