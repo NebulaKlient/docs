@@ -7,154 +7,136 @@ title: "Fishing"
   It's **important** you enable **World Caching** in the [**Pathfinding**](../misc/pathfinding) module, so it works for the longer distances.
 </Danger>
 
-## Main Features and Settings
+<Accordion title="General" icon="gear" iconType="solid">
+  - **Fishing Macro Keybind**: toggles Fishing Macro by the keybind
+  - **Fishing Type**:⤵
 
-- **Fishing Type** :  
-  - **Normal:** Fishing and killing mobs instantly.
-  - **Barn:** Fishing with the added option of killing the sea creatures after a set amount of time.
-    - **Barn Fishing Attack Conditions**:
-    - **Barn Fishing SC Threshold**:
-    - **Not Enough Mana Retry Relay:**
-    - **Etherwarp Mode**:
-  - **Trophy:** Trophy fishing in the Crimson Isle.
-    - **Trophy Minium Wait Time**:
-  - **Worm:** Fishing for Water Worm or Flaming Worm in the Crystal Hollows and killing them after a set period of time.
-    - **Worm Fishing Attack Conditions**:
-    - **Worm Fishing SC Threshold**:
+    <Expandable title="Types">
+      - **Normal:** Fishing and killing mobs instantly.
+      - **Barn:** Fishing with the added option of killing the sea creatures after a set amount of time.
+      - **Trophy:** Trophy fishing in the Crimson Isle.
+      - **Worm:** Fishing for Water Worm or Flaming Worm in the Crystal Hollows and killing them after a set period of time.
+    </Expandable>
+  - **Sneak While Fishing**: toggles sneak while fishing
+  - **Hotspot Changer**: automatically fishes at the closest hotspot and changes it once disappears; requires "Hotspot Radar"
+  - **Hotspot Changer Postion (BETA)**: ⤵
 
+    <Expandable title="Positions">
+      - **On the surface**
+      - **Under the water**
+    </Expandable>
+  - **Catch Golden Fish**: toggles Catch Golden Fish 
+  - **Golden Fish Prediction Distance**: changes the distance between the predicted position of the golden fish and the hook
+  - **Ignore Target After Failures (BETA)**: changes number of failed attacks before ignoring the target
+  - **Auto Rain**: automatically buys rain from NPC
+  - **Rain Purchase Amount**: changes amount of rain to buy
+  - **Use Rod For Attacking (for 1 sec)**: toggles Use Rod For Attacking
+</Accordion>
 
-- **Sneak While Fishing** :  Sneaking while the macro is running to mimic legit behavior.
+<Accordion title="Misc" icon="sparkles">
+  - **Disable Totem of Corruption Usage**: disables Totem of Corruption usage
+  - **Disable Umbrella Usage**: disables umbrella usage
+  - **DIsable Power Orb Usage On Boss Spawn**: disables Power Orb usage on Boss spawn
+  - **Reset Profit Calculator**: resets Profit Calculator data
+  - **Lava Worm Spot Finder**: re-enter the world to make it work; ESP for spots
+  - **Anti-AFK Sensitivity**: changes value of Anti-AFK Sensitivity; the higher the value, the less sensitive the anti-afk will be (degrees)
+  - **Anti-Stuck Delay**: changes delay before recasting the rod when stuck (seconds)
+  - **Highlight Hotspot Rings**: highlights hotspot rings
+  - **Highlight Thunder Rings**: highlights Thunder rings
+</Accordion>
 
+<Accordion title="Barn Fishing" icon="fishing-rod">
+  - **Set Barn Fall Down Position**: click button to set Barn Fall Down position
+  - **Barn Fishing Attack Conditions**:⤵
 
-- **Hot Spot Changer:** When this option is enabled the macro will only fish at hotspots. <Warning>It is **important** if this option is enabled, please make sure to walk around the world. This is to help the pathfinding determine fishing positions around the hotspot.</Warning>
-- **Catch Golden Fish**: Catches golden fish that appear while fishing in the crimson isle.
-  - **Golden Fish Prediction Distance:** Predicts the position of the golden fish to the hook.
-- **Auto Rain:** Automatically buys rain while fishing in the park. Default purchase amount is 10.
+    <Expandable title="Conditions">
+      - **Before Despawn**
+      - **Threshold Reached**
+      - **Despawn OR Threshold**
+      - **Despawn AND Threshold**
+    </Expandable>
+  - **Barn Fishing SC Threshold**: changes value for Sea Creatures Threshold 
+  - **Not Enough Mana Retry Delay**: changes delay before using AOTV to come back when you dont have enough mana (seconds)
+  - **Etherwarp Mode**: toggles Etherwarp Mode; Using Etherwap to come back to fishing spot instead of AOTV
+</Accordion>
 
+<Accordion title="Trophy  Fishing" icon="fishing-rod">
+  - **Trophy Minumum Wait Time**: changes minimum time before catching a trophy fish (seconds); useful for Slugfish
+</Accordion>
 
-- **Using Rod For Attacking (For 1 Sec):** Uses rod to attack mob for 1 sec before switching to main weapon.
+<Accordion title="Worm Fishing" icon="fishing-rod">
+  - **Worm Fishing Attack Conditions**:⤵
 
-## Misc Features and Settings
+    <Expandable title="Conditions">
+      - **Before Despawn**
+      - **Threshold Reached**
+      - **Despawn OR Threshold**
+      - **Despawn AND Threshold**
+    </Expandable>
+  - **Worm Fishing SC Threshold**: changes value for Sea Creatures Threshold 
+</Accordion>
 
-- **Use Totem Of Corruption**:
-- **Use Power Orb On Boss Spawn**:
-- **Lava Worm Spot Finder**:
-- **Anti AFK Sensitivity**: 
-- **Anti Stuck Delay**:
-- **Highlight Hotspot Rings**:
-- **Highlight Thunder Rings:**
+<Accordion title="Combat" icon="swords">
+  - **Weapon Type**: ⤵
 
-## Combat and Wardrobe Swapper Features and Settings
+    <Expandable title="Type">
+      - **Melee**
+      - **Ability/Bow**
+      - **Wither Impact**
+    </Expandable>
+  - **Weapon Slot** : changes slot for Weapon
+  - **Attack Delay**: <u>additional</u> delay between entity spawn and switching to combat mode (ms)
+  - **Attack Squids**: toggles Attack Squid
+  - **Ignore Targets In Lava**: toggles Ignore Targets In Lava
+  - **Use Etherwarp For Dodging Thunder**: toggles usage of Etherwarp to dodge Thunder
+</Accordion>
 
-**Combat**:
+<Accordion title="Wardrobe Swapper" icon="clothes-hanger">
+  - **Wardrobe Slot To Switch Back**: select wardrobe slot to switch back
+  - **Wardrobe Slot To Use on Thunder Spawn**: select wardrobe slot to swap on Thunder spawn
+  - **Wardrobe Slot To Use on Vanquisher Spawn**: select wardrobe slot to swap on Vanquisher spawn
+  - **Wardrobe Slot To Use on Lord Jawbus Spawn**: select wardrobe slot to swap on Lord Jawbus spawn
+  - **Wardrobe Slot To Use on Titanoboa Spawn**: select wardrobe slot to swap on Titanoboa spawn
+  - **Wardrobe Slot To Use on Wiki Tiki Spawn**: select wardrobe slot to swap on Wiki Tiki spawn
+  - **Wardrobe Slot To Use on Reindrake Spawn**: select wardrobe slot to swap on Reindrake spawn
+</Accordion>
 
--  **Weapon Type**:
-- **Weapon Slot**:
-- **Attack Delay**:
-- **Attack Squids:**
-- **Ignore Targets In Lava**:
+<Accordion title="Scanning" icon="scanner-image">
+  - **Pond Selection**:⤵
 
-**Wardrobe Swapper**:
+    <Expandable title="Mode">
+      - **Automatic**
+      - **Player Look**
+    </Expandable>
+  - **Pond Edge Threshold**:
+</Accordion>
 
-- **Wardrobe Slot To Switch Back**:
-- **Wardrobe Slot To Use on Thunder Spawn**:
-- **Wardrobe Slot To Use on Vanquisher Spawn**:
-- **Wardrobe Slot To Use on Lord Jawbus Spawn**:
-- **Wardrobe Slot To Use on Titanoboa Spawn**:
-- **Wardrobe Slot To Use on Wiki Tiki Spawn**:
+<Accordion title="Attributes Helper" icon="sparkles">
+  - **Render Attributes on Magma Rods**: toggles Render Attributes on Magma Rods
+  - **Attributes Filter**: renders only selected attribute, separate by ;
+  - **Color of Text**: changes Color of Text
+</Accordion>
 
-## Visual and Notification Features and Settings
+<Accordion title="Visuals" icon="eye">
+  - **Highlight Targets**: toggles targets highlight
+  - **Highlight Targets**: toggles targets highlight
+  - **Show Fishing Rod Prediction**: toggles Fishing Rod Prediction
+  - **Fishing Rod Prediction Tracer Color**: changes Fishing Rod Prediction Tracer Color
+  - **Fishing Rod Prediction Hit Color**: changes Fishing Rod Prediction Hit Coolor
+</Accordion>
 
-**Visual**:
+<Accordion title="Notifications" icon="brake-warning">
+  - **Notify On Vanquisher Spawn**: toggles notification
+  - **Notify On Lord Jawbus Spawn**: toggles notification
+  - **Notify On Thunder Spawn**: toggles notification
+  - **Notify On Titanoboa Spawn**: toggles notification
+  - **Notify On Wiki Tiki Spawn**: toggles notification
+  - **Notify On Reindrake Spawn**: toggles notification
+</Accordion>
 
-- **Highlight Targets**:
-- **Show Fishing Rods Predictions:**
-- **Tracer Color:**
-- **Hit Color**:
-
-**Notifications**:
-
-- **Notify On Vanquisher Spawn**:
-- **Notify On Lord Jawbus Spawn**:
-- **Notify On Thunder Spawn**:
-- **Notify On Titanoboa Spawn**:
-- **Notify On Wiki Tiki Spawn**:
-
-#### Minimum Requirements
-
-> Recommend at least level 7 for bazaar. See [BazaarUnlocker](../general/bazaar-unlocker) for details on how Nebula can assist with unlocking bazaar\! 
-
-##  Recommended Setups
-<Tabs>
-  <Tab title="Early Game">
-    <Card title="Armor Set: Glacite Armor" icon={<img
-src="https://wiki.hypixel.net/images/3/3d/SkyBlock_armor_glacite.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Tool: Bandaged / Mithril Pickaxe" icon={<img
-src="https://wiki.hypixel.net/images/3/37/SkyBlock_items_enchanted_stone_pickaxe.gif"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Pet: Mithril Golem (Epic)" icon={<img
-src="https://wiki.hypixel.net/images/d/dc/SkyBlock_pets_mithril_golem.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Equipment: 4/4 Mithril Equipment reforged to Royal" icon={<img
-src="https://wiki.hypixel.net/images/7/72/SkyBlock_items_mithril_necklace.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-  </Tab>
-  <Tab title="Mid Game">
-    <Card title="Armor Set: Yog Armor reforged to Dimensional" icon={<img
-src="https://wiki.hypixel.net/images/f/f5/SkyBlock_armor_yog.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      Note: If you have extra money, you can get Sorrow Armor. The mining speed is minuscule, so only get this if you have a lot of money to spare
-    </Card>
-    <Card title="Tool: Mithril Drill SX-R226 reforged to Fleet" icon={<img
-src="https://wiki.hypixel.net/images/e/e1/SkyBlock_items_enchanted_prismarine_shard.gif"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Pet: Mithril Golem (Legendary)" icon={<img
-src="https://wiki.hypixel.net/images/d/dc/SkyBlock_pets_mithril_golem.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Equipment: 4/4 Mithril Equipment reforged to Royal" icon={<img
-src="https://wiki.hypixel.net/images/7/72/SkyBlock_items_mithril_necklace.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      Note: You can upgrade to Titanium Equipment, but you are not required to at this stage yet.
-    </Card>
-  </Tab>
-  <Tab title="Late Game">
-    <Card title="Armor Set: Armor of Divan reforged to Dimensional" icon={<img
-src="https://wiki.hypixel.net/images/9/9c/SkyBlock_armor_divan.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Tool: Mithril Drill SX-R326 reforged to Fleet" icon={<img
-src="https://wiki.hypixel.net/images/e/e1/SkyBlock_items_enchanted_prismarine_shard.gif"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Pet: Mithril Golem (Legendary)" icon={<img
-src="https://wiki.hypixel.net/images/d/dc/SkyBlock_pets_mithril_golem.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-    <Card title="Equipment: 4/4 Mithril Equipment reforged to Royal" icon={<img
-src="https://wiki.hypixel.net/images/7/72/SkyBlock_items_mithril_necklace.png"
-className="h-6 w-6 my-0"/>} horizontal>
-      
-    </Card>
-  </Tab>
-</Tabs>
-###  Usage Notes
-
-> **Tip:** [Helpful tip for users]
-
-> **Note:** [Extra setup clarification or reminder]
+<Accordion title="Debug" icon="sparkles">
+  - **Debug Mode**:
+  - **Fall Down Pos X**:
+  - **Fall Down Pos Y**:
+  - **Fall Down Pos Z**:
+</Accordion>
