@@ -1,38 +1,40 @@
 ---
 title: "🚨 Failsafes"
-description: "Failsafe system for macro"
+description: "Failsafe system"
 ---
 
 <Accordion title="Failsafes" icon="brake-warning" iconType="solid">
-  - **Rotation failsafe**: toggles Rotation failsafe
-  - **TP failsafe**: toggles TP failsafe
-  - **Stuck In Block failsafe**: toggles Stuck In Block failsafe
-  - **Death failsafe**: toggles Death failsafe
-  - **Warp failsafe**: toggles Warp failsafe
-  - **Player Close failsafe**: toggles Close failsafe
-  - **Player Griefing Failsafe**: toggles Player Griefing failsafe
-  - **Player Name Failsafe**: toggles Player Name Failsafe
-  - **Player Name List**: comma separated
-  - **Player Looking failsafe**: toggles Player Looking failsafe
-  - **Player Looking Duration (in seconds)**: how long it takes for the failsafe to trigger when a player is looking at you
-  - **Enviroment Change failsafe**: toggles Enviroment Change failsafe
-  - **Bedrock Cage failsafe**: toggles Bedrock Cage failsafe
-  - **Velocity failsafe**: toggles Velocity failsafe
-  - **Velocity Threshold failsafe**: velocity failsafe threshold
-  - **Cobweb failsafe**: toggles Cobweb failsafe
-  - **Bad Effects Failsafe**: toggles Bad Effects failsafe
-  - **Failed Etherwarp failsafe**: toggles Failed Etherwarp failsafe
-  - **Dirt Check failsafe**: toggles Dirt Check failsafe
-  - **Upcoming Staff Check failsafe**: toggles Upcoming Staff Check Failsafes
-  - **Chat Mention failsafe**: toggles Chat Mention failsafe
-  - **Trigger Chat Mention Failsafe only when the player is close**: toggles Chat Mention Failsafe only when the player is close
+  - **Rotation failsafe**: Toggles Rotation failsafe.
+  - **TP failsafe**: Toggles Teleport failsafe.
+  - **Stuck In Block failsafe**: Toggles Stuck In Block failsafe.
+  - **Death failsafe**: Toggles Death failsafe.
+  - **Warp failsafe**: Toggles Warp failsafe.
+  - **Player Close failsafe**: Toggles Close failsafe.
+  - **Player Griefing Failsafe**: Toggles Player Griefing failsafe.
+  - **Player Name Failsafe**: Toggles Player Name Failsafe.
+  - **Player Name List**: Comma separated.
+  - **Player Looking failsafe**: Toggles Player Looking failsafe.
+  - **Player Looking Duration (in seconds)**: How long it takes for the failsafe to trigger when a player is looking at you.
+  - **Enviroment Change failsafe**: Toggles Environment Change failsafe.
+  - **Bedrock Cage failsafe**: Toggles Bedrock Cage failsafe.
+  - **Velocity failsafe**: Toggles Velocity failsafe.
+  - **Velocity Threshold failsafe**: Velocity failsafe threshold.
+  - **Cobweb failsafe**: Toggles Cobweb failsafe.
+  - **Bad Effects Failsafe**: Toggles Bad Effects failsafe.
+  - **Item Change Failsafe**: Triggers when your held item changes unexpectedly.
+  - **Failed Etherwarp failsafe**: Toggles Failed Etherwarp failsafe.
+  - **Dirt Check failsafe**: Toggles Dirt Check failsafe.
+  - **Upcoming Staff Check failsafe**: Toggles Upcoming Staff Check failsafe.
+  - **Chat Mention failsafe**: Toggles Chat Mention failsafe.
+  - **Trigger Chat Mention Failsafe only when the player is close**: Toggles Chat Mention Failsafe only when the player is close.
+  - **Chat Mention Other Keywords**: Add custom keywords (comma-separated) to trigger the chat mention failsafe.
 </Accordion>
 
 <Accordion title="Alerts" icon="sparkles">
-  - **Entity Close Failsafe**: toggles entity close failsafe
-  - **Auto Disable Player Close Failsafe**: automatically disables the Player Close and Entity failsafe if there are too many entities nearby when a macro starts
-  - **Auto Disable Entity Close Failsafe**: automatically disables the Player Close and Entity failsafes if there are too many entities nearby when a macro starts
-  - **Sound Type**: ⤵
+  - **Entity Close Failsafe**: Toggles entity close failsafe.
+  - **Auto Disable Player Close Failsafe**: Automatically disables the Player Close failsafe if there are too many players nearby on macro start.
+  - **Auto Disable Entity Close Failsafe**: Automatically disables the Entity Close failsafe if there are too many entities nearby on macro start.
+  - **Sound Type**: ⤵
 
     <Expandable title="Types">
       - **Disabled**
@@ -40,34 +42,35 @@ description: "Failsafe system for macro"
       - **Built-in**
       - **Custom**
     </Expandable>
-  - **Built-in Sound**: ⤵
+  - **Built-in Sound**: ⤵
 
     <Expandable title="Types">
       - **AAAAAAAAAA**
       - **Metal pipe**
     </Expandable>
-  - **Custom Sound File**: the sound must be a WAV file in directory: .minecraft/Nebula/Failsafes/sounds
-  - **Custom Sound Volume**: change sound volume
-  - **Play/Stop Sound**: play / stop selected sound
-  - **Alt-Tab When Alerted**: alt-tab in game when alerted
-  - **Flash Screen When Alerted**: flashes the screen red and yellow for selected time
-  - **Flash Duration (in seconds)**: select time for Flash Screen
+  - **Custom Sound File**: The sound must be a WAV file in directory: .minecraft/Nebula/Failsafes/sounds.
+  - **Custom Sound Volume**: Change sound volume.
+  - **Play/Stop Sound**: Play or stop selected sound.
+  - **Send Notification When Alerted**: Sends a system notification when a failsafe is triggered.
+  - **Alt-Tab When Alerted**: Alt-tabs in game when alerted.
+  - **Flash Screen When Alerted**: Flashes the screen red and yellow for selected time.
+  - **Flash Duration (in seconds)**: Select time for Flash Screen.
 </Accordion>
 
 <Accordion title="Recording" icon="video">
-  - **Clip Capturing Type**: ⤵
+  - **Clip Capturing Type**: ⤵
 
     <Expandable title="Type">
       - **Disabled**
-      - **Built-in Replay Buffer**
-      - **External Replay Buffer**
-      - **External Recorder**
+      - **Built-in Replay Buffer**
+      - **External Replay Buffer**
+      - **External Recorder**
     </Expandable>
-  - **Capture Notification**: toggles capture notification
-  - **Hardware Acceleration**: tries to find the best hardware acceleration settings suited for your PC, test using "/n clip hardware"
-  - **Capture Clip After Failsafe**: captures clip after failsafe
-  - **Capture Clip After Getting Banned**: captures clip after getting banned
-  - **Key 1 (required)**: the first key used in combination to capture a clip
-  - **Key 2 (required)**: the second key used in combination to capture a clip
-  - **Key 3 (optional)**: the third key used in combination to capture a clip
+  - **Capture Notification**: Toggles capture notification.
+  - **Hardware Acceleration**: Tries to find the best hardware acceleration settings suited for your PC. Test using "/n clip hardware".
+  - **Capture Clip After Failsafe**: Captures clip after failsafe.
+  - **Capture Clip After Getting Banned**: Captures clip after getting banned.
+  - **Key 1 (required)**: The first key used in combination to capture a clip.
+  - **Key 2 (required)**: The second key used in combination to capture a clip.
+  - **Key 3 (optional)**: The third key used in combination to capture a clip.
 </Accordion>

@@ -1,6 +1,54 @@
 ---
 title: "🪴 Farming"
-description: "This page is under construction"
+description: "A highly customizable farming macro for various crop types."
 ---
 
-# 
+<Accordion title="General" icon="gear">
+  - **Farming Macro Keybind**: Keybind to start and stop the macro.
+  - **Macro Type**: Select the type of farm you are using.
+  <Expandable title="Farm Types">
+    - **S-Shape Crops/Wart**
+    - **Vertical Crops/Wart**
+    - **Preset Pumpkin/Melon**
+    - **Classic Pumpkin/Melon**
+    - **Compact Pumpkin/Melon**
+    - **Classic Mushroom**
+    - **SDS Mushroom**
+    - **S-Shape Cactus**
+    - **Forward Cocoa**
+    - **Horizontal Cocoa**
+    - **S-Shape Sugar Cane**
+  </Expandable>
+  - **Minimum Switch Delay**: Minimum delay (in ms) when changing rows.
+  - **Maximum Switch Delay**: Maximum delay (in ms) when changing rows.
+</Accordion>
+
+<Accordion title="Rotation" icon="angle-90" iconType="duotone">
+  - **Custom Pitch**: Use a custom pitch value for farming.
+  - **Custom Pitch Value**: The pitch value to use (from -90 to 90).
+  - **Custom Yaw**: Use a custom yaw value for farming.
+  - **Custom Yaw Value**: The yaw value to use (from -180 to 180).
+</Accordion>
+
+<Accordion title="Movement" icon="person-running">
+  - **Hold W Policy**: Determines how the 'W' key is held during farming.
+  - **Turn after Drop**: Performs a turn after dropping down a layer.
+  - **Turn after Rewarp**: Performs a turn after rewarping to the top.
+</Accordion>
+
+<Accordion title="Misc" icon="sparkles">
+  - **Increase Crops Hitbox**: Expands the hitbox of crops for easier farming.
+  - **Increase Mushroom Hitbox**: Expands the hitbox of mushrooms.
+  - **Increase Cocoa Hitbox**: Expands the hitbox of cocoa beans.
+  - **Zero Ping Cactus**: Client-side removal of cactus blocks after breaking for smoother farming.
+</Accordion>
+
+<Accordion title="Pest Macro" icon="bug">
+  - **Start Killing Pests At**: Number of pests required to spawn before the Pest Macro activates. (Set to 0 to disable)
+  - **Ignore Pests During Jacob**: Prevents the Pest Macro from running during Jacob's Farming Contests.
+</Accordion>
+
+<Accordion title="Visitor Macro" icon="user">
+  - **Start Doing Visitors At**: Number of visitors waiting before the Auto Visitors macro activates. (Set to 0 to disable)
+  - **Ignore Visitors During Jacob**: Prevents serving visitors during Jacob's Farming Contests.
+</Accordion>

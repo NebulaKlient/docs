@@ -1,6 +1,26 @@
 ---
 title: "AutoVisitors"
-description: "This page is under construction"
+description: "Automatically serves visitors in the Garden."
 ---
 
-# 
+<Accordion title="General" icon="gear">
+  - **Auto Visitors Macro Keybind**: Keybind to toggle the macro.
+  - **Auto Serve Visitors**: Automatically serve visitors without the macro being active.
+  - **Max Payment Per Visitor**: The maximum amount of coins (in thousands) to pay per item for a visitor's request.
+</Accordion>
+
+<Accordion title="Rarity" icon="star">
+  <Info>These settings are only active if "Auto Serve Visitors" is enabled.</Info>
+  - **Uncommon Visitors**: Action to take for Uncommon rarity visitors.
+  - **Rare Visitors**: Action to take for Rare rarity visitors.
+  - **Legendary Visitors**: Action to take for Legendary rarity visitors.
+  - **Mythic Visitors**: Action to take for Mythic rarity visitors.
+  - **Special Visitors**: Action to take for Special rarity visitors.
+  <Expandable title="Options for each rarity">
+    - **Always Accept**
+    - **Accept if less than payment**: Accepts if the cost is less than the max payment setting.
+    - **Accept if profitable**: Accepts only if the deal is profitable.
+    - **Ignore**
+    - **Refuse**
+  </Expandable>
+</Accordion>

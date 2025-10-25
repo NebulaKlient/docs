@@ -1,95 +1,98 @@
 ---
 title: "💎 GemstoneMiner"
-description: "Gemstone Macro"
+description: "Mines gemstones."
 ---
 
 <Accordion title="General" icon="pickaxe" iconType="solid">
-  - **Gemstone Macro Keybind**: toggles Gemstone Macro
-  - **Mining Mode**: ⤵
+  - **Gemstone Macro Keybind**: Keybind to start and stop the Gemstone Macro.
+  - **Mining Mode**: ⤵
 
     <Expandable title="Modes">
       - **Normal**
       - **Nuker**
     </Expandable>
-  - **Block Hitbox Expander**: expands block hitboxes
-  - **Instantly start Mining the next block**: instantly start mining the next block
-  - **Custom Mining Speed**: set custom mining speed value
-  - **Rotation Time Multiplier**: rotation speed
-  - **AOTV Rotation Time Multiplier**: AOTV rotation speed
-  - **Additional Ticks (Normal)**: additional ticks for tick glidin
-  - **Additional Ticks (MSB)**: additional ticks for tick gliding under Mining Speed Boost
-  - **Experimental Tickgliding**: Experimental Tickgliding, may have a positive impact on rates
-  - **Disable tickgliding when server TPS dies**: disables tickgliding when the server TPS is less than or equal to the selected value
-  - **Sneak While Mining**: sneaks while mining
-  - **Pristine**: enter your pristine amount
-  - **Type of Gemstone**: ⤵ used by profit calculator
+  - **Tick Gliding**: Toggles Tick Gliding - slightly increases rates by rotating to the next block earlier than usual, useful for high ping users.
+  - **Block Hitbox Expander**: Expands block hitboxes.
+  - **Instantly start Mining the next block**: Instantly starts mining the next block.
+  - **Custom Mining Speed**: Sets custom mining speed value.
+  - **Rotation Time Multiplier**: Sets rotation speed.
+  - **AOTV Rotation Time Multiplier**: Sets AOTV rotation speed.
+  - **Additional Ticks (Normal)**: Sets additional ticks for tick gliding.
+  - **Additional Ticks (MSB)**: Sets additional ticks for tick gliding under Mining Speed Boost.
+  - **Experimental Tickgliding**: Enables experimental tick gliding, which may have a positive impact on rates.
+  - **Testingg**: Only enable this if instructed to.
+  - **Disable tickgliding when server TPS dies**: Disables tick gliding when the server TPS is less than or equal to the selected value.
+  - **Sneak While Mining**: Sneaks while mining.
+  - **Pristine**: Enter your pristine amount.
+  - **Type of Gemstone**: ⤵ Used by the profit calculator.
 
     <Expandable title="Type">
       - **Flawed**
       - **Fine**
       - **Flawless**
     </Expandable>
-  - **Tick Gliding**: toggles Tick Gliding
-  - **Slight Movement Towards Gemstones**: slight movement towards gemstones
-  - **Mine Gemstone Panes**: mines gemstone panes 
-  - **Highlight Blocking Path Blocks**: highlights blocking path blocks
-  - **Notify on Unable to See Next Waypoint**: notifies on "Unable to See Next Waypoint"
-  - **Selection Highlight Color**: color for currently selected to mine block
+  - **Slight Movement Towards Gemstones**: Slight movement towards gemstones.
+  - **Mine Gemstone Panes**: Mines gemstone panes.
+  - **Highlight Blocking Path Blocks**: Highlights blocking path blocks.
+  - **Notify on Unable to See Next Waypoint**: Notifies on "Unable to See Next Waypoint."
+  - **Selection Highlight Color**: Sets color for currently selected to mine block.
+  - **TESTING Highlight all mineable gems around**: Highlights all nearby mineable gemstones.
 </Accordion>
 
 <Accordion title="Mining Speed Boost" icon="sparkles">
-  - **Use Mining Speed Boost**: toggles Mining Speed Boost usage
-  - **Blue Cheese Swap**: toggles Blue Cheese Swap
-  - **Blue Cheese Drill Slot**: slot with Blue Cheese drill
-  - **Use MSB on Topaz**: use Mining Speed Boost on topaz
+  - **Use Mining Speed Boost**: Toggles Mining Speed Boost usage.
+  - **Blue Cheese Swap**: Toggles Blue Cheese Swap.
+  - **Blue Cheese Drill Slot**: Slot with Blue Cheese drill.
+  - **Use MSB on Topaz**: Uses Mining Speed Boost on topaz.
 </Accordion>
 
 <Accordion title="Mob Killer" icon="swords" iconType="solid">
-  - **Kill Mobs**: toggles Mob Killer
-  - **Weapon Type**: ⤵
+  - **Kill Mobs**: Toggles Mob Killer.
+  - **Weapon Type**: ⤵
 
     <Expandable title="Modes">
       - **Ability**
       - **Hyperion**
     </Expandable>
-  - **Weapon Slot**: slot with weapon
+  - **Weapon Slot**: Slot with weapon.
 
     <Info>
-      Change range in "Combat Macro" module
+      Change range in "Combat Macro" module.
     </Info>
 </Accordion>
 
 <Accordion title="Route Miner" icon="sparkles">
-  - **Route Miner**: toggles route miner
+  - **Route Miner**: Toggles Route Miner.
 </Accordion>
 
 <Accordion title="Gemstone Type" icon="diamond" iconType="solid">
   <Info>
-    Macro will mine only selected gemstone types
+    Macro will mine only selected gemstone types.
   </Info>
   - **Ruby Gemstone**
-  - **Amber Gemstone**
+  - **Amber Gemstone**
   - **Amethyst Gemstone**
-  - **Jade Gemstone**
-  - **Sapphire Gemstone**
+  - **Jade Gemstone**
+  - **Sapphire Gemstone**
   - **Topaz Gemstone**
-  - **Jasper Gemstone**
-  - **Opal Gemstone**
-  - **Aquamarine Gemstone**
-  - **Citrine Gemstone**
+  - **Jasper Gemstone**
+  - **Opal Gemstone**
+  - **Aquamarine Gemstone**
+  - **Citrine Gemstone**
   - **Onyx Gemstone**
-  - **Peridot Gemstone**
+  - **Peridot Gemstone**
 </Accordion>
 
 <Accordion title="Commands" icon="sparkles">
-  - **/n gemstone help**: prints a help message
-  - **/n gemstone add [index]**: adds waypoint with selected index
-  - **/n gemstone insert [index]**: inserts waypoint with selected index
-  - **/n gemstone remove [index]**: removes waypoint with selected index
-  - **/n gemstone clear**: clear all waypoints
-  - **/n gemstone save [file]**: save waypoints to a file
-  - **/n gemstone load [file]**: loads waypoints from a file
-  - **/n conver-polar [file]**: converts polar route to nebula format
-  - **/n convert-skyskipped [file]**: converts skyskipped route to nebula format
-  - **/n convet-melody [file]**: converts melody route to nebula format
+  - **/n gemstone help**: Prints a help message.
+  - **/n gemstone add [index]**: Adds waypoint with selected index.
+  - **/n gemstone insert [index]**: Inserts waypoint with selected index.
+  - **/n gemstone remove [index]**: Removes waypoint with selected index.
+  - **/n gemstone clear**: Clears all waypoints.
+  - **/n gemstone save [file]**: Saves waypoints to a file.
+  - **/n gemstone load [file]**: Loads waypoints from a file.
+  - **/n conver-polar [file]**: Converts polar route to Nebula format.
+  - **/n convert-skyskipped [file]**: Converts skyskipped route to Nebula format.
+  - **/n convert-melody [file]**: Converts melody route to Nebula format.
+  - **/n conver-polinex [file]**: Converts polar route to Nebula format.
 </Accordion>

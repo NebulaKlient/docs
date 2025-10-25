@@ -4,65 +4,74 @@ description: "Automatically does slayer quests for you. Works with Zombie, Spide
 ---
 
 <Accordion title="General" icon="option" iconType="duotone">
-  - **Slayer Macro Keybind**: Keybind to start and stop the macro.
-  - **Macro Type**: ⤵
-
-  <Expandable title="Slayer Types">
-    - **Revenant**: Zombie slayer in the Graveyard or Crypts.
-    - **Tarantula**: Spider slayer in Spider's Den or Crimson Isle.
-    - **Sven**: Wolf slayer in the Ruins or Cave.
-    - **Enderman**: Voidgloom slayer in The End.
-    - **Inferno**: Blaze slayer in the Crimson Isle.
-    - **Vampire**: Riftstalker slayer in the Rift.
-  </Expandable>
-  - **Kill Other People Bosses**: Attack and kill slayer bosses spawned by other players for extra combat XP and drops.
+  - **Slayer Macro Keybind**: Keybind to start and stop the macro. It automatically detects your current slayer quest on the scoreboard.
+  - **Kill Other Players Bosses**: Attack and kill slayer bosses spawned by other players for extra combat XP and drops.
   - **Auto Daedalus Axe Swap**: Automatically switches to Daedalus Axe when killing mobs for increased Magic Find.
-  - **Daedalus Axe Swap On %HP**: Bosses health percentage threshold (1-100%) to switch to Daedalus Axe. At 10%, the macro will swap when the boos reaches 10% health or below.
+  - **Daedalus Axe Swap at % HP**: Bosses health percentage threshold (1-50%) to switch to Daedalus Axe.
+  - **Auto Slayer**: Enable this if you have the "Auto-Slayer" feature unlocked from Maddox. The macro will automatically start the next quest.
 </Accordion>
 
 <Accordion title="Zombie Slayer" icon="biohazard" iconType="duotone">
-  - **Dodge T5 TNT**: Automatically dodges TNT explosions during Tier 5 boss fights, instead of tanking attacks directly.
-  - **Auto Use AOTS**: Automatically uses Axe of the Shredded throw ability for additional damage output.
+  - **Dodge TNT (T5)**: Automatically dodges TNT explosions during Tier 5 boss fights.
+  - **TNT Dodge Ticks**: How many ticks to wait before dodging TNT. Higher value means waiting longer.
+  - **Auto HOTS**: Automatically uses Heart of the Sea throw ability. (Currently unavailable)
+  - **Crypts Warp Unlocked**: Uses `/warp crypt` to travel faster if unlocked.
+</Accordion>
+
+<Accordion title="Sven Slayer" icon="dog" iconType="duotone">
+  - **Kill Puppies**: Toggles whether to kill Sven Puppies.
+  - **Ruins Warp Unlocked**: Uses `/warp ruins` to travel faster if unlocked.
+</Accordion>
+
+<Accordion title="Spider Slayer" icon="spider" iconType="duotone">
+  - **Kill Bats**: Toggles whether to kill bats spawned by the boss.
+  - **Kill Magma Cubes Before Shooting Eggs**: Prioritizes killing nearby magma cubes before shooting eggs on the Crimson Isle.
+  - **Kill Spiders Before Shooting Eggs**: Prioritizes killing nearby spiders before shooting eggs in the Spider's Den.
+  - **Arachne's Sanctuary Warp Unlocked**: Uses `/warp arachne` to travel faster if unlocked.
 </Accordion>
 
 <Accordion title="Enderman Slayer" icon="eye" iconType="duotone">
-  - **Voidgloom Glyph Wither Cloak**: Uses Wither Cloak to tank the beacons instead of going to them during the boss fight.
-  - **Wither Cloak Duration in Seconds**: Duration to maintain the wither cloak effect. Increase for high ping or decrease if running out of mana.
+  - **Enderman Slayer Location**: Selects the area to farm Zealots.
+  <Expandable title="Location Options">
+    - **Main Area**
+    - **Dragon's Nest**
+    - **Hideout**
+    - **Void Sepulture**
+  </Expandable>
+  - **Use SoulCry When Spawning**: Activates SoulCry ability when spawning the Voidgloom Seraph boss.
   - **Use Summons for Hits Phase**: Automatically deploys summons during the hits phase of the Voidgloom Seraph fight.
-
   <Info>
     **Note:** You need either a **Summoning Ring**, **Necromancer Sword**, or **Reaper Scythe** in your hotbar to spawn summons.
   </Info>
-  - **Use SoulCry When Spawning**: Activates SoulCry ability when spawning the Voidgloom Seraph boss.
+  - **Use Terminator for Hits Phase**: Uses a Terminator during the hits phase.
+  - **Laser Offset**: Adjust the timing for dodging lasers. Increase if you jump too late, decrease if too early.
+  - **Use Wither Cloak (Voidgloom Glyph)**: Uses Wither Cloak to tank the beacons instead of going to them during the boss fight.
+  - **Check Aggro**: Experimental feature to continue hitting the boss if it targets you instead of your summons.
+  - **Void Sepulture Warp Unlocked (requires MVP+)**: Uses `/warp void` to travel faster if unlocked.
 </Accordion>
 
 <Accordion title="Weapon" icon="swords" iconType="duotone">
-  - **Spawn Weapon Type**: ⤵
-
+  - **Spawn Weapon Type**: Selects the weapon type for killing mobs to spawn the boss.
   <Expandable title="Weapon Types">
-    - **Melee**: Uses sword attacks to kill spawned slayer mobs.
-    - **Ability/Bow**: Uses weapon ability or bow to kill spawned slayer mobs.
-    - **Hyperion**: Uses Wither Impact ability to kill spawned slayer mobs.
+    - **Melee**: Uses sword attacks.
+    - **Ability**: Uses a weapon's right-click ability.
+    - **Hyperion**: Uses Wither Impact.
+    - **Bow**: Uses a bow.
   </Expandable>
-  - **Spawn Weapon Slot**: Configurable weapon slot (1-9) for killing spawned slayer mobs.
-  - **Boss Weapon Type**: ⤵
-
-  <Expandable title="Boss Weapon Types">
-    - **Melee**: Uses sword attacks to kill the slayer boss.
-    - **Ability/Bow**: Uses weapon ability or bow to kill the slayer boss.
-    - **Hyperion**: Uses Wither Impact ability to kill the slayer boss.
+  - **Spawn Weapon Slot**: Configurable weapon slot (1-8) for spawning the boss.
+  - **Boss Weapon Type**: Selects the weapon type for killing the slayer boss.
+  <Expandable title="Weapon Types">
+    - **Melee**: Uses sword attacks.
+    - **Ability**: Uses a weapon's right-click ability.
+    - **Hyperion**: Uses Wither Impact.
+    - **Bow**: Uses a bow.
   </Expandable>
-  - **Boss Weapon Slot**: Configurable weapon slot (1-9) for killing the slayer boss.
+  - **Boss Weapon Slot**: Configurable weapon slot (1-8) for killing the slayer boss.
 </Accordion>
 
 <Accordion title="Armor" icon="shield" iconType="duotone">
   - **Spawn Armor Slot**: Wardrobe slot (0-18) for armor used when spawning the slayer boss. Set to 0 to disable armor swap.
   - **Boss Armor Slot**: Wardrobe slot (0-18) for armor used when the slayer boss is spawned. Set to 0 to disable armor swap.
-  - **Swap Armor On X% Health**: Health percentage threshold (0-100%) to swap to boss armor during spawn phase. At 50%, the macro will swap when your health drops to 50% or below.
-  - **Boss On X% Health Armor Slot**: Wardrobe slot (0-18) for emergency armor when health drops below the threshold during boss fight.
-</Accordion>
-
-<Accordion title="Maddox" icon="phone-volume" iconType="duotone">
-  - **Mute the Batphone sounds**: Disables sound effects when using the Maddox Batphone.
-  - **Mute the Batphone chat messages**: Hides chat messages from the Maddox in chat.
+  - **Swap Armor at % HP**: Health percentage threshold (0-100%) to swap to a different armor set during the boss fight.
+  - **Boss Armor Slot at % HP**: Wardrobe slot (0-18) for the emergency armor set to swap to when health drops below the threshold.
 </Accordion>

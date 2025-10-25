@@ -6,12 +6,12 @@ description: "Auto routes for dungeons "
 <Accordion title="General" icon="gear" iconType="solid">
   - **Routes Toggle**: toggles route nodes, requires brush to be enabled from [DungeonUtils](/modules/dungeons/dungeon-utils)
   - **Render Routes**: toggles nodes visibility
-  - **Actions Delay**: <u>additional</u> actions delay for nodes
-  - **Rotation Type**: ⤵
+  - **Actions Delay**: <u>additional</u> actions delay for nodes (in ticks)
+  - **Rotation Type**: ⤵
 
     <Expandable title="Types">
       **Normal**: changes player view\
-      **Fake**: doesnt change player view 
+      **Fake**: doesnt change player view 
     </Expandable>
   - **Rotation Speed**: changes rotations speed for nodes
   - **Fast TP**: zero ping etherwarp (currently unavailable because of anti-cheat update)
@@ -19,12 +19,16 @@ description: "Auto routes for dungeons "
     <Danger>
       If feature is  fixed in the future it may still  be detected after a new anti-cheat update
     </Danger>
-  - **Timer Balance**: improved version of Fast TP with delayed game speed slowdown (currently unavailable because of anti-cheat update)
+  - **Timer Balance**: improved version of Fast TP with delayed game speed slowdown (currently unavailable because of anti-cheat update)
 
     <Danger>
       If feature is  fixed in the future it may still  be detected after a new anti-cheat update
     </Danger>
   - **Distract Keybind**: disables the “Routes Distracted!” title to continue the route
+</Accordion>
+
+<Accordion title="Route" icon="route" iconType="solid">
+  - **Item Placeholders**: Define placeholders for items in routes. Format is "placeholder:real name; placeholder:real name 2; etc..."
 </Accordion>
 
 <Accordion title="Usage Notes" icon="sparkles">
@@ -43,7 +47,7 @@ description: "Auto routes for dungeons "
   <Expandable title="Nodes list">
     - **Etherwarp:** places an Etherwarp node that automatically etherwarps you to the selected block using an algorithm or hardcoded yaw & pitch values
     - **Walk**: places a Walk node that automatically walks in the selected direction
-    - **Pearl**: places a Pearl node that automatically throws ender pearl 
+    - **Pearl**: places a Pearl node that automatically throws ender pearl 
     - **Rotate**: places a Rotate node that automatically rotates u
     - **Chat**: places a Chat node that automatically sends message or command in chat
 

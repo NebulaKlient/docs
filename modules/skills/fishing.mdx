@@ -1,5 +1,5 @@
 ---
-description: "This module that automates Fishing, with quality-of-life features to improve efficiency."
+description: "This module automates Fishing, with various modes including Barn, Trophy, and Worm fishing, along with combat and utility features. Supports automatic hotspot fishing, AOTV pathfinder and Thunder dodging."
 title: "Fishing"
 ---
 
@@ -8,139 +8,132 @@ title: "Fishing"
 </Danger>
 
 <Accordion title="General" icon="gear" iconType="solid">
-  - **Fishing Macro Keybind**: toggles Fishing Macro when pressing the keybind
+  - **Fishing Macro Keybind**: Keybind to start and stop the fishing macro.
   - **Fishing Type**:⤵
 
     <Expandable title="Types">
-      - **Normal:** Fishing and killing mobs instantly.
-      - **Barn:** Fishing with the added option of killing the sea creatures after a set amount of time.
-      - **Trophy:** Trophy fishing in the Crimson Isle.
-      - **Worm:** Fishing for Water Worm or Flaming Worm in the Crystal Hollows and killing them after a set period of time.
+      - **Normal:** Fishes and kills mobs instantly.
+      - **Barn:** Fishes with the added option of killing the sea creatures after a set amount of time.
+      - **Trophy:** Trophy fishing in the Crimson Isle, prevents any movement unless necessary.
+      - **Worm:** Fishes up in the Crystal Hollows and kills them once the amount of entities is reached and/or they are about to despawn.
     </Expandable>
-  - **Sneak While Fishing**: toggles sneak while fishing
-  - **Hotspot Changer**: automatically fishes at the closest hotspot and changes it once disappears; requires "Hotspot Radar"
-  - **Hotspot Changer Position (BETA)**: ⤵
+  - **Sneak While Fishing**: Sneaks while awaiting fish.
+  - **Hotspot Changer**: Automatically fishes at the closest hotspot and changes it once it disappears; requires "Hotspot Radar."
+  - **Hotspot Changer Position (BETA)**: ⤵
 
     <Expandable title="Positions">
-      - **On the surface**
-      - **Under the water**
+      - **On the surface**
+      - **Under the water**
     </Expandable>
-  - **Catch Golden Fish**: toggles Catch Golden Fish 
-  - **Golden Fish Prediction Distance**: changes the distance between the predicted position of the golden fish and the hook
-  - **Ignore Target After Failures (BETA)**: changes number of failed attacks before ignoring the target
-  - **Auto Rain**: automatically buys rain from NPC
-  - **Rain Purchase Amount**: sets the amount of rain to buy
-  - **Use Rod For Attacking (for 1 sec)**: toggles Use Rod For Attacking
+  - **Catch Golden Fish**: Toggles catching golden fish.
+  - **Golden Fish Prediction Distance**: Changes the distance between the predicted position of the golden fish and the hook.
+  - **Ignore Target After Failures (BETA)**: Changes the number of failed attacks before ignoring the target.
 </Accordion>
 
 <Accordion title="Misc" icon="sparkles">
-  - **Disable Totem of Corruption Usage**: disables Totem of Corruption usage
-  - **Disable Umbrella Usage**: disables umbrella usage
-  - **Disable Power Orb Usage On Boss Spawn**: disables Power Orb usage on Boss spawn
-  - **Reset Profit Calculator**: resets Profit Calculator data
-  - **Lava Worm Spot Finder**: re-enter the world to make it work; ESP for spots
-  - **Anti-AFK Sensitivity**: changes value of Anti-AFK Sensitivity; the higher the value, the less sensitive the anti-afk will be (degrees)
-  - **Anti-Stuck Delay**: sets delay before recasting the rod when stuck (seconds)
-  - **Highlight Hotspot Rings**: highlights hotspot rings
-  - **Highlight Thunder Rings**: highlights Thunder rings
+  - **Disable Totem of Corruption Usage**: Disables Totem of Corruption usage.
+  - **Disable Umbrella Usage**: Disables umbrella usage.
+  - **Disable Power Orb Usage On Fishing Up**: Prevents using a Power Orb right after fishing up a mob (Normal mode only).
+  - **Don't Put Power Orb If Mob Has Lower HP**: Prevents using a Power Orb on mobs with less than the specified health.
+  - **Disable Power Orb Usage On Boss Spawn**: Disables Power Orb usage on Boss spawn.
+  - **Reset Profit Calculator**: Resets Profit Calculator data.
+  - **Lava Worm Spot Finder**: Re-enter the world to make it work; ESP for spots.
+  - **Anti-AFK Sensitivity**: Changes the value of Anti-AFK Sensitivity; the higher the value, the less sensitive the anti-afk will be (degrees).
+  - **Anti-Stuck Delay**: Sets delay before recasting the rod when stuck (seconds).
 </Accordion>
 
 <Accordion title="Barn Fishing" icon="fishing-rod">
-  - **Set Barn Fall Down Position**: click button to set Barn Fall Down position
-  - **Barn Fishing Attack Conditions**:⤵
+  - **Set Barn Fall Down Position**: Click button to set Barn Fall Down position.
+  - **Barn Fishing Attack Conditions**:⤵
 
     <Expandable title="Conditions">
-      - **Before Despawn**
+      - **Before Despawn**
       - **Threshold Reached**
-      - **Despawn OR Threshold**
+      - **Despawn OR Threshold**
       - **Despawn AND Threshold**
     </Expandable>
-  - **Barn Fishing SC Threshold**: changes value for Sea Creatures Threshold 
-  - **Not Enough Mana Retry Delay**: sets delay before using AOTV to come back when you dont have enough mana (seconds)
-  - **Etherwarp Mode**: toggles Etherwarp Mode; Using Etherwrap to come back to fishing spot instead of AOTV
-
-    <Expandable title="Usage Notes">
-      - To increase targets detection range u need to change Ability Weapon Range in [CombatMacro](/modules/combat/combat-macro) module
-    </Expandable>
+  - **Barn Fishing SC Threshold**: Changes value for Sea Creatures Threshold.
+  - **Not Enough Mana Retry Delay**: Sets delay before using AOTV to come back when you don't have enough mana (seconds).
+  - **Etherwarp Mode**: Makes use of Etherwarp to come back to the fishing spot instead of AOTV or walking.
 </Accordion>
 
 <Accordion title="Trophy  Fishing" icon="fishing-rod">
-  - **Trophy Minimum Wait Time**: changes minimum time before catching a trophy fish (seconds); useful for Slugfish
+  - **Trophy Minimum Wait Time**: Changes minimum time before catching a trophy fish (seconds); useful for Slugfish.
 </Accordion>
 
 <Accordion title="Worm Fishing" icon="fishing-rod">
-  - **Worm Fishing Attack Conditions**:⤵
+  - **Worm Fishing Attack Conditions**:⤵
 
     <Expandable title="Conditions">
-      - **Before Despawn**
+      - **Before Despawn**
       - **Threshold Reached**
-      - **Despawn OR Threshold**
+      - **Despawn OR Threshold**
       - **Despawn AND Threshold**
     </Expandable>
-  - **Worm Fishing SC Threshold**: changes value for Sea Creatures Threshold 
+  - **Worm Fishing SC Threshold**: Changes value for Sea Creatures Threshold.
 </Accordion>
 
 <Accordion title="Combat" icon="swords">
-  - **Weapon Type**: ⤵
+  - **Weapon Type**: ⤵
 
     <Expandable title="Type">
       - **Melee**
       - **Ability/Bow**
-      - **Wither Impact**
+      - **Wither Impact**
     </Expandable>
-  - **Weapon Slot** : changes slot for Weapon
-  - **Attack Delay**: <u>additional</u> delay between entity spawn and switching to combat mode (ms)
-  - **Attack Squids**: toggles Attack Squid
-  - **Ignore Targets In Lava**: toggles Ignore Targets In Lava
-  - **Use Etherwarp For Dodging Thunder**: toggles usage of Etherwarp to dodge Thunder
+  - **Weapon Slot** : Item slot to use for attacking mobs.
+  - **Attack Delay**: <u>Additional</u> delay between entity spawn and switching to combat mode (ms).
+  - **Use Rod For Attacking (for 1 sec)**: Attacks the sea creature after fishing up with the fishing rod for 1 second to continue fishing faster, if one tapped.
+  - **Attack Squids**: Disable if you don't want to go inside the pond each time you fish up a squid.
+  - **Use Etherwarp For Dodging Thunder**: Uses Etherwarp to dodge Thunder, otherwise uses AOTV or walks outside the ring.
+  - **Ignore Targets In Lava**: Ignores targets in lava.
+  - **Don't Attack On Fishing Up**: Prevents attacking if you just fished something up.
+  - **Don't Attack On Damage Received**: Prevents attacking right after taking damage.
+  - **Don't Attack Mobs With Lower HP**: Prevents attacking mobs with less than the specified health.
+  - **Don't Attack Recently Spawned Mobs (in seconds)**: Prevents attacking mobs that just spawned.
 </Accordion>
 
 <Accordion title="Wardrobe Swapper" icon="clothes-hanger">
-  - **Wardrobe Slot To Switch Back**: select wardrobe slot to switch back
-  - **Wardrobe Slot To Use on Thunder Spawn**: select wardrobe slot to swap on Thunder spawn
-  - **Wardrobe Slot To Use on Vanquisher Spawn**: select wardrobe slot to swap on Vanquisher spawn
-  - **Wardrobe Slot To Use on Lord Jawbus Spawn**: select wardrobe slot to swap on Lord Jawbus spawn
-  - **Wardrobe Slot To Use on Titanoboa Spawn**: select wardrobe slot to swap on Titanoboa spawn
-  - **Wardrobe Slot To Use on Wiki Tiki Spawn**: select wardrobe slot to swap on Wiki Tiki spawn
-  - **Wardrobe Slot To Use on Reindrake Spawn**: select wardrobe slot to swap on Reindrake spawn
+  - **Wardrobe Slot To Switch Back**: Select wardrobe slot to switch back.
+  - **Wardrobe Slot To Use on Thunder Spawn**: Select wardrobe slot to swap on Thunder spawn.
+  - **Wardrobe Slot To Use on Vanquisher Spawn**: Select wardrobe slot to swap on Vanquisher spawn.
+  - **Wardrobe Slot To Use on Lord Jawbus Spawn**: Select wardrobe slot to swap on Lord Jawbus spawn.
+  - **Wardrobe Slot To Use on Titanoboa Spawn**: Select wardrobe slot to swap on Titanoboa spawn.
+  - **Wardrobe Slot To Use on Wiki Tiki Spawn**: Select wardrobe slot to swap on Wiki Tiki spawn.
+  - **Wardrobe Slot To Use on Reindrake Spawn**: Select wardrobe slot to swap on Reindrake spawn.
 </Accordion>
 
 <Accordion title="Scanning" icon="scanner-image">
-  - **Pond Selection**:⤵
+  - **Pond Selection**:⤵
 
     <Expandable title="Mode">
-      - **Automatic**: throws the hook into an automatically selected area  
-      - **Player Look**: throws the hook where the player is looking
+      - **Automatic**: Throws the hook into an automatically selected area.  
+      - **Player Look**: Throws the hook where the player is looking.
     </Expandable>
-  - **Pond Edge Threshold**:
+  - **Pond Edge Threshold**:
 </Accordion>
 
 <Accordion title="Attributes Helper" icon="sparkles">
-  - **Render Attributes on Magma Rods**: toggles Render Attributes on Magma Rods
-  - **Attributes Filter**: renders only selected attribute, separate with ;
-  - **Color of Text**: changes Color of Text
+  - **Render Attributes on Magma Rods**: Renders attributes on Magma Rods.
+  - **Attributes Filter**: Renders only selected attribute, separate with ;.
+  - **Color of Text**: Changes Color of Text.
 </Accordion>
 
 <Accordion title="Visuals" icon="eye">
-  - **Highlight Targets**: toggles targets highlight
-  - **Highlight Targets**: toggles targets highlight
-  - **Show Fishing Rod Prediction**: toggles Fishing Rod Prediction
-  - **Fishing Rod Prediction Tracer Color**: changes Fishing Rod Prediction Tracer Color
-  - **Fishing Rod Prediction Hit Color**: changes Fishing Rod Prediction Hit Coolor
+  - **Highlight Targets**: Highlights the current target.
+  - **Highlight All Targets**: Highlights all valid targets.
+  - **Show Fishing Rod Prediction**: Shows Fishing Rod Prediction.
+  - **Fishing Rod Prediction Tracer Color**: Changes Fishing Rod Prediction Tracer Color.
+  - **Fishing Rod Prediction Hit Color**: Changes Fishing Rod Prediction Hit Color.
+  - **Highlight Hotspot Rings**: Highlights hotspot rings.
+  - **Highlight Thunder Rings**: Highlights Thunder rings.
 </Accordion>
 
 <Accordion title="Notifications" icon="brake-warning">
-  - **Notify On Vanquisher Spawn**: toggles notification
-  - **Notify On Lord Jawbus Spawn**: toggles notification
-  - **Notify On Thunder Spawn**: toggles notification
-  - **Notify On Titanoboa Spawn**: toggles notification
-  - **Notify On Wiki Tiki Spawn**: toggles notification
-  - **Notify On Reindrake Spawn**: toggles notification
-</Accordion>
-
-<Accordion title="Debug" icon="sparkles">
-  - **Debug Mode**:
-  - **Fall Down Pos X**:
-  - **Fall Down Pos Y**:
-  - **Fall Down Pos Z**:
+  - **Notify On Vanquisher Spawn**: Toggles system notification.
+  - **Notify On Lord Jawbus Spawn**: Toggles system notification.
+  - **Notify On Thunder Spawn**: Toggles system notification.
+  - **Notify On Titanoboa Spawn**: Toggles system notification.
+  - **Notify On Wiki Tiki Spawn**: Toggles system notification.
+  - **Notify On Reindrake Spawn**: Toggles system notification.
 </Accordion>

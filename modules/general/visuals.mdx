@@ -85,23 +85,25 @@ description: "Fancy and customizable Nebula visuals."
 <Accordion title="Custom Inventory Character" icon="user" iconType="duotone">
   **Custom Inventory Character**: Enables custom character display in inventory GUI.
 
-  - **Path (URL or Filename with extension)**: File path or URL for custom character image. You can add custom characters here: minecraft/Nebula/Visuals/characters
+  - **Path (URL or Filename with extension)**: File path or URL for custom character image. You can add custom assets here: .minecraft/Nebula/Visuals/characters
   - **X**: Horizontal position adjustment for the custom character.
   - **Y**: Vertical position adjustment for the custom character.
   - **Scale**: Size scaling for the custom character display.
 </Accordion>
 
+<Accordion title="Custom GIF HUD" icon="image" iconType="duotone">
+  - **Custom GIF HUD**: Displays a GIF on your screen.
+  - **Custom GIF URL**: The URL of the GIF to display.
+</Accordion>
+
 <Accordion title="General" icon="gear" iconType="duotone">
-  - **Konata Dancer HUD**: Displays konata dancing on your screen.
   - **Hide Players**: Makes other players invisible.
   - **Click Through Hidden Players**: Allows clicking through hidden players as if they weren't there.
   - **Hide Players Mode**: ⤵
 
   <Expandable title="Hide Players Options">
     - **All**: Hides all players.
-    - **Others**: Hides only other players (not yourself).
-    - **Friends**: Hides only friends.
-    - **Guild**: Hides only guild members.
+    - **Near You**: Hides players within a certain radius.
   </Expandable>
   - **Radius To Hide Players In**: Distance in blocks within which players will be hidden.
   - **Highlight Glowing Mushrooms**: Makes glowing mushrooms more visible with ESP.
@@ -140,9 +142,10 @@ description: "Fancy and customizable Nebula visuals."
   - **Custom ESP Mode**: ⤵
 
   <Expandable title="ESP Modes">
-    - **Glow**: Adds a glowing outline effect to targeted entities.
-    - **Box**: Draws a box outline around targeted entities.
     - **Outline**: Creates a colored outline around targeted entities.
+    - **Box**: Draws a box outline around targeted entities.
+    - **Chams**: Renders a solid color overlay on targeted entities.
+    - **Glow**: Adds a glowing outline effect to targeted entities.
   </Expandable>
   - **Custom ESP Color**: Sets the color for ESP.
   - **Render Players**: Shows ESP on other players.
@@ -154,10 +157,9 @@ description: "Fancy and customizable Nebula visuals."
   - **Highlight Style**: ⤵
 
   <Expandable title="Highlight Styles">
+    - **Static**: Uses a single color for highlighting.
     - **Rainbow**: Cycles through rainbow colors for the highlight.
-    - **Solid**: Uses a single color for highlighting.
-    - **Outline**: Creates an outline around blocks.
-    - **Fill**: Fills the entire block with color.
+    - **LSD**: Cycles through colors rapidly for a flashing effect.
   </Expandable>
   - **Depth**: Enables depth testing for block highlights.
   - **Speed**: Controls the speed of animated highlight effects.
@@ -177,7 +179,6 @@ description: "Fancy and customizable Nebula visuals."
   <Expandable title="ESP Modes">
     - **Box**: Draws a box outline around chests.
     - **Glow**: Adds a glowing outline effect to chests.
-    - **Outline**: Creates a colored outline around chests.
   </Expandable>
   - **Only in Crystal Hollows**: Restricts chest ESP to only work in Crystal Hollows.
 </Accordion>
@@ -188,6 +189,8 @@ description: "Fancy and customizable Nebula visuals."
 
 <Accordion title="Item Animation" icon="hand" iconType="duotone">
   - **Item Animations**: Enables custom animations for items held in hand.
+  - **No Equip Reset**: Prevents the item equip animation from resetting.
+  - **No Equip Reset on Slot Change**: Prevents the item equip animation from resetting when changing hotbar slots.
   - **Size**: Adjusts the size of the held item.
   - **Scale Swing**: Adjusts the speed of your swing.
   - **X**: Horizontal position adjustment for the held item.
@@ -208,9 +211,11 @@ description: "Fancy and customizable Nebula visuals."
   - **Scoreboard BG Blur Strength**: Controls the strenght of the background blur.
   - **Scoreboard BG Color**: Sets the background color of the scoreboard.
   - **Scoreboard Outline Color**: Sets the outline color of the scoreboard.
+  - **Scoreboard Outline Width**: Adjusts the width of the scoreboard outline.
+  - **Scoreboard Shadow Color**: Sets the color of the scoreboard's drop shadow.
   - **Scoreboard Title Text**: Custom text to display as the scoreboard title.
 </Accordion>
 
 <Accordion title="End Island" icon="sparkles">
-  - **Highlight Endere Nodes**: highlights special blocks in the end
+  - **Highlight Ender Nodes**: highlights special blocks in the end
 </Accordion>

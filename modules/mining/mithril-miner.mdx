@@ -6,20 +6,28 @@ description: "Mines mithril and ores in the Dwarven Mines, includes a custom rou
 <Accordion title="General" icon="gear" iconType="duotone">
   - **Mithril Macro Keybind**: Keybind to start and stop the mining macro.
   - **Rotation Time Multiplier**: Controls how fast rotations move - higher values make them slower. Best practice is to make the rotations look like something you can mimic.
+  - **AOTV Rotation Time Multiplier**: Controls the rotation speed when using AOTV.
   - **Mining Type**: ⤵
 
   <Expandable title="Mining Types">
-    - **Pure Ores**: Mines only pure ore blocks.
     - **Mithril**: Focuses specifically on mithril blocks.
+    - **Pure Ores**: Mines only pure ore blocks.
     - **Any**: Mines any valuable blocks found.
   </Expandable>
+  - **Mining Mode**:
+    - **Normal**: Mines blocks normally.
+    - **Nuker**: Mines multiple blocks at once in a radius.
+  - **Rotate to a place near the next target**: Rotates towards the next block while mining the current one.
+  - **Block Expander**: Expands the hitbox of blocks (only for Nuker mode without Insta Mine).
+  - **Instantly start mining the next block**: Starts mining the next block instantly (only for Nuker mode).
   - **Mithril Priority**: ⤵
 
   <Expandable title="Priority Options">
-    - **Highest To Lowest**: Prioritizes mining center of mithril vein.
-    - **Lowest To Highest**: Prioritizes mining outer layer of mithril vein.
-    - **Titanium**: Prioritizes titanium blocks first.
     - **Normal**: Uses standard mining priority.
+    - **Lowest To Highest**: Prioritizes mining outer layer of mithril vein.
+    - **Highest To Lowest**: Prioritizes mining center of mithril vein.
+    - **Titanium Lowest To Highest**: Prioritizes titanium blocks from the outer layer inwards.
+    - **Titanium Highest To Lowest**: Prioritizes titanium blocks from the center outwards.
   </Expandable>
   - **Sneak While Mining**: Sneaks while mining blocks.
   - **Move Closer If Out of Range**: Automatically moves closer to blocks that are out of mining range.
@@ -27,6 +35,7 @@ description: "Mines mithril and ores in the Dwarven Mines, includes a custom rou
   - **Pickonimbus Switcher**: Automatically switches to Pickonimbus when beneficial.
   - **Tick Gliding**: Enables tick-perfect gliding for faster mining.
   - **Waypoint Mode**: Use custom waypoint routes for mining.
+  - **Players Near Waypoint Radius**: The radius to check for other players when on a waypoint.
   - **Titanium Highlight Color**: Color for highlighting titanium blocks.
   - **Default Highlight Color**: Color for highlighting standard ore blocks.
   - **Point Highlight Color**: Color for highlighting specific mining points.
@@ -37,7 +46,7 @@ description: "Mines mithril and ores in the Dwarven Mines, includes a custom rou
 <Accordion title="Mining Ability" icon="pickaxe" iconType="duotone">
   - **Use Mining Ability**: Automatically uses mining abilities when available.
   - **Blue Cheese Swap**: Swaps to your Blue Cheese Drill.
-  - **Blue Cheese Drill Slot**: Hotbar slot (1-9) for the Blue Cheese drill.
+  - **Blue Cheese Drill Slot**: Hotbar slot (1-8) for the Blue Cheese drill.
   - **Minimum Size Of A Vein**: Minimum vein size required for Pickobulus ability activation.
 </Accordion>
 
