@@ -105,12 +105,12 @@
       "anchors": [
         {
           "anchor": "Website",
-          "href": "https://nebulaclient.zip/",
+          "href": "https://nebulaclient.net/",
           "icon": "globe"
         },
         {
           "anchor": "Discord",
-          "href": "https://nebulaclient.zip/discord",
+          "href": "https://nebulaclient.net/discord",
           "icon": "discord"
         }
       ]
